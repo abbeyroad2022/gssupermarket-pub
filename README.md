@@ -1,1 +1,1 @@
-# gssupermarket-pub
+# GS Supwermarket APP 퍼블리싱
