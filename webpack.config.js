@@ -46,7 +46,7 @@ module.exports = (env) => {
 		// new CleanWebpackPlugin([outputPath]),
 		new CopyWebpackPlugin([
 			{
-				from: './_status/**/*',
+				from: './status/**/*',
 				force: true,
 			},
 			{
