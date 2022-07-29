@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=960" />
+    <title>쇼딜 | 마크업리스트 | BNP21</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="./status.css" />
+    <!-- endbuild -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- build:js -->
+    <script src="./status.js"></script>
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <!--
+		마크업 리스트 : 범례
+		- 진행상황 표현 : 미정, 진행, 완료, 수정, 대기, 삭제, 기존
+		- <section class="progress-list" data-type="deploy">에서 입력시 퍼블리싱 마크업 리스트에 만 노출 삭제시 배포 시점에 노출
+	 -->
+    <div id="wrap">
+      <!-- container -->
+      <div id="container">
+        <header id="header">
+          <h1>쇼딜 마크업 리스트 (Mobile)</h1>
+        </header>
+
+        <!-- contentPrimary -->
+        <section id="contentPrimary" class="content-primary">
+          <h1>쇼딜 마크업 리스트(Mobile)</h1>
+
+          <!-- 대쉬보드 -->
+          <section class="progress-board">
+            <!-- <div class="progress">
+						<a href="javascript:void(0);">
+							<div class="title">
+								PC
+							</div>
+							<div class="stat">
+								<strong class="percent">30%</strong>
+								<span class="count">
+									<span class="current">3</span>
+									<span class="slash">/</span>
+									<span class="total">10</span>
+								</span>
+							</div>
+						</a>
+					</div> -->
+          </section>
+          <!-- // 대쉬보드 -->
+
+          <!-- 공통레이아웃 -->
+          <section class="progress-list" data-type="deploy">
+            <h2>#공통레이아웃</h2>
+            <div class="utils">
+              <p><strong>진행상황 표현 :</strong> 미정, 진행, 완료, 수정, 대기, 삭제, 기존</p>
+              <div class="util-group">
+                <a class="full-inspection" href="javascript:void(0);">전체열기</a> <a class="go-top" href="#content">최상단 가기</a>
+              </div>
+            </div>
+            <!-- data-table small -->
+            <table class="data-table wsg">
+              <colgroup>
+                <col style="width: 40px" />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col style="width: 80px" />
+                <col style="width: 90px" />
+                <col style="width: 140px" />
+                <col style="width: 54px" />
+                <col style="width: 300px" />
+              </colgroup>
+              <thead>
+              <tr>
+                <th>번호</th>
+                <th>1 Depth</th>
+                <th>2 Depth</th>
+                <th>3 Depth</th>
+                <th>UI</th>
+                <th>Sprint</th>
+                <th>Directory</th>
+                <th>Page ID</th>
+                <th>코딩</th>
+                <th>수정이력</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td></td>
+                <td>Layout</td>
+                <td>Type1</td>
+                <td></td>
+                <td>헤더(로고+검색) + 본문 + GNB</td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">layout_type1</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Type2</td>
+                <td></td>
+                <td>헤더(이전+제목) + 본문 + GNB</td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">layout_type2</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Type3</td>
+                <td></td>
+                <td>헤더(이전+제목) + 본문</td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">layout_type3</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Type4</td>
+                <td></td>
+                <td>헤더(제목+닫기) + 본문</td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">layout_type4</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>main</td>
+                <td></td>
+                <td>헤더(로고+검색) + 본문 + GNB</td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">layout_main</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>shortcut</td>
+                <td></td>
+                <td>본문 + GNB</td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">layout_shortcut</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>login</td>
+                <td></td>
+                <td>본문</td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">layout_login</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              </tbody>
+            </table>
+          </section>
+          <!-- //공통레이아웃 -->
+
+          <!-- 공통컴포넌트 -->
+          <section class="progress-list" data-type="deploy">
+            <h2>#공통컴포넌트</h2>
+            <div class="utils">
+              <p><strong>진행상황 표현 :</strong> 미정, 진행, 완료, 수정, 대기, 삭제, 기존</p>
+              <div class="util-group">
+                <a class="full-inspection" href="javascript:void(0);">전체열기</a> <a class="go-top" href="#content">최상단 가기</a>
+              </div>
+            </div>
+            <!-- data-table small -->
+            <table class="data-table wsg">
+              <colgroup>
+                <col style="width: 40px" />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col style="width: 80px" />
+                <col style="width: 90px" />
+                <col style="width: 140px" />
+                <col style="width: 54px" />
+                <col style="width: 300px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>번호</th>
+                  <th>1 Depth</th>
+                  <th>2 Depth</th>
+                  <th>3 Depth</th>
+                  <th>Design</th>
+                  <th>Sprint</th>
+                  <th>Directory</th>
+                  <th>Page ID</th>
+                  <th>코딩</th>
+                  <th>수정이력</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td></td>
+                <td>Component</td>
+                <td>Button</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">component_button</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Tab</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">component_tab</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Form</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">component_form</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Icon</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">_common</td>
+                <td class="page">component_icon</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              </tbody>
+            </table>
+          </section>
+          <!-- //공통컴포넌트 -->
+
+          <!-- 페이지 -->
+          <section class="progress-list" data-type="deploy">
+            <h2>#페이지</h2>
+            <div class="utils">
+              <p><strong>진행상황 표현 :</strong> 미정, 진행, 완료, 수정, 대기, 삭제, 기존</p>
+              <div class="util-group">
+                <a class="full-inspection" href="javascript:void(0);">전체열기</a> <a class="go-top" href="#content">최상단 가기</a>
+              </div>
+            </div>
+            <!-- data-table small -->
+            <table class="data-table wsg">
+              <colgroup>
+                <col style="width: 40px" />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col style="width: 80px" />
+                <col style="width: 90px" />
+                <col style="width: 140px" />
+                <col style="width: 54px" />
+                <col style="width: 300px" />
+              </colgroup>
+              <thead>
+              <tr>
+                <th>번호</th>
+                <th>1 Depth</th>
+                <th>2 Depth</th>
+                <th>3 Depth</th>
+                <th>Design</th>
+                <th>Sprint</th>
+                <th>Directory</th>
+                <th>Page</th>
+                <th>코딩</th>
+                <th>수정이력</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td></td>
+                <td>메인</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir"></td>
+                <td class="page">index</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>홈(쇼딜)</td>
+                <td>목록</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">showdeal</td>
+                <td class="page">showdeal_list</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>썸네일 이미지 사이즈 조정</span><br />
+                  <span>텝 라인 사이즈 수정</span><br />
+                  <span>[main]태그에서 [is_tab_fix] 클래스 삭제</span><br />
+                  <strong>2022-03-14</strong><br /><br />
+                  <span>상단 슬라이드 추가</span><br />
+                  <span>콘텐츠 추가 (실시간 쇼딜, 찜 정보)</span><br />
+                  <span>토스트팝업 3종 추가</span><br />
+                  <span>모달팝업 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>상세</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">showdeal</td>
+                <td class="page">showdeal_detail_talk</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>Bottom Sheet 분리(카톡채널형)</span><br />
+                  <span>토스트 팝업 사이즈 수정</span><br />
+                  <span>플로팅바 내 버튼 사이즈 수정</span><br />
+                  <strong>2022-04-03</strong><br />
+                  <span>바로구매 버튼 변경</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">showdeal</td>
+                <td class="page">showdeal_detail_tel</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>Bottom Sheet 분리(전화번호 추가형)</span><br />
+                  <span>토스트 팝업 사이즈 수정</span><br />
+                  <span>플로팅바 내 버튼 사이즈 수정</span><br />
+                  <strong>2022-04-03</strong><br />
+                  <span>바로구매 버튼 변경</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>업체페이지</td>
+                <td></td>
+                <td></td>
+                <td class="dir">showdeal</td>
+                <td class="page">shop_deal</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>썸네일 이미지 사이즈 조정</span><br />
+                  <span>텝 라인 사이즈 수정</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>천원딜</td>
+                <td>목록</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">chundeal</td>
+                <td class="page">chundeal_list</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>상세</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">chundeal</td>
+                <td class="page">chundeal_detail_talk</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>Bottom Sheet 분리(카톡채널형)</span><br />
+                  <span>토스트 팝업 사이즈 수정</span><br />
+                  <span>플로팅바 내 버튼 사이즈 수정</span><br />
+                  <strong>2022-04-03</strong><br />
+                  <span>바로구매 버튼 변경</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">chundeal</td>
+                <td class="page">chundeal_detail_tel</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>Bottom Sheet 분리(전화번호 추가형)</span><br />
+                  <span>토스트 팝업 사이즈 수정</span><br />
+                  <span>플로팅바 내 버튼 사이즈 수정</span><br />
+                  <strong>2022-04-03</strong><br />
+                  <span>바로구매 버튼 변경</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>바로가기</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">shortcut</td>
+                <td class="page">shortcut</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>찜</td>
+                <td>찜 정보</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">scrap</td>
+                <td class="page">scrap_deal</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>썸네일 이미지 사이즈 조정</span><br />
+                  <span>텝 라인 사이즈 수정</span><br />
+                  <span>[main]태그에서 [is_tab_fix] 클래스 삭제</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>관심 매장</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">scrap</td>
+                <td class="page">scrap_shop</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>텝 라인 사이즈 수정</span><br />
+                  <span>[main]태그에서 [is_tab_fix] 클래스 삭제</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>로그인</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">login</td>
+                <td class="page">login</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>디자인 수정 적용</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>마이페이지</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">mypage</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>[업체 비즈프로필 만들기] 링크 버튼 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>업체 비즈프로필 만들기</td>
+                <td>프로필 등록 안내</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">profile_guide</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>프로필 등록</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">profile_regist</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>비즈프로필</td>
+                <td>비즈프로필 정보</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">profile_info</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>프로필 수정</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">profile_modify</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>쇼딜 생성하기</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">regist_select</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>디자인 수정 적용</span><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>쇼딜 상품 생성하기</td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">regist_showdeal</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>천원딜 응모하기 생성하기</td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">regist_chundeal</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>이벤트/기획전 연결하기</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">regist_event</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>쇼딜관리</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">manage_showdeal</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>썸네일 이미지 사이즈 조정</span><br />
+                  <span>텝 라인 사이즈 수정</span><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span><br />
+                  <strong>2022-04-03</strong><br />
+                  <span>기간 표시 추가</span><br />
+                  <span>[btm_group inner] 클래스에 [btn_float] 클래스 추가 (버튼 플로팅)</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>천원딜관리</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">manage_chundeal</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-04-03</strong><br />
+                  <span>페이지 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>이벤트/기획전 관리</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">manage_event</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>텝 라인 사이즈 수정</span><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span><br />
+                  <strong>2022-04-03</strong><br />
+                  <span>radio > checkbox 로 변경</span><br />
+                  <span>공개여부 스위치 추가</span><br />
+                  <span>기간 표시 추가</span><br />
+                  <span>[btm_group inner] 클래스에 [btn_float] 클래스 추가 (버튼 플로팅)</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>고객관리</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">manage_customer</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                  <strong>2022-04-03</strong><br />
+                  <span>응모일 표시 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>충전하기</td>
+                <td></td>
+                <td></td>
+                <td class="dir">mypage</td>
+                <td class="page">charge</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>총금액 영역 입력폼으로 변경</span><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span><br />
+                  <strong>2022-03-14</strong><br />
+                  <span>금액 증가 버튼 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>검색</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">search</td>
+                <td class="page">search</td>
+                <td class="state">수정</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>cont_item 클래스 수정 (cont_item search)</span><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>검색 결과</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir">search</td>
+                <td class="page">search_result</td>
+                <td class="state">완료</td>
+                <td class="history">
+                  <strong>2022-02-17</strong><br />
+                  <span>검색 결과 화면 추가</span><br />
+                  <span>[header]태그에 [fixed] 클래스 추가</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>API</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="dir"></td>
+                <td class="page">api</td>
+                <td class="state">완료</td>
+                <td class="history"></td>
+              </tr>
+              </tbody>
+            </table>
+          </section>
+          <!-- //페이지 -->
+
+        </section>
+        <!-- //contentPrimary -->
+      </div>
+      <!-- //container -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <!-- SEO -->
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="사이트키워드">
+  <meta name="description" content="사이트설명">
+  <!-- mobile automatic link removal -->
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+  <!-- og, kakao, social -->
+  <meta property="og:title" content="페이지제목">
+  <meta property="og:url" content="쇼딜">
+  <meta property="og:image" content="이미지경로">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="사이트설명">
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="쇼딜">
+  <meta name="twitter:url" content="사이트주소">
+  <meta name="twitter:image" content="이미지경로">
+  <meta name="twitter:description" content="사이트설명">
+  <title>쇼딜</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrap">
+
+    <!-- #header -->
+    <header id="header" class="header fixed">
+      <h2 class="header_title">천원딜 응모하기 생성하기</h2>
+      <button class="btn btn_close"><i class="ic ic_close"></i><span class="sr_only">닫기</span></button>
+    </header>
+    <!-- //#header -->
+
+    <!-- #main -->
+    <main id="container" class="is_header">
+
+      <!-- #section -->
+      <section>
+        <div class="inner">
+          <!-- .cont_item -->
+          <div class="cont_item btm_line cashcow">
+            <div class="cont_head">
+              <h3 class="tit">대표상품 이미지</h3>
+            </div>
+            <div class="cont_body">
+              <div class="upload_group">
+                <div class="upload_item">
+                  <figure class="uploaded_img"><img src="../../assets/data/thum_deal.jpg" alt="이미지"></figure> <!-- //이미지태그로 넣을 경우 -->
+                  <div class="btn_group">
+                    <!--									<button type="button" class="btn btn_upload">-->
+                    <!--										<i class="ic ic_upload"></i><span class="sr_only">파일업로드</span>-->
+                    <!--										<input type="file">-->
+                    <!--									</button>-->
+                    <button type="button" class="btn btn_delete">
+                      <i class="ic ic_delete"></i><span class="sr_only">파일삭제</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="upload_item">
+                  <figure class="uploaded_img" style="background-image: url('../../assets/data/thum_deal.jpg')"></figure> <!-- //백그라운드이미지로 넣을 경우 -->
+                  <div class="btn_group">
+                    <!--									<button type="button" class="btn btn_upload">-->
+                    <!--										<i class="ic ic_upload"></i><span class="sr_only">파일업로드</span>-->
+                    <!--										<input type="file">-->
+                    <!--									</button>-->
+                    <button type="button" class="btn btn_delete">
+                      <i class="ic ic_delete"></i><span class="sr_only">파일삭제</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="upload_item">
+                  <figure class="uploaded_img"></figure> <!-- //이미지 업로드 전, 이미지 삭제 후 -->
+                  <div class="btn_group">
+                    <button type="button" class="btn btn_upload">
+                      <i class="ic ic_upload"></i><span class="sr_only">파일업로드</span>
+                      <input type="file">
+                    </button>
+                    <!--									<button type="button" class="btn btn_delete">-->
+                    <!--										<i class="ic ic_delete"></i><span class="sr_only">파일삭제</span>-->
+                    <!--									</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //.cont_item -->
+          <!-- .cont_item -->
+          <div class="cont_item">
+            <div class="cont_body">
+
+              <!-- //.field_group -->
+              <div class="field_group">
+                <!-- .field_item -->
+                <div class="field_item">
+                  <label for="" class="label">상품명</label>
+                  <div class="control">
+                    <input type="text" id="">
+                  </div>
+                </div>
+                <!-- //.field_item -->
+                <!-- .field_item -->
+                <div class="field_item">
+                  <label for="" class="label">태그</label>
+                  <div class="control">
+                    <textarea name="" id="" rows="2" placeholder="#태그1 #태그2 #태그3 #태그4 #태그5 #태그6 #태그7 #태그8 #태그9"></textarea>
+                  </div>
+                </div>
+                <!-- //.field_item -->
+                <!-- .field_item -->
+                <div class="field_item">
+                  <label for="" class="label">현재가</label>
+                  <div class="control">
+                    <input type="number" id="">
+                    <span class="txt">원</span>
+                  </div>
+                </div>
+                <!-- //.field_item -->
+                <!-- .field_item -->
+                <div class="field_item">
+                  <label for="" class="label">이벤트 URL</label>
+                  <div class="control">
+                    <textarea name="" id="" rows="2" placeholder="상품페이지"></textarea>
+                  </div>
+                </div>
+                <!-- //.field_item -->
+                <!-- .field_item -->
+                <div class="field_item">
+                  <label for="" class="label">카톡 채널주소 (선택)</label>
+                  <div class="control">
+                    <textarea name="" id="" rows="2" placeholder="채널친구가 늘어납니다."></textarea>
+                  </div>
+                </div>
+                <!-- //.field_item -->
+                <!-- .field_item -->
+                <div class="field_item">
+                  <p class="label al_top mt5">공개 여부</p>
+                  <div class="control col">
+                    <!-- .choice_group -->
+                    <div class="choice_group">
+                      <label class="custom_radio" for="">
+                        <input type="radio" id="" checked>
+                        <i class="mark"></i>
+                        <span class="label_txt">바로 설정</span>
+                      </label>
+                      <label class="custom_radio" for="">
+                        <input type="radio" id="">
+                        <i class="mark"></i>
+                        <span class="label_txt">예약 설정</span>
+                      </label>
+                    </div>
+                    <!-- //.choice_group -->
+                    <!-- .input_group -->
+                    <div class="input_group period">
+                      <div class="date_type"><input type="text" id="" placeholder="시작일"></div>
+                      <span class="txt">~</span>
+                      <div class="date_type"><input type="text" id="" placeholder="종료일"></div>
+                      <button type="button" class="btn btn_reset">
+                        <i class="ic ic_reset"></i><span class="sr_only">기간 재설정</span>
+                      </button>
+                    </div>
+                    <!-- //.input_group -->
+                  </div>
+                </div>
+                <!-- //.field_item -->
+              </div>
+              <!-- //.field_group -->
+
+              <!-- .btn_group_row -->
+              <div class="btn_group_row btn_half">
+                <button type="button" class="btn btn_darkgray btn_lg"><span>미리보기</span></button>
+                <button type="button" class="btn btn_primary btn_lg"><span>응모딜 생성하기</span></button>
+              </div>
+              <!-- //.btn_group_row -->
+
+              <p class="txt_em">딜 생성 2주후 자동 종료됩니다.</p>
+
+            </div>
+          </div>
+          <!-- //.cont_item -->
+        </div>
+      </section>
+      <!-- //#section -->
+
+    </main>
+    <!-- //#main -->
+
+    <!-- #footer -->
+    <footer id="footer">
+      <p class="copyright">Copyright ⓒ 2021 showdeal. All rights reserved.</p>
+    </footer>
+    <!-- //#footer -->
+
+  </div>
+  <script type="text/javascript" src="../../assets/js/ui.js"></script>
+</body>
+
+</html>
