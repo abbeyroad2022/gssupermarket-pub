@@ -8,11 +8,8 @@
 
 ## local
 - `npm run start`
-- http://localhost:9000/_status/status.html
-
-## build
-- `npm run build`
+- http://localhost:9000/status/status.html
 
 ## deploy
 - `npm run deploy`
-- https://abbeyroad2022.github.io/gssupermarket-pub/_status/status.html
+- https://abbeyroad2022.github.io/gssupermarket-pub/status/status.html
