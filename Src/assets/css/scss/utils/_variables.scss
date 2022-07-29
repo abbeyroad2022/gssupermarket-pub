@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// Content Width
+$webWidth: 1200px;
+$mobileWidth: 640px;
+$base-vw: 320px;
+
+// font family
+$body-font-family: 'Noto Sans KR', sans-serif;
+
+// font base size
+$html-font-size: 16px;
+
+// color
+$color-primary: #FF4F1D; //orange
+$color-secondary: #1FB9AF; //aqua
+
+// break points
+$breakpoints: (
+	'sm':       ( max-width: 640px ),
+	'md':       ( max-width: 960px ),
+	'lg':       ( max-width: 1200px ),
+) !default;
+
+
+

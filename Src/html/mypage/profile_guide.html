@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	${require('html-loader?interpolate!../_template/common_meta.html')}
+	<title>쇼딜</title>
+	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+</head>
+<body>
+<div id="wrap">
+
+	<!-- #header -->
+	<header id="header" class="header fixed">
+		<button class="btn btn_back"><i class="ic ic_back"></i><span class="sr_only">이전</span></button>
+		<h2 class="header_title">업체 비즈프로필 만들기</h2>
+	</header>
+	<!-- //#header -->
+
+	<!-- #main -->
+	<main id="container" class="is_header">
+
+		<!-- #section -->
+		<section>
+			<div class="inner">
+				<!-- .cont_item -->
+				<div class="cont_item">
+					<div class="cont_head">
+						<h3 class="tit_em txt_c"><em>내 상품페이지 링크 그대로</em> <br>고객을 모아오는 <em>쇼딜링크</em>를 만들어보세요.</h3>
+					</div>
+					<div class="cont_body">
+						<!-- .slider_wrap -->
+						<div class="slider_wrap profile_slide">
+							<div class="swiper round_type">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="../../assets/img/img_sample_slide.jpg" alt="이미지"></div>
+									<div class="swiper-slide"><img src="../../assets/img/img_sample_slide.jpg" alt="이미지"></div>
+									<div class="swiper-slide"><img src="../../assets/img/img_sample_slide.jpg" alt="이미지"></div>
+								</div>
+							</div>
+							<button type="button" class="btn btn_slide_prev"><span class="sr_only">이전</san></button>
+							<button type="button" class="btn btn_slide_next"><span class="sr_only">다음</san></button>
+						</div>
+						<!-- //.slider_wrap -->
+						<!-- .btn_group_row -->
+						<div class="btn_group_row btn_half">
+							<button type="button" class="btn btn_primary btn_lg"><span>시작하기</span></button>
+						</div>
+						<!-- //.btn_group_row -->
+						<!-- .coupon -->
+						<div class="coupon">
+							<div class="coupon_item">
+								<figure class="coupon_img"><img src="../../assets/img/img_coupon@2x.png" alt="신규가입시 혜택 15,000P"></figure>
+							</div>
+						</div>
+						<!-- //.coupon -->
+					</div>
+				</div>
+				<!-- //.cont_item -->
+			</div>
+		</section>
+		<!-- //#section -->
+
+	</main>
+	<!-- //#main -->
+
+	<!-- #footer -->
+	<footer id="footer">
+		<p class="copyright">Copyright ⓒ 2021 showdeal. All rights reserved.</p>
+	</footer>
+	<!-- //#footer -->
+
+</div>
+
+<script>
+	var swiper = new Swiper(".profile_slide > .swiper", {
+		loop: true,
+		navigation: {
+			nextEl: '.btn_slide_prev',
+			prevEl: '.btn_slide_next',
+		},
+	});
+</script>
+
+</body>
+</html>

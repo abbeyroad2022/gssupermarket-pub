@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	${require('html-loader?interpolate!../_template/common_meta.html')}
+	<title>쇼딜</title>
+	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+</head>
+<body>
+<div id="wrap">
+
+	<!-- #header -->
+	<header id="header" class="header">
+		<h1 class="header_logo"><a href="javascript:;"><span class="sr_only">쇼딜</span></a></h1>
+		<div class="header_search">
+			<i class="ic ic_search"></i>
+			<input type="search" id="keyword" placeholder="검색어를 입력해주세요.">
+		</div>
+	</header>
+	<!-- //#header -->
+
+	<!-- #main -->
+	<main id="container" class="is_header is_gnb">
+
+		<!-- #section -->
+		<section class="btm_float">
+
+			<!-- .tab_group_wrap -->
+			<div class="tab_group_wrap">
+				<ul class="tab_group">
+					<li class="tab_item"><button class="tab"><span>찜 정보</span></button></li>
+					<li class="tab_item is_active"><button class="tab"><span>관심 매장</span></button></li>
+				</ul>
+			</div>
+			<!-- //.tab_group_wrap -->
+
+			<!-- .list_group -->
+			<div class="list_group list_minify">
+				<!-- .list_item -->
+				<div class="list_item">
+					<div class="profile_item">
+						<div class="profile_thumb">
+							<figure class="profile_img" style="background-image: url('../../assets/data/thum_profile1.jpg')"></figure>
+						</div>
+						<h3 class="profile_name">트렌드제이</h3>
+						<button type="button" class="btn btn_interest is_active">
+							<span>+ 관심</span>
+						</button>
+					</div>
+				</div>
+				<!-- //.list_item -->
+				<!-- .list_item -->
+				<div class="list_item">
+					<div class="profile_item">
+						<div class="profile_thumb">
+							<figure class="profile_img" style="background-image: url('../../assets/data/thum_profile2.jpg')"></figure>
+						</div>
+						<h3 class="profile_name">트렌드제이</h3>
+						<button type="button" class="btn btn_interest">
+							<span>+ 관심</span>
+						</button>
+					</div>
+				</div>
+				<!-- //.list_item -->
+				<!-- .list_item -->
+				<div class="list_item">
+					<div class="profile_item">
+						<div class="profile_thumb">
+							<figure class="profile_img" style="background-image: url('../../assets/data/thum_profile3.jpg')"></figure>
+						</div>
+						<h3 class="profile_name">트렌드제이</h3>
+						<button type="button" class="btn btn_interest">
+							<span>+ 관심</span>
+						</button>
+					</div>
+				</div>
+				<!-- //.list_item -->
+				<!-- .list_item -->
+				<div class="list_item">
+					<div class="profile_item">
+						<div class="profile_thumb">
+							<figure class="profile_img" style="background-image: url('../../assets/data/thum_profile4.jpg')"></figure>
+						</div>
+						<h3 class="profile_name">트렌드제이</h3>
+						<button type="button" class="btn btn_interest">
+							<span>+ 관심</span>
+						</button>
+					</div>
+				</div>
+				<!-- //.list_item -->
+				<!-- .list_item -->
+				<div class="list_item">
+					<div class="profile_item">
+						<div class="profile_thumb">
+							<figure class="profile_img"></figure> <!-- //프로필이미지 데이터가 없는 경우 style 제거 -->
+						</div>
+						<h3 class="profile_name">트렌드제이</h3>
+						<button type="button" class="btn btn_interest">
+							<span>+ 관심</span>
+						</button>
+					</div>
+				</div>
+				<!-- //.list_item -->
+			</div>
+			<!-- //.list_group -->
+
+			<!-- .btm_group -->
+			<div class="btm_group inner">
+				<!-- .pagination -->
+				<div class="pagination">
+					<button type="button" class="btn btn_page_prev"><span>이전</san></button>
+					<p class="page_current"><em>1</em>/17</p>
+					<button type="button" class="btn btn_page_next"><span>다음</san></button>
+				</div>
+				<!-- //.pagination -->
+			</div>
+			<!-- //.btm_group -->
+
+		</section>
+		<!-- //#section -->
+
+	</main>
+	<!-- //#main -->
+
+	<!-- #gnb -->
+	<nav id="gnb">
+		<div class="gnb_menu">
+			<button type="button" class="btn btn_gnb"><i class="ic ic_gnb_home"></i><span>홈</span></button><!-- //매뉴 선택 활성화 시 class="btn btn_gnb"에 'is_active' 클래스 추가 -->
+			<button type="button" class="btn btn_gnb"><i class="ic ic_gnb_deal"></i><span>천원딜</span></button>
+			<button type="button" class="btn btn_gnb"><i class="ic ic_gnb_shortcut"></i><span class="sr_only">바로가기</span></button>
+			<button type="button" class="btn btn_gnb is_active"><i class="ic ic_gnb_scrap"></i><span>찜</span></button>
+			<button type="button" class="btn btn_gnb"><i class="ic ic_gnb_mypage"></i><span>마이페이지</span></button>
+		</div>
+	</nav>
+	<!-- //#gnb -->
+
+	<!-- #footer -->
+	<footer id="footer">
+		<p class="copyright">Copyright ⓒ 2021 showdeal. All rights reserved.</p>
+	</footer>
+	<!-- //#footer -->
+
+</div>
+</body>
+</html>

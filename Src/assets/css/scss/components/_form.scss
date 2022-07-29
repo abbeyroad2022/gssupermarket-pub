@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* ================================== Form ================================== */
+.field_item {
+	width: 100%;
+	@include flexbox;
+	@include align-items(center);
+	.label {
+		width: rem(48px);
+		min-width: rem(48px);
+		padding-right: rem(4px);
+		&.al_top {
+			@include align-self (flex-start);
+		}
+	}
+	.control {
+		@include flex(1, 1, auto);
+		@include flexbox;
+		@include align-items(center);
+		padding: rem(7px) 0;
+		&.col {
+			display: block;
+			& > * {
+				margin-top: rem(6px);
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+		.custom_check,
+		.custom_radio {
+			padding: rem(8px) 0;
+			padding-right: rem(12px);
+			.label_txt {
+				margin-top: 0;
+				font-size: rem(12px);
+			}
+		}
+		.input_group {
+			@include flexbox;
+			@include align-items(center);
+			&.period {
+				.date_type {
+					position: relative;
+					@include flex(1, 1, auto);
+					&:after {
+						content: '';
+						position: absolute;
+						top: 50%;
+						right: rem(8px);
+						width: rem(12px);
+						height: rem(12px);
+						background: url("../img/ic_calendar@2x.png") no-repeat center / cover;
+						transform: translateY(-50%);
+					}
+				}
+				.txt {
+					padding-left: rem(4px);
+					padding-right: rem(4px);
+				}
+				.btn_reset {
+					margin-left: rem(10px);
+				}
+			}
+			&.auth {
+				.btn {
+					width: rem(86px);
+					margin-left: rem(4px);
+				}
+			}
+		}
+		.txt {
+			padding-left: rem(8px);
+		}
+	}
+	label {
+		cursor: pointer;
+	}
+	input[type='text'],
+	input[type='password'],
+	input[type='number'],
+	input[type='email'],
+	input[type='url'],
+	input[type='tel'],
+	textarea {
+		width: 100%;
+		padding: rem(8px) rem(8px);
+		line-height: 1.5;
+		border: 1px solid #DDD;
+		border-radius: rem(5px);
+	}
+	input[type='number'] {
+		text-align: right;
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
+	}
+	textarea {
+		margin: rem(1px) 0;
+	}
+}
+
+// choice_group
+.choice_group {
+	@include flexbox;
+	.custom_check,
+	.custom_radio {
+		padding: rem(6px) 0;
+	}
+	&.col3 {
+		@include flex-wrap(wrap);
+		.custom_check,
+		.custom_radio {
+			@include flex(1, 1, 36%);
+			&:nth-child(3n) {
+				@include flex(1, 1, 28%);
+			}
+		}
+	}
+}
+
+// custom check/radio
+.custom_check,
+.custom_radio {
+	@include flexbox;
+	@include align-items(center);
+	//position: relative;
+	cursor: pointer;
+	input {
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		border: 0;
+		margin: -1px;
+		clip: rect(0,0,0,0);
+		overflow: hidden;
+		position: absolute;
+		& + .mark {
+			position: relative;
+			@include flex(1, 0, rem(16px));
+			max-width: rem(16px);
+			width: rem(16px);
+			height: rem(16px);
+		}
+		& + .mark:before,
+		& + .mark:after {
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: 0;
+			box-sizing: border-box;
+			transform: translateY(-50%);
+		}
+		& + .mark:before {
+			width: rem(16px);
+			height: rem(16px);
+			border: 1px solid #CCC;
+			background-color: #FFF;
+		}
+		&[type="checkbox"] {
+			&:checked {
+				& + .mark:after {
+					left: rem(3px);
+					width: rem(10px);
+					height: rem(6px);
+					margin-top: rem(-4px);
+					border-left: rem(3px) solid;
+					border-bottom: rem(3px) solid;
+					border-color: $color-primary;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+		&[type="radio"] {
+			& + .mark:before {
+				border-radius: 50%;
+			}
+			&:checked {
+				& + .mark:after {
+					left: rem(4px);
+					width: rem(8px);
+					height: rem(8px);
+					border-radius: 50%;
+					background-color: $color-primary;
+				}
+			}
+		}
+	}
+	.label_txt {
+		padding-left: rem(6px);
+		font-size: rem(14px);
+	}
+}
+
+// toggle switch 0n/0ff
+.custom_check {
+	&.switch_type {
+		position: relative;
+		display: inline-block;
+		width: rem(56px);
+		min-width: rem(56px);
+		height: rem(24px);
+		padding-left: 0;
+		font-size: rem(12px);
+		.slider {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			border-radius: rem(15px);
+			background-color: #AAA;
+			transition: .4s;
+			cursor: pointer;
+			&:before {
+				position: absolute;
+				content: 'OFF';
+				top: 50%;
+				right: rem(7px);
+				color: #FFF;
+				transform: translateY(-50%);
+				transition: .2s;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				width: rem(18px);
+				height: rem(18px);
+				top: 50%;
+				border-radius: 50%;
+				background-color: #FFF;
+				transform: translate(rem(4px), -50%);
+				transition: .2s;
+			}
+		}
+		input:checked {
+			& + .slider {
+				background-color: #1FB9AF;
+				&:before {
+					content: 'ON';
+					left: rem(7px);
+					right: auto;
+				}
+				&:after {
+					transform: translate(rem(34px), -50%);
+				}
+			}
+		}
+	}
+}
+
+// upload
+.upload_group {
+	@include flexbox;
+	@include align-items;
+	@include justify-content(space-between);
+	.upload_item {
+		@include flex;
+		margin-left: rem(10px);
+		min-width: rem(66px);
+		width: auto;
+		padding-bottom: (77px/((66px*3)+(10px*2))) * 100%;
+		border-radius: 0;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.upload_item {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-bottom: (132px/288px) * 100%;
+	background-color: #EBE2E0;
+	border-radius: rem(5px);
+	overflow: hidden;
+	.btn_group {
+		@include flexbox;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		padding: 0;
+		transform: translate(-50%, -50%);
+	}
+	.uploaded_img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+}
+
+.profile_thumb_modify {
+	position: relative;
+	.profile_thumb {
+		width: rem(50px);
+		min-width: rem(50px);
+		height: rem(50px);
+		margin: 0 auto;
+	}
+	.btn_group {
+		@include flexbox;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		margin-left: rem(29px);
+	}
+}

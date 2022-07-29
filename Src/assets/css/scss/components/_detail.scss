@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* ================================== Detail ================================== */
+// detail wrap
+.detail_wrap {
+	background-color: #FFF;
+	.item_info {
+		padding-left: rem(16px);
+		padding-right: rem(16px);
+	}
+	.title_area {
+		margin-top: rem(10px);
+		padding: 0;
+		.title {
+			padding-right: 0;
+		}
+	}
+	.tag_group {
+		margin-top: rem(6px);
+		color: #333;
+		font-size: rem(12px);
+		.tag_item {
+			padding-right: rem(3px);
+		}
+	}
+}
+
+// discount_info
+.discount_info {
+	@include flexbox;
+	@include align-items(center);
+	@include justify-content(center);
+	margin-top: rem(14px);
+	padding: rem(8px) rem(16px);
+	text-align: center;
+	color: #FFF;
+	background-color: #FF8E6D;
+	.ic {
+		margin-right: rem(6px);
+	}
+	.countdown {
+		margin-left: rem(8px);
+		font-size: rem(14px);
+		font-weight: 700;
+	}
+}

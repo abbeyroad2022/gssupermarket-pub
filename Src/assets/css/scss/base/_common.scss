@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* ================================== Common ================================== */
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+body {
+	height: 100%;
+	color: #333;
+	font-family: $body-font-family;
+	font-size: rem(12px);
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: -0.02em;
+	word-break: keep-all;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+
+.sr_only {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	clip: rect(0,0,0,0);
+}
+
+input,
+textarea {
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: initial;
+	white-space: nowrap;
+	background: transparent;
+}
+
+// background
+.bg_white {
+	background: #FFF !important;
+}
+.bg_showdeal {
+	background: #85DFE6 !important;
+}
+.bg_login {
+	background: transparent linear-gradient(314deg, #111 50%, #393939 110%) 0% 0% no-repeat !important;
+}
+
+// shadow
+.shadow_dark {
+	box-shadow: 2px 3px 7px #000 !important;
+}
+.shadow_orange {
+	box-shadow: 2px 3px 7px #F9BA95 !important;
+}
+.shadow_aqua {
+	box-shadow: 2px 3px 7px #56A8AE !important;
+}
+
+
+// align
+.txt_c {
+	text-align: center !important;
+}
+.txt_l {
+	text-align: left !important;
+}
+.txt_r {
+	text-align: right !important;
+}
+
+
+
+// font size
+.fs11 {
+	font-size: rem(11px) !important;
+}
+.fs12 {
+	font-size: rem(12px) !important;
+}
+.fs14 {
+	font-size: rem(14px) !important;
+}
+.fs16 {
+	font-size: rem(16px) !important;
+}
+.fs18 {
+	font-size: rem(18px) !important;
+}
+.fs20 {
+	font-size: rem(20px) !important;
+}
+.fs26 {
+	font-size: rem(26px) !important;
+}
+
+// font weight
+.fw400 {
+	font-weight: 400 !important;
+}
+.fw500 {
+	font-weight: 500 !important;
+}
+.fw700 {
+	font-weight: 700 !important;
+}
+
+// font color
+.fc000 {
+	color: #000 !important;
+}
+.fc333 {
+	color: #333 !important;
+}
+.fc555 {
+	color: #555 !important;
+}
+.fc666 {
+	color: #666 !important;
+}
+.fc999 {
+	color: #999 !important;
+}
+
+// margin
+.mt5 {
+	margin-top: rem(5px) !important;
+}
+.mt10 {
+	margin-top: rem(10px) !important;
+}
+.mt13 {
+	margin-top: rem(13px) !important;
+}
+.mt15 {
+	margin-top: rem(15px) !important;
+}
+.mt20 {
+	margin-top: rem(20px) !important;
+}
+
+
+/*-------------------------------------------------------------------
+	## Form Controls
+-------------------------------------------------------------------*/
+@include placeholder {
+	color: #AEAEAE;
+	font-size: rem(12px);
+	letter-spacing: -0.05rem;
+}
+
+/* Default */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #AEAEAE;
+}
+
+/* IE 10 + */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #AEAEAE;
+}
+
+/* Webkit Browser */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #AEAEAE;
+}
+
+/* Mozilla Firefox 4 to 18 */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #AEAEAE;
+}
+
+/* Mozilla Firefox 19+ */
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+/* IE 10 + */
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+/* Webkit Browser */
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+	color: transparent;
+}
+
+/* Mozilla Firefox 4 to 18 */
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+	color: transparent;
+}
+
+/* Mozilla Firefox 19+ */
+input {
+	border: 0px;
+	color: #333;
+	vertical-align: middle;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+input[type='radio'] {
+	-webkit-appearance: radio;
+	-moz-appearance: radio;
+	-o-appearance: radio;
+	appearance: radio;
+}
+input[type='checkbox'] {
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+	-o-appearance: checkbox;
+	appearance: checkbox;
+}
+textarea {
+	width: 100%;
+	vertical-align: middle;
+	resize: none !important;
+	color: #333;
+	word-break: break-all !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}

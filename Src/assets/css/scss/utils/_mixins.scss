@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin clearafter {
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin linx($link, $visit, $hover, $active) {
+	a {
+		color: $link;
+		&:visited { color: $visit; }
+		&:hover { color: $hover; }
+		&:active { color: $active; }
+	}
+}
+
+@mixin text-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+}
+
+@mixin multiline-ellipsis ($max-height, $lines: 2) {
+	// Fallback for non-webkit browsers.
+	// Fallback does not render ellipsis.
+	overflow: hidden;
+	max-height: $max-height;
+
+	// ie
+	max-height: ($max-height * $lines) + em;
+	display: block;
+
+	// Webkit solution for multiline ellipsis
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lines;  
+	
+	// Solution for Opera
+	text-overflow: -o-ellipsis-lastline;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-sizing($box-model) {
+	-webkit-box-sizing: $box-model; // Safari <= 5
+	-moz-box-sizing: $box-model; // Firefox <= 19
+	box-sizing: $box-model;
+}
+
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	// font-size: $sizeValue + rem;
+}
+
+@mixin transition($element, $duration, $timing) {
+	transition: $element $duration $timing;
+	-webkit-transition: $element $duration $timing;
+	-moz-transition: $element $duration $timing;
+	-o-transition: $element $duration $timing;
+}
+
+@mixin translate($translateX, $translateY) {
+	transform: translate($translateX, $translateY);
+	-ms-transform: translate($translateX, $translateY);
+	-webkit-transform: translate($translateX, $translateY);
+}
+
+@mixin placeholder {
+	$placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+	@each $placeholder in $placeholders {
+		&:#{$placeholder}-placeholder {
+			@content;
+		}
+	}
+}
+
+
+
+
+
+@mixin posFixedTop($top: 0, $left: 0, $right: 0) {
+	position: fixed;
+	top: $top;
+	left: $left;
+	right: $right;
+	z-index: 10;
+}
+@mixin posFixedBtm($bottom: 0, $left: 0, $right: 0) {
+	position: fixed;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
+	z-index: 10;
+}
+
+
+
+
+
+@mixin posFixedFull {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+@mixin posAbsoluteLT($left, $top, $width, $height) {
+	position: absolute;
+	left: $left;
+	top: $top;
+	display: block;
+	width: $width;
+	height: $height;
+}
+
+@mixin posAbsoluteLB($left, $bottom, $width, $height) {
+	position: absolute;
+	left: $left;
+	bottom: $bottom;
+	display: block;
+	width: $width;
+	height: $height;
+}
+
+@mixin posAbsoluteRT($right, $top, $width, $height) {
+	position: absolute;
+	right: $right;
+	top: $top;
+	display: block;
+	width: $width;
+	height: $height;
+}
+
+@mixin posAbsoluteRB($right, $bottom, $width, $height) {
+	position: absolute;
+	right: $right;
+	bottom: $bottom;
+	display: block;
+	width: $width;
+	height: $height;
+}
+
+@mixin boxShadow($hOffset, $hOffset, $blur, $color) {
+	box-shadow: $hOffset $hOffset $blur $color;
+	-moz-box-shadow: $hOffset $hOffset $blur $color;
+	-webkit-box-shadow: $hOffset $hOffset $blur $color;
+}
+
+
+@mixin prefix($declarations, $prefixes: ()) {
+	@each $property, $value in $declarations {
+		@each $prefix in $prefixes {
+			#{'-' + $prefix + '-' + $property}: $value;
+		}
+		#{$property}: $value;
+	}
+}
+
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .aspect-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@mixin when-inside($selector) {
+	#{$selector} & {
+		@content;
+	}
+}
+
+@mixin respond-to($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media only screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	}
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+		+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
+
+@mixin inbox {
+	@include font-size(1.4);
+	margin: 0;
+	padding: 3px 5px 3px 5px;
+	border: 1px solid $input-border;
+	background: #fff;
+	color: #333;
+	line-height: 20px;
+	height: 26px;
+}
+
+@mixin inbox-high {
+	@include font-size(1.4);
+	margin: 0;
+	padding: 0 5px;
+	border: 1px solid #c4c2c2;
+	background: #fff;
+	color: #333;
+	line-height: 38px;
+	height: 38px;
+}
+
+@mixin when-inside($selector) {
+	#{$selector} & {
+		@content;
+	}
+}
+
+@mixin lh($height) {
+	height: $height;
+	line-height: $height;
+}
+
+@mixin squire($size) {
+	height: $size;
+	line-height: $size;
+	width: $size;
+}
+
+// range selector mixin
+@mixin select-range($start, $end){
+	&:nth-child(n+#{$start}):nth-child(-n+#{$end}){
+		@content;
+	}
+}
+
+// mod query mixin
+@mixin mod-list($mod, $remainder){
+	&:nth-last-child(#{$mod}n+#{$remainder}):first-child,
+	&:nth-last-child(#{$mod}n+#{$remainder}):first-child ~ li {
+		@content;
+	}
+}

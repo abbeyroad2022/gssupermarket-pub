@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	${require('html-loader?interpolate!../_template/common_meta.html')}
+	<title>쇼딜</title>
+	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+</head>
+<body>
+<div id="wrap">
+
+	<!-- #header -->
+	<header id="header" class="header fixed">
+		<button class="btn btn_back"><i class="ic ic_back"></i><span class="sr_only">이전</span></button>
+		<h2 class="header_title">비즈프로필 등록</h2>
+	</header>
+	<!-- //#header -->
+
+	<!-- #main -->
+	<main id="container" class="is_header">
+
+		<!-- #section -->
+		<section>
+			<div class="inner">
+				<!-- .cont_item -->
+				<div class="cont_item">
+					<div class="cont_head">
+						<h3 class="tit">업체이름</h3>
+					</div>
+					<div class="cont_body">
+						<!-- .field_item -->
+						<div class="field_item">
+							<div class="control">
+								<input type="text" id="" title="업체이름 입력" value="">
+							</div>
+						</div>
+						<!-- //.field_item -->
+					</div>
+				</div>
+				<!-- //.cont_item -->
+				<!-- .cont_item -->
+				<div class="cont_item">
+					<div class="cont_head">
+						<h3 class="tit">주요 카테고리</h3>
+						<p class="txt">최대 2개까지 선택하실 수 있습니다.</p>
+					</div>
+					<div class="cont_body">
+						<!-- //.choice_group -->
+						<div class="choice_group col3 mt5">
+							<label class="custom_check" for="checkbox1">
+								<input type="checkbox" id="checkbox1" checked>
+								<i class="mark"></i>
+								<span class="label_txt">패션의류</span>
+							</label>
+							<label class="custom_check" for="checkbox2">
+								<input type="checkbox" id="checkbox2">
+								<i class="mark"></i>
+								<span class="label_txt">뷰티</span>
+							</label>
+							<label class="custom_check" for="checkbox3">
+								<input type="checkbox" id="checkbox3">
+								<i class="mark"></i>
+								<span class="label_txt">패션잡화</span>
+							</label>
+							<label class="custom_check" for="checkbox4">
+								<input type="checkbox" id="checkbox4">
+								<i class="mark"></i>
+								<span class="label_txt">출산/유아동</span>
+							</label>
+							<label class="custom_check" for="checkbox5">
+								<input type="checkbox" id="checkbox5">
+								<i class="mark"></i>
+								<span class="label_txt">식품</span>
+							</label>
+							<label class="custom_check" for="checkbox6">
+								<input type="checkbox" id="checkbox6">
+								<i class="mark"></i>
+								<span class="label_txt">생활</span>
+							</label>
+							<label class="custom_check" for="checkbox7">
+								<input type="checkbox" id="checkbox7">
+								<i class="mark"></i>
+								<span class="label_txt">디지털/가전</span>
+							</label>
+							<label class="custom_check" for="checkbox8">
+								<input type="checkbox" id="checkbox8">
+								<i class="mark"></i>
+								<span class="label_txt">스포츠/레저</span>
+							</label>
+							<label class="custom_check" for="checkbox9">
+								<input type="checkbox" id="checkbox9">
+								<i class="mark"></i>
+								<span class="label_txt">기타</span>
+							</label>
+						</div>
+						<!-- //.choice_group -->
+					</div>
+				</div>
+				<!-- //.cont_item -->
+			</div>
+		</section>
+		<!-- //#section -->
+
+	</main>
+	<!-- //#main -->
+
+	<!-- #footer -->
+	<footer id="footer">
+		<p class="copyright">Copyright ⓒ 2021 showdeal. All rights reserved.</p>
+	</footer>
+	<!-- //#footer -->
+
+</div>
+</body>
+</html>

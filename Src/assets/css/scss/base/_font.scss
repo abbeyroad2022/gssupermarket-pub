@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* ================================== Font ================================== */
+
+//@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap&subset=korean');
+
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 700;
+	src: local("Noto Sans KR Bold"),
+	url("../fonts/NotoSansKR-Bold.woff2") format("woff2"),
+	url("../fonts/NotoSansKR-Bold.woff") format("woff"),
+	url("../fonts/NotoSansKR-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 500;
+	src: local("Noto Sans KR Medium"),
+	url("../fonts/NotoSansKR-Medium.woff2") format("woff2"),
+	url("../fonts/NotoSansKR-Medium.woff") format("woff"),
+	url("../fonts/NotoSansKR-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Noto Sans KR";
+	font-weight: 400;
+	src: local("Noto Sans KR Regular"),
+	url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),
+	url("../fonts/NotoSansKR-Regular.woff") format("woff"),
+	url("../fonts/NotoSansKR-Regular.otf") format("opentype");
+}
