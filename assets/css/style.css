@@ -1,9 +1,17 @@
 /* ================================== Font ================================== */
-@font-face { font-family: "Noto Sans KR"; font-weight: 700; src: local("Noto Sans KR Bold"), url(../../assets/fonts/NotoSansKR-Bold.woff2) format("woff2"), url(../../assets/fonts/NotoSansKR-Bold.woff) format("woff"), url(../../assets/fonts/NotoSansKR-Bold.otf) format("opentype"); }
+@font-face { font-family: NotoSansCJKkr; font-weight: 100; font-style: normal; src: local("../fonts/NotoSansCJKkr Thin"), url(../../assets/fonts/NotoSansCJKkr-Thin.woff2) format("woff2"), url(../../assets/fonts/NotoSansCJKkr-Thin.woff) format("woff"), url(../../assets/fonts/NotoSansCJKkr-Thin.otf) format("opentype"); }
 
-@font-face { font-family: "Noto Sans KR"; font-weight: 500; src: local("Noto Sans KR Medium"), url(../../assets/fonts/NotoSansKR-Medium.woff2) format("woff2"), url(../../assets/fonts/NotoSansKR-Medium.woff) format("woff"), url(../../assets/fonts/NotoSansKR-Medium.otf) format("opentype"); }
+@font-face { font-family: NotoSansCJKkr; font-weight: 300; font-style: normal; src: local("../fonts/NotoSansCJKkr Light"), url(../../assets/fonts/NotoSansCJKkr-Light.woff2) format("woff2"), url(../../assets/fonts/NotoSansCJKkr-Light.woff) format("woff"), url(../../assets/fonts/NotoSansCJKkr-Light.otf) format("opentype"); }
 
-@font-face { font-family: "Noto Sans KR"; font-weight: 400; src: local("Noto Sans KR Regular"), url(../../assets/fonts/NotoSansKR-Regular.woff2) format("woff2"), url(../../assets/fonts/NotoSansKR-Regular.woff) format("woff"), url(../../assets/fonts/NotoSansKR-Regular.otf) format("opentype"); }
+@font-face { font-family: NotoSansCJKkr; font-weight: 300; font-style: normal; src: local("../fonts/NotoSansCJKkr DemiLight"), url(../../assets/fonts/NotoSansCJKkr-DemiLight.woff2) format("woff2"), url(../../assets/fonts/NotoSansCJKkr-DemiLight.woff) format("woff"), url(../../assets/fonts/NotoSansCJKkr-DemiLight.otf) format("opentype"); }
+
+@font-face { font-family: NotoSansCJKkr; font-weight: 400; font-style: normal; src: local("../fonts/NotoSansCJKkr Regular"), url(../../assets/fonts/NotoSansCJKkr-Regular.woff2) format("woff2"), url(../../assets/fonts/NotoSansCJKkr-Regular.woff) format("woff"), url(../../assets/fonts/NotoSansCJKkr-Regular.otf) format("opentype"); }
+
+@font-face { font-family: NotoSansCJKkr; font-weight: 500; font-style: normal; src: local("../fonts/NotoSansCJKkr Medium"), url(../../assets/fonts/NotoSansCJKkr-Medium.woff2) format("woff2"), url(../../assets/fonts/NotoSansCJKkr-Medium.woff) format("woff"), url(../../assets/fonts/NotoSansCJKkr-Medium.otf) format("opentype"); }
+
+@font-face { font-family: NotoSansCJKkr; font-weight: 700; font-style: normal; src: local("../fonts/NotoSansCJKkr Bold"), url(../../assets/fonts/NotoSansCJKkr-Bold.woff2) format("woff2"), url(../../assets/fonts/NotoSansCJKkr-Bold.woff) format("woff"), url(../../assets/fonts/NotoSansCJKkr-Bold.otf) format("opentype"); }
+
+@font-face { font-family: NotoSansCJKkr; font-weight: 900; font-style: normal; src: local("../fonts/NotoSansCJKkr Black"), url(../../assets/fonts/NotoSansCJKkr-Black.woff2) format("woff2"), url(../../assets/fonts/NotoSansCJKkr-Black.woff) format("woff"), url(../../assets/fonts/NotoSansCJKkr-Black.otf) format("opentype"); }
 
 /* ================================== Reset ================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, main { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; box-sizing: border-box; }
@@ -32,7 +40,7 @@ address, em { font-style: normal; }
 /* ================================== Common ================================== */
 html { width: 100%; height: 100%; font-size: 16px; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
 
-body { height: 100%; color: #333; font-family: "Noto Sans KR", sans-serif; font-size: 0.75rem; font-weight: 400; line-height: 1.4; letter-spacing: -0.02em; word-break: keep-all; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; }
+body { height: 100%; color: #181e3b; font-family: "NotoSansCJKkr", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.4; letter-spacing: -0.04em; word-break: keep-all; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; }
 
 .sr_only { position: absolute; overflow: hidden; width: 1px; height: 1px; padding: 0; margin: -1px; border: 0; clip: rect(0, 0, 0, 0); }
 
@@ -170,7 +178,7 @@ textarea { width: 100%; vertical-align: middle; resize: none !important; color: 
 
 .header_search.wide input { max-width: none; }
 
-#container { display: table-cell; width: 100%; height: 100%; background: #F9F1EF; }
+#container { display: table-cell; width: 100%; height: 100%; background: #fff; }
 
 #container.is_header { padding-top: 3.25rem; }
 
@@ -263,9 +271,9 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .btn.btn_inline { display: -webkit-inline-box; display: -moz-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
 
-.btn.btn_primary { color: #FFF; border: 1px solid #FF4F1D; background-color: #FF4F1D; }
+.btn.btn_primary { color: #FFF; border: 1px solid #3ddb87; background-color: #3ddb87; }
 
-.btn.btn_secondary { color: #FFF; border: 1px solid #1FB9AF; background-color: #1FB9AF; }
+.btn.btn_secondary { color: #FFF; border: 1px solid #181e3b; background-color: #181e3b; }
 
 .btn.btn_dark { color: #FFF; border: 1px solid #333; background-color: #333; }
 
@@ -489,7 +497,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .tab_item.is_active .tab { color: #000; font-weight: 700; }
 
-.tab_item.is_active .tab:before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background-color: #FF4F1D; }
+.tab_item.is_active .tab:before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background-color: #3ddb87; }
 
 .sort_group_wrap { background-color: #FFF; }
 
@@ -503,7 +511,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .sort_item .btn { height: 2.25rem; padding: 0 0.625rem; color: #666; border-radius: 0; }
 
-.sort_item.is_active .btn { color: #FF4F1D; font-weight: 500; }
+.sort_item.is_active .btn { color: #3ddb87; font-weight: 500; }
 
 /* ================================== List ================================== */
 .list_group { background-color: #FFF; }
@@ -564,7 +572,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .price_area .price_deal { font-size: 0.875rem; }
 
-.price_area .price_deal em { color: #FF4F1D; font-weight: 700; }
+.price_area .price_deal em { color: #3ddb87; font-weight: 700; }
 
 .item_switch { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; padding: 0.5rem 1.875rem; }
 
@@ -738,11 +746,11 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .custom_check input + .mark:before, .custom_radio input + .mark:before { width: 1rem; height: 1rem; border: 1px solid #CCC; background-color: #FFF; }
 
-.custom_check input[type="checkbox"]:checked + .mark:after, .custom_radio input[type="checkbox"]:checked + .mark:after { left: 0.1875rem; width: 0.625rem; height: 0.375rem; margin-top: -0.25rem; border-left: 0.1875rem solid; border-bottom: 0.1875rem solid; border-color: #FF4F1D; transform: rotate(-45deg); }
+.custom_check input[type="checkbox"]:checked + .mark:after, .custom_radio input[type="checkbox"]:checked + .mark:after { left: 0.1875rem; width: 0.625rem; height: 0.375rem; margin-top: -0.25rem; border-left: 0.1875rem solid; border-bottom: 0.1875rem solid; border-color: #3ddb87; transform: rotate(-45deg); }
 
 .custom_check input[type="radio"] + .mark:before, .custom_radio input[type="radio"] + .mark:before { border-radius: 50%; }
 
-.custom_check input[type="radio"]:checked + .mark:after, .custom_radio input[type="radio"]:checked + .mark:after { left: 0.25rem; width: 0.5rem; height: 0.5rem; border-radius: 50%; background-color: #FF4F1D; }
+.custom_check input[type="radio"]:checked + .mark:after, .custom_radio input[type="radio"]:checked + .mark:after { left: 0.25rem; width: 0.5rem; height: 0.5rem; border-radius: 50%; background-color: #3ddb87; }
 
 .custom_check .label_txt, .custom_radio .label_txt { padding-left: 0.375rem; font-size: 0.875rem; }
 
@@ -813,7 +821,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .pagination .page_current { color: #666; font-size: 0.875rem; }
 
-.pagination .page_current em { color: #FF4F1D; font-weight: 700; }
+.pagination .page_current em { color: #3ddb87; font-weight: 700; }
 
 .sort_wrap { padding: 0.1875rem 0; background-color: #FFF; }
 
@@ -929,7 +937,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .cont_head .tit_em { color: #000; font-size: 0.875rem; font-weight: 700; }
 
-.cont_head .tit_em em { color: #FF4F1D; }
+.cont_head .tit_em em { color: #3ddb87; }
 
 .cont_head .tit em { font-weight: 700; }
 
@@ -937,7 +945,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .cont_head .txt { color: #999; font-weight: 400; }
 
-.cont_head .txt_em { color: #FF4F1D; }
+.cont_head .txt_em { color: #3ddb87; }
 
 .cont_head .txt em { color: #333; }
 
@@ -945,7 +953,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .cont_body .txt_guide { color: #999; }
 
-.cont_body .txt_em { color: #FF4F1D; }
+.cont_body .txt_em { color: #3ddb87; }
 
 .cont_body [class^="btn_group_"] { padding: 0.875rem 0; }
 
@@ -961,7 +969,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .link_box { display: block; min-height: 6.875rem; margin-top: 1.25rem; padding: 1rem; border: 1px dashed #C9BEBC; border-radius: 0.3125rem; background-color: #EBE2E0; }
 
-.link_box .tit { color: #FF4F1D; font-size: 1rem; font-weight: 700; }
+.link_box .tit { color: #3ddb87; font-size: 1rem; font-weight: 700; }
 
 .link_box .txt { margin-top: 0.625rem; }
 
@@ -1023,7 +1031,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .dashboard .info .txt { color: #000; font-size: 0.875rem; font-weight: 500; }
 
-.dashboard .info .txt em { color: #FF4F1D; font-weight: 700; }
+.dashboard .info .txt em { color: #3ddb87; font-weight: 700; }
 
 .dashboard .info .stat { padding-left: 1.25rem; }
 
@@ -1041,7 +1049,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .cashcow .cont_body { -webkit-box: 1; -moz-box: 1; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto; }
 
-.tag_group { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; color: #FF4F1D; font-size: 0.875rem; }
+.tag_group { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; color: #3ddb87; font-size: 0.875rem; }
 
 .tag_group .tag_item { padding-right: 0.375rem; }
 
@@ -1089,7 +1097,7 @@ section.btm_float .btm_group.btn_float [class^='btn_group_'] { position: fixed; 
 
 .slider_wrap .swiper-pagination-bullet:only-child { display: block !important; }
 
-.slider_wrap .swiper-pagination-bullet-active { background: #FF4F1D; }
+.slider_wrap .swiper-pagination-bullet-active { background: #3ddb87; }
 
 .slider_wrap .btn_slide_prev, .slider_wrap .btn_slide_next { position: absolute; top: 50%; left: 50%; margin-top: 0.125rem; transform: translate(-50%, -50%); z-index: 1; }
 
