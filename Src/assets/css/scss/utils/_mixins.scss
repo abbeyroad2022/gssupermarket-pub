@@ -101,10 +101,6 @@
 	}
 }
 
-
-
-
-
 @mixin posFixedTop($top: 0, $left: 0, $right: 0) {
 	position: fixed;
 	top: $top;
@@ -119,10 +115,6 @@
 	right: $right;
 	z-index: 10;
 }
-
-
-
-
 
 @mixin posFixedFull {
 	position: fixed;

@@ -29,6 +29,7 @@ jQuery(document).ready(function () {
 
 
       console.log(prop.directory.length)
+      console.log(prop.directory)
 
       if (current.text() == "미정") {
         current.addClass("undecided");

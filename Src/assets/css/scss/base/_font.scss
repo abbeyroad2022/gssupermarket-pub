@@ -1,31 +1,24 @@
 @charset "utf-8";
 /* ================================== Font ================================== */
-
-//@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap&subset=korean');
-
-@font-face {
-	font-family: "Noto Sans KR";
-	font-weight: 700;
-	src: local("Noto Sans KR Bold"),
-	url("../fonts/NotoSansKR-Bold.woff2") format("woff2"),
-	url("../fonts/NotoSansKR-Bold.woff") format("woff"),
-	url("../fonts/NotoSansKR-Bold.otf") format("opentype");
-}
-
-@font-face {
-	font-family: "Noto Sans KR";
-	font-weight: 500;
-	src: local("Noto Sans KR Medium"),
-	url("../fonts/NotoSansKR-Medium.woff2") format("woff2"),
-	url("../fonts/NotoSansKR-Medium.woff") format("woff"),
-	url("../fonts/NotoSansKR-Medium.otf") format("opentype");
-}
-
-@font-face {
-	font-family: "Noto Sans KR";
-	font-weight: 400;
-	src: local("Noto Sans KR Regular"),
-	url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),
-	url("../fonts/NotoSansKR-Regular.woff") format("woff"),
-	url("../fonts/NotoSansKR-Regular.otf") format("opentype");
+$font-name : 'NotoSansCJKkr';
+$font-path : '../fonts/';
+$fonts : (
+	'Thin' : 100, 
+	'Light' : 300, 
+	'DemiLight' : 300, 
+	'Regular' : 400, 
+	'Medium' : 500, 
+	'Bold' : 700, 
+	'Black' : 900
+);
+@each $fonts, $size in $fonts {
+	@font-face {
+		font-family: #{$font-name};
+		font-weight: $size;
+		font-style: normal;
+		src : local("#{$font-path}#{$font-name} #{$fonts}"),
+		url("#{$font-path}#{$font-name}-#{$fonts}.woff2") format("woff2"),
+		url("#{$font-path}#{$font-name}-#{$fonts}.woff") format("woff"),
+		url("#{$font-path}#{$font-name}-#{$fonts}.otf") format("opentype");
+	}
 }

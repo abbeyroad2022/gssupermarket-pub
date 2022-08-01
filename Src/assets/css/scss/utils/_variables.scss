@@ -1,26 +1,31 @@
 @charset "utf-8";
 
 // Content Width
-$webWidth: 1200px;
-$mobileWidth: 640px;
-$base-vw: 320px;
+$mobileWidth: 750px;
+$base-vw: 375px;
 
 // font family
-$body-font-family: 'Noto Sans KR', sans-serif;
+$body-font-family: 'NotoSansCJKkr', sans-serif;
 
 // font base size
 $html-font-size: 16px;
 
 // color
-$color-primary: #FF4F1D; //orange
-$color-secondary: #1FB9AF; //aqua
+$color-pale-skyblue: #cbe0ee;
+$color-darkblue-grey: #181e3b;
+$color-battleship-grey: #6a7682;
+$color-weird-green: #3ddb87;
+$color-gray_ae: #aeaeae;
+$color-ray_e3: #e3e3e3;
+$color-gray_e5: #e5e5e5;
+$color-white: #fff;
+
+$color-primary: $color-weird-green;
+$color-secondary: $color-darkblue-grey;
 
 // break points
 $breakpoints: (
-	'sm':       ( max-width: 640px ),
-	'md':       ( max-width: 960px ),
-	'lg':       ( max-width: 1200px ),
+	'sm':       ( min-width: 640px ),
+	'md':       ( min-width: 750px ),
+	'lg':       ( min-width: 850px ),
 ) !default;
-
-
-
