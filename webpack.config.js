@@ -24,7 +24,7 @@ function generateHtmlPlugins(htmlDir) {
 		}),
 	);
 	// folderList Array에 html내 폴더명 추가
-	const subList = ['main', 'showdeal', 'chundeal', 'shortcut', 'scrap', 'login', 'mypage', 'search', 'ui-guide'];
+	const subList = ['login', 'join', 'delivery', 'mypage', 'error', 'ui-guide'];
 	for (i = 0; i < subList.length; i++) {
 		const htmlSubFile = fs.readdirSync(`./src/html/${subList[i]}/`).filter(file => file.substr(-5) === '.html');
 		const htmlSub = htmlSubFile.map(file => new HtmlWebpackPlugin({

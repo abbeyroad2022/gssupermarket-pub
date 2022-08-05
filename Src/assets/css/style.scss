@@ -9,15 +9,16 @@
 @import 'scss/base/reset';
 @import 'scss/base/common';
 
-@import 'scss/components/grid';
 @import 'scss/components/layout';
 @import 'scss/components/button';
 @import 'scss/components/icon';
 @import 'scss/components/tab';
+@import 'scss/components/card';
 @import 'scss/components/list';
 @import 'scss/components/detail';
 @import 'scss/components/form';
 @import 'scss/components/ui';
 
-@import 'scss/pages/main';
-@import 'scss/pages/contents';
+@import 'scss/pages/delivery';
+@import 'scss/pages/mypage';
+// @import 'scss/pages/contents';

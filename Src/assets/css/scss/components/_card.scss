@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* ================================== Card ================================== */
+
+.card {
+    &-box {
+        padding: rem(15) rem(15);
+        border: rem(1) solid $color-gray-f7;
+        background-color: $color-gray-fe;
+    }
+    &-head {
+        display: flex;
+        align-items: center;
+        > *:not(:last-child) {
+            margin-right: rem(10);
+        }
+        [class*='btn-group-'] {
+            margin-left: auto;
+        }
+    }
+    .name {
+        font-size: rem(20);
+        font-weight: 500;
+    }
+    .address {
+        margin-top: rem(10);
+    }
+    .request {
+        margin-top: rem(6);
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            padding: rem(5) rem(10);
+            border-radius: rem(2);
+            background-color: #f4f5f8;
+        }
+    }
+    [class*='info-'] {
+        display: flex;
+        align-items: center;
+        color: $color-spruce;
+        font-size: rem(14);
+        .ic {
+            margin-right: rem(2);
+            &-time {
+                margin-right: rem(3);
+            }
+        }
+    }
+    .info-etc {
+        margin-top: rem(8);
+    }
+}

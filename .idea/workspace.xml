@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6c1ae94f-b447-4735-9072-26be01a1304b" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/base/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/scss/base/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/base/_font.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/scss/base/_font.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/scss/base/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/scss/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/components/_icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/scss/components/_icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/components/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/scss/components/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/components/_tab.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/scss/components/_tab.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/pages/_main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/scss/utils/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/scss/utils/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/html/ui-guide/component_button.html" beforeDir="false" afterPath="$PROJECT_DIR$/Src/html/ui-guide/component_button.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/html/ui-guide/layout_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/html/ui-guide/layout_main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/html/ui-guide/layout_shortcut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/html/ui-guide/layout_type1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/html/ui-guide/layout_type2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/html/ui-guide/layout_type3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/html/ui-guide/layout_type4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/status/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/Src/status/status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_deal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_deal2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_profile1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_profile2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_profile3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_profile4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_profile5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_profile6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_profile7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_profile8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/data/thum_shop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_applicant@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_back@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_calendar@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_clock@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_close@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_deal@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_deal_on@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_home@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_home_on@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_mypage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_mypage_on@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_scrap@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_scrap_on@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_gnb_shortcut@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_hand@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_logo_kakao@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_logo_naver@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_scrap@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_scrap_floating@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_scrap_floating_on@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_scrap_on@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_search@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_shop@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_shortcut@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/ic_upload@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/img_coupon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/img_sample_slide.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/logo_showdeal@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/noimg@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/noprofile@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/txt_black_friday@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/txt_shortcut@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/js/ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/aos/aos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/aos/aos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/jquery/jquery-2.2.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/jquery/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/jquery/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/jquery/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/swiper/swiper-bundle.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/swiper/swiper-bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/swiper/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/libs/swiper/swiper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/chundeal/chundeal_detail_talk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/chundeal/chundeal_detail_tel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/chundeal/chundeal_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/main/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/charge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/manage_chundeal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/manage_customer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/manage_event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/manage_showdeal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/mypage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/profile_guide.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/profile_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/profile_modify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/profile_regist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/regist_chundeal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/regist_event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/regist_select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/mypage/regist_showdeal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/scrap/scrap_deal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/scrap/scrap_shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/search/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/search/search_result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/shortcut/shortcut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/showdeal/shop_deal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/showdeal/showdeal_detail_talk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/showdeal/showdeal_detail_tel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/html/showdeal/showdeal_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/status/status.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/status/status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/status/status.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Cq1zEnB50gr2Rguh25KK45D4ZK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="6c1ae94f-b447-4735-9072-26be01a1304b" name="변경" comment="" />
+      <created>1659515564340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659515564340</updated>
+      <workItem from="1659515566356" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

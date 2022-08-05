@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	${require('html-loader?interpolate!../_template/common_meta.html')}
+	<title>GS THE FLASH 모바일 통합운영 시스템</title>
+	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+
+		<!-- #header -->
+		<header id="header" class="header is-bg is-delivery">
+			<div class="inner">
+				<h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
+				<h2 class="title">배송현황</h2>
+				<div class="btn-group-row">
+					<button class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
+					<button class="btn btn-mypage"><i class="ic ic-mypage"></i><span class="sr-only">마이페이지</span></button>
+				</div>
+			</div>
+		</header>
+		<!-- //#header -->
+
+		<!-- #main -->
+		<main id="container" class="is-delivery">
+
+			<!-- #section -->
+			<section class="fixed-top">
+				<!-- .delivery-info -->
+				<div class="delivery-info">
+					<i class="ic ic-delivery"></i>
+					<p class="company">운송업체<br><strong>서울 12가 3456</strong></p>
+					<p class="store"><i>GS</i> 더프레시<br>강남대치 점</p>
+				</div>
+				<!-- //.delivery-info -->
+				<!-- .tab-group -->
+				<div class="tab-group">
+					<ul class="tab-list col3">
+						<li class="tab-item is-active"><button type="button" class="tab"><span>대기</span><i class="case-num">999</i></button></li>
+						<li class="tab-item"><button type="button" class="tab"><span>진행</span><i class="case-num">06</i></button></li>
+						<li class="tab-item"><button type="button" class="tab"><span>완료</span><i class="case-num">00</i></button></li>
+					</ul>
+				</div>
+				<!-- //.tab-group -->
+				<!-- .sort-group -->
+				<div class="sort-group">
+					<ul class="sort-list">
+						<li class="sort-item is-active"><button type="button" class="sort"><span>전체</span></button></li>
+						<li class="sort-item"><button type="button" class="sort"><span>사전예약</span></button></li>
+						<li class="sort-item"><button type="button" class="sort"><span>퀵커머스</span></button></li>
+						<li class="sort-item"><button type="button" class="sort"><span>점포몰</span></button></li>
+						<li class="sort-item"><button type="button" class="sort"><span>일반배송</span></button></li>
+					</ul>
+				</div>
+				<!-- //.sort-group -->
+				<!-- .total-count -->
+				<p class="total-count">2/12</p>
+				<!-- //.total-count -->
+			</section>
+			<!-- //#section -->
+
+			<!-- #section -->
+			<section class="content">
+				<div class="inner pt0">
+
+					<!-- card -->
+					<div class="card">
+						<div class="card-box">
+							<div class="card-head">
+								<h3 class="name">홍*동</h3>
+								<span class="tag tag-type1"><span class="sr-only">일반배송</span></span>
+								<div class="btn-group-row">
+									<button class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+									<button class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+									<button class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+									<button class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+								</div>
+							</div>
+							<div class="card-body">
+								<p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+								<div class="request">
+									<ul class="request-info">
+										<li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+										<li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+									</ul>
+									<p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- card -->
+					<div class="card">
+						<div class="card-box">
+							<div class="card-head">
+								<h3 class="name">홍*동</h3>
+								<span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
+								<div class="btn-group-row">
+									<button class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+									<button class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+									<button class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+									<button class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+								</div>
+							</div>
+							<div class="card-body">
+								<p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+								<div class="request">
+									<ul class="request-info">
+										<li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+										<li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+									</ul>
+									<p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			<!-- //#section -->
+
+		</main>
+		<!-- //#main -->
+		
+	</div>
+	<!-- //#wrap -->
+</body>
+</html>

@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
 	console.log("loadding page")
 
@@ -43,4 +45,29 @@ document.addEventListener("DOMContentLoaded", () => {
 			modalPop.classList.remove('is_active')
 		})
 	}
+
+	// tab
+	const tabList = document.querySelectorAll('.tab-list li');
+	for(var i = 0; i < tabList.length; i++){
+		tabList[i].querySelector('.tab').addEventListener('click', function(e){
+		e.preventDefault();
+		for(var j = 0; j < tabList.length; j++){
+			tabList[j].classList.remove('is-active');
+		}
+		this.parentNode.classList.add('is-active');
+		});
+	}
+
+	// sort
+	const sortList = document.querySelectorAll('.sort-list li');
+	for(var i = 0; i < sortList.length; i++){
+		sortList[i].querySelector('.sort').addEventListener('click', function(e){
+		e.preventDefault();
+		for(var j = 0; j < sortList.length; j++){
+			sortList[j].classList.remove('is-active');
+		}
+		this.parentNode.classList.add('is-active');
+		});
+	}
+
 });

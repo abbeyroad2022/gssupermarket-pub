@@ -5,200 +5,268 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	&_back {
-		width: rem(17px);
-		height: rem(15px);
-		background-image: url("../img/ic_back@2x.png");
+	&-back {
+		width: rem(24);
+		height: rem(24);
+		background-image: url("../img/ic-back.svg");
 	}
-	&_search {
-		width: rem(17px);
-		height: rem(16px);
-		background-image: url("../img/ic_search@2x.png");
+	&-refresh {
+		width: rem(24);
+		height: rem(24);
+		background-image: url("../img/ic-refresh.svg");
 	}
-	&_close {
-		width: rem(12px);
-		height: rem(11px);
-		background-image: url("../img/ic_close@2x.png");
+	&-mypage {
+		width: rem(24);
+		height: rem(24);
+		background-image: url("../img/ic-mypage.svg");
 	}
-	&_scrap {
-		width: rem(18px);
-		height: rem(15px);
-		background-image: url("../img/ic_scrap@2x.png");
+	&-close-white {
+		width: rem(24);
+		height: rem(24);
+		background-image: url("../img/ic-close-white.svg");
 	}
-	&_shortcut {
-		width: rem(78px);
-		height: rem(78px);
-		background-image: url("../img/ic_shortcut@2x.png");
+
+	&-delivery {
+		width: rem(48);
+		height: rem(48);
+		background-image: url("../img/ic-delivery.svg");
 	}
-	&_hand {
-		width: rem(40px);
-		height: rem(62px);
-		background-image: url("../img/ic_hand@2x.png");
+
+	
+	&-msg {
+		width: rem(19);
+		height: rem(19);
+		background-image: url("../img/ic-msg.svg");
 	}
-	&_upload {
-		width: rem(20px);
-		height: rem(20px);
-		border-radius: 50%;
-		background-image: url("../img/ic_upload@2x.png");
+	&-time {
+		width: rem(16);
+		height: rem(16);
+		background-image: url("../img/ic-time.svg");
 	}
-	&_clock {
-		width: rem(20px);
-		height: rem(20px);
-		background-image: url("../img/ic_clock@2x.png");
+	&-etc {
+		width: rem(20);
+		height: rem(20);
+		background-color: $color-gray_f6;
+		//background-image: url("../img/ic-etc.svg");
 	}
-	&_shop {
-		width: rem(16px);
-		height: rem(15px);
-		background-image: url("../img/ic_shop@2x.png");
+
+
+	&-receipt {
+		width: rem(31);
+		height: rem(31);
+		background-image: url("../img/ic-receipt.svg");
 	}
-	&_applicant {
-		width: rem(22px);
-		height: rem(17px);
-		background-image: url("../img/ic_applicant@2x.png");
+	&-info {
+		width: rem(31);
+		height: rem(31);
+		background-image: url("../img/ic-info.svg");
 	}
-	&_gnb {
-		&_home {
-			width: rem(25px);
-			height: rem(23px);
-			background-image: url("../img/ic_gnb_home@2x.png");
-		}
-		&_deal {
-			width: rem(25px);
-			height: rem(23px);
-			background-image: url("../img/ic_gnb_deal@2x.png");
-		}
-		&_shortcut {
-			width: rem(34px);
-			height: rem(34px);
-			background-image: url("../img/ic_gnb_shortcut@2x.png");
-		}
-		&_scrap {
-			width: rem(25px);
-			height: rem(23px);
-			background-image: url("../img/ic_gnb_scrap@2x.png");
-		}
-		&_mypage {
-			width: rem(20px);
-			height: rem(23px);
-			background-image: url("../img/ic_gnb_mypage@2x.png");
-		}
+	&-phone {
+		width: rem(31);
+		height: rem(31);
+		background-image: url("../img/ic-phone.svg");
 	}
-	&_logo {
-		&_kakao {
-			width: rem(26px);
-			min-width: rem(26px);
-			height: rem(24px);
-			background-image: url("../img/ic_logo_kakao@2x.png");
-		}
-		&_naver {
-			width: rem(26px);
-			min-width: rem(26px);
-			height: rem(24px);
-			background-image: url("../img/ic_logo_naver@2x.png");
-		}
+	&-location {
+		width: rem(31);
+		height: rem(31);
+		background-image: url("../img/ic-location.svg");
 	}
-	&_move {
-		&:after {
-			content: '';
-			display: inline-block;
-			width: rem(6px);
-			height: rem(6px);
-			margin-left: rem(4px);
-			border-top: 1px solid #333;
-			border-right: 1px solid #333;
-			transform: rotate(45deg);
-		}
-	}
-	&_reset {
-		position: relative;
-		width: rem(17px);
-		height: rem(17px);
-		border-radius: 50%;
-		background-color: #666;
-		&:before,
-		&:after {
-			content: '';
-			position: absolute;
-			top: rem(3px);
-			left: rem(8px);
-			width: 1px;
-			height: rem(11px);
-			background-color: #FFF;
-		}
-		&:before {
-			transform: rotate(45deg);
-		}
-		&:after {
-			transform: rotate(-45deg);
-		}
-	}
-	&_delete {
-		position: relative;
-		width: rem(20px);
-		height: rem(20px);
-		border-radius: 50%;
-		background-color: #FFF;
-		&:before,
-		&:after {
-			content: '';
-			position: absolute;
-			top: rem(4px);
-			left: rem(9px);
-			width: 1px;
-			height: rem(12px);
-			background-color: #999;
-		}
-		&:before {
-			transform: rotate(45deg);
-		}
-		&:after {
-			transform: rotate(-45deg);
-		}
-	}
-	&_del {
-		position: relative;
-		width: rem(11px);
-		height: rem(11px);
-		background-color: transparent;
-		&:before,
-		&:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: rem(5px);
-			width: 1px;
-			height: rem(11px);
-			background-color: #666;
-		}
-		&:before {
-			transform: rotate(45deg);
-		}
-		&:after {
-			transform: rotate(-45deg);
-		}
-	}
-	&_plus {
-		position: relative;
-		width: rem(20px);
-		height: rem(20px);
-		&:before,
-		&:after {
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 1px;
-			height: rem(11px);
-			background-color: #CCC;
-			transform: translate(-50%, -50%);
-		}
-		&:before {
-			width: rem(4px);
-			height: rem(20px);
-		}
-		&:after {
-			width: rem(20px);
-			height: rem(4px);
-		}
-	}
+
+
+
+
+
+
+
+	// &_search {
+	// 	width: rem(17px);
+	// 	height: rem(16px);
+	// 	background-image: url("../img/ic_search@2x.png");
+	// }
+	// &_close {
+	// 	width: rem(12px);
+	// 	height: rem(11px);
+	// 	background-image: url("../img/ic_close@2x.png");
+	// }
+	// &_scrap {
+	// 	width: rem(18px);
+	// 	height: rem(15px);
+	// 	background-image: url("../img/ic_scrap@2x.png");
+	// }
+	// &_shortcut {
+	// 	width: rem(78px);
+	// 	height: rem(78px);
+	// 	background-image: url("../img/ic_shortcut@2x.png");
+	// }
+	// &_hand {
+	// 	width: rem(40px);
+	// 	height: rem(62px);
+	// 	background-image: url("../img/ic_hand@2x.png");
+	// }
+	// &_upload {
+	// 	width: rem(20px);
+	// 	height: rem(20px);
+	// 	border-radius: 50%;
+	// 	background-image: url("../img/ic_upload@2x.png");
+	// }
+	// &_clock {
+	// 	width: rem(20px);
+	// 	height: rem(20px);
+	// 	background-image: url("../img/ic_clock@2x.png");
+	// }
+	// &_shop {
+	// 	width: rem(16px);
+	// 	height: rem(15px);
+	// 	background-image: url("../img/ic_shop@2x.png");
+	// }
+	// &_applicant {
+	// 	width: rem(22px);
+	// 	height: rem(17px);
+	// 	background-image: url("../img/ic_applicant@2x.png");
+	// }
+	// &_gnb {
+	// 	&_home {
+	// 		width: rem(25px);
+	// 		height: rem(23px);
+	// 		background-image: url("../img/ic_gnb_home@2x.png");
+	// 	}
+	// 	&_deal {
+	// 		width: rem(25px);
+	// 		height: rem(23px);
+	// 		background-image: url("../img/ic_gnb_deal@2x.png");
+	// 	}
+	// 	&_shortcut {
+	// 		width: rem(34px);
+	// 		height: rem(34px);
+	// 		background-image: url("../img/ic_gnb_shortcut@2x.png");
+	// 	}
+	// 	&_scrap {
+	// 		width: rem(25px);
+	// 		height: rem(23px);
+	// 		background-image: url("../img/ic_gnb_scrap@2x.png");
+	// 	}
+	// 	&_mypage {
+	// 		width: rem(20px);
+	// 		height: rem(23px);
+	// 		background-image: url("../img/ic_gnb_mypage@2x.png");
+	// 	}
+	// }
+	// &_logo {
+	// 	&_kakao {
+	// 		width: rem(26px);
+	// 		min-width: rem(26px);
+	// 		height: rem(24px);
+	// 		background-image: url("../img/ic_logo_kakao@2x.png");
+	// 	}
+	// 	&_naver {
+	// 		width: rem(26px);
+	// 		min-width: rem(26px);
+	// 		height: rem(24px);
+	// 		background-image: url("../img/ic_logo_naver@2x.png");
+	// 	}
+	// }
+	// &_move {
+	// 	&:after {
+	// 		content: '';
+	// 		display: inline-block;
+	// 		width: rem(6px);
+	// 		height: rem(6px);
+	// 		margin-left: rem(4px);
+	// 		border-top: 1px solid #333;
+	// 		border-right: 1px solid #333;
+	// 		transform: rotate(45deg);
+	// 	}
+	// }
+	// &_reset {
+	// 	position: relative;
+	// 	width: rem(17px);
+	// 	height: rem(17px);
+	// 	border-radius: 50%;
+	// 	background-color: #666;
+	// 	&:before,
+	// 	&:after {
+	// 		content: '';
+	// 		position: absolute;
+	// 		top: rem(3px);
+	// 		left: rem(8px);
+	// 		width: 1px;
+	// 		height: rem(11px);
+	// 		background-color: #FFF;
+	// 	}
+	// 	&:before {
+	// 		transform: rotate(45deg);
+	// 	}
+	// 	&:after {
+	// 		transform: rotate(-45deg);
+	// 	}
+	// }
+	// &_delete {
+	// 	position: relative;
+	// 	width: rem(20px);
+	// 	height: rem(20px);
+	// 	border-radius: 50%;
+	// 	background-color: #FFF;
+	// 	&:before,
+	// 	&:after {
+	// 		content: '';
+	// 		position: absolute;
+	// 		top: rem(4px);
+	// 		left: rem(9px);
+	// 		width: 1px;
+	// 		height: rem(12px);
+	// 		background-color: #999;
+	// 	}
+	// 	&:before {
+	// 		transform: rotate(45deg);
+	// 	}
+	// 	&:after {
+	// 		transform: rotate(-45deg);
+	// 	}
+	// }
+	// &_del {
+	// 	position: relative;
+	// 	width: rem(11px);
+	// 	height: rem(11px);
+	// 	background-color: transparent;
+	// 	&:before,
+	// 	&:after {
+	// 		content: '';
+	// 		position: absolute;
+	// 		top: 0;
+	// 		left: rem(5px);
+	// 		width: 1px;
+	// 		height: rem(11px);
+	// 		background-color: #666;
+	// 	}
+	// 	&:before {
+	// 		transform: rotate(45deg);
+	// 	}
+	// 	&:after {
+	// 		transform: rotate(-45deg);
+	// 	}
+	// }
+	// &_plus {
+	// 	position: relative;
+	// 	width: rem(20px);
+	// 	height: rem(20px);
+	// 	&:before,
+	// 	&:after {
+	// 		content: '';
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		left: 50%;
+	// 		width: 1px;
+	// 		height: rem(11px);
+	// 		background-color: #CCC;
+	// 		transform: translate(-50%, -50%);
+	// 	}
+	// 	&:before {
+	// 		width: rem(4px);
+	// 		height: rem(20px);
+	// 	}
+	// 	&:after {
+	// 		width: rem(20px);
+	// 		height: rem(4px);
+	// 	}
+	// }
 }

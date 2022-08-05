@@ -2,141 +2,169 @@
 <html lang="ko">
 <head>
 	${require('html-loader?interpolate!../_template/common_meta.html')}
-	<title>GS Supermarket</title>
+	<title>GS THE FLASH 모바일 통합운영 시스템</title>
 	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+	<link rel="stylesheet" type="text/css" href="../../assets/libs/pretty/pretty.css">
+	<style>
+		xmp {margin:0; padding:0; white-space:pre-wrap;font-family:inherit}
+		xmp .tag {width: auto;}
+		.coding_guide .h1_guide {margin-bottom: 15px; padding: 7px 0 12px 10px; background: #0e563c; color: white; font-size: 20px; font-weight: 500; line-height: normal;}
+		.coding_guide .h2_guide {margin: 20px 0 10px 20px; color: #000; font-size: 16px; font-weight: 500; line-height: normal;}
+		.coding_guide .guide_wrap, .coding_guide .code_wrap {position:relative;width:100%;padding:0 20px 10px 20px;box-sizing:border-box;}
+		.coding_guide .d_desc {padding:9px; border:1px dashed #bdbfc2; background:#f5f5f5; font-size:12px; line-height:15px;}
+		.coding_guide .d_desc.code {padding:0;}
+		.coding_guide .d_desc .num_list {padding-left:20px; list-style-type:decimal;}
+		.coding_guide .d_desc .num_list li {padding:0 0 5px 0;}
+		.coding_guide ol.linenums {padding: 20px 0 0;}
+		.coding_guide .t_point {margin:0 0 7px; padding-bottom:5px; border-bottom:1px solid #e5e5e5;}
+	</style>
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="coding_guide">
 
-	<!-- #main -->
-	<main id="container">
-		<!-- #section -->
-		<section>
-			<div class="inner">
+	<h1 class="h1_guide">Form</h1>
 
-				<!-- .cont_item -->
-				<div class="cont_item btm_line">
-					<div class="cont_head">
-						<h3 class="tit">폼(기본)</h3>
-					</div>
-					<div class="cont_body mt10">
+	<h2 class="h2_guide">form</h2>
+	<div class="guide_wrap">
 
-						<!-- .field_item -->
-						<div class="field_item">
-							<label for="" class="label">input</label>
-							<div class="control">
-								<input type="text" id="" placeholder="">
-							</div>
-						</div>
-						<!-- //.field_item -->
-						<!-- .field_item -->
-						<div class="field_item">
-							<label for="" class="label">textarea</label>
-							<div class="control">
-								<textarea name="" id="" rows="2" placeholder=""></textarea>
-							</div>
-						</div>
-						<!-- //.field_item -->
-						<!-- .field_item -->
-						<div class="field_item">
-							<label for="" class="label">input + text</label>
-							<div class="control">
-								<input type="text" id="">
-								<span class="txt">text</span>
-							</div>
-						</div>
-						<!-- //.field_item -->
-						<!-- .field_item -->
-						<div class="field_item">
-							<p class="label">radio</p>
-							<div class="control">
-								<div class="choice_group">
-									<label class="custom_radio" for="">
-										<input type="radio" id="" checked>
-										<i class="mark"></i>
-										<span class="label_txt">radio</span>
-									</label>
-									<label class="custom_radio" for="">
-										<input type="radio" id="">
-										<i class="mark"></i>
-										<span class="label_txt">radio</span>
-									</label>
-									<label class="custom_radio" for="">
-										<input type="radio" id="">
-										<i class="mark"></i>
-										<span class="label_txt">radio</span>
-									</label>
-								</div>
-								<!-- //.choice_group -->
-							</div>
-						</div>
-						<!-- //.field_item -->
-						<!-- .field_item -->
-						<div class="field_item">
-							<p class="label">check</p>
-							<div class="control">
-								<div class="choice_group">
-									<label class="custom_check" for="">
-										<input type="checkbox" id="" checked>
-										<i class="mark"></i>
-										<span class="label_txt">check</span>
-									</label>
-									<label class="custom_check" for="">
-										<input type="checkbox" id="">
-										<i class="mark"></i>
-										<span class="label_txt">check</span>
-									</label>
-									<label class="custom_check" for="">
-										<input type="checkbox" id="">
-										<i class="mark"></i>
-										<span class="label_txt">check</span>
-									</label>
-								</div>
-								<!-- //.choice_group -->
-							</div>
-						</div>
-						<!-- //.field_item -->
-						<!-- .field_item -->
-						<div class="field_item">
-							<label for="" class="label">input + button</label>
-							<div class="control col">
-								<!-- .input_group -->
-								<div class="input_group auth">
-									<input type="text" id="">
-									<button type="button" class="btn btn_primary btn_sm"><span>버튼</span></button>
-								</div>
-								<!-- //.input_group -->
-							</div>
-						</div>
-						<!-- //.field_item -->
-						<!-- .field_item -->
-						<div class="field_item">
-							<p class="label">period</p>
-							<div class="control col">
-								<!-- .input_group -->
-								<div class="input_group period">
-									<div class="date_type"><input type="text" id="" placeholder="시작일"></div>
-									<span class="txt">~</span>
-									<div class="date_type"><input type="text" id="" placeholder="종료일"></div>
-									<button type="button" class="btn btn_reset">
-										<i class="ic ic_reset"></i><span class="sr_only">기간 재설정</span>
-									</button>
-								</div>
-								<!-- //.input_group -->
-							</div>
-						</div>
-						<!-- //.field_item -->
 
-					</div>
-				</div>
-				<!-- //.cont_item -->
 
-			</div>
-		</section>
-		<!-- //#section -->
-	</main>
-	<!-- //#main -->
+<!-- .field_item -->
+<div class="field_item">
+	<label for="" class="label">input</label>
+	<div class="control">
+		<input type="text" id="" placeholder="">
+	</div>
+</div>
+<!-- //.field_item -->
+<!-- .field_item -->
+<div class="field_item">
+	<label for="" class="label">textarea</label>
+	<div class="control">
+		<textarea name="" id="" rows="2" placeholder=""></textarea>
+	</div>
+</div>
+<!-- //.field_item -->
+<!-- .field_item -->
+<div class="field_item">
+	<label for="" class="label">input + text</label>
+	<div class="control">
+		<input type="text" id="">
+		<span class="txt">text</span>
+	</div>
+</div>
+<!-- //.field_item -->
+<!-- .field_item -->
+<div class="field_item">
+	<p class="label">radio</p>
+	<div class="control">
+		<div class="choice_group">
+			<label class="custom_radio" for="">
+				<input type="radio" id="" checked>
+				<i class="mark"></i>
+				<span class="label_txt">radio</span>
+			</label>
+			<label class="custom_radio" for="">
+				<input type="radio" id="">
+				<i class="mark"></i>
+				<span class="label_txt">radio</span>
+			</label>
+			<label class="custom_radio" for="">
+				<input type="radio" id="">
+				<i class="mark"></i>
+				<span class="label_txt">radio</span>
+			</label>
+		</div>
+		<!-- //.choice_group -->
+	</div>
+</div>
+<!-- //.field_item -->
+<!-- .field_item -->
+<div class="field_item">
+	<p class="label">check</p>
+	<div class="control">
+		<div class="choice_group">
+			<label class="custom_check" for="">
+				<input type="checkbox" id="" checked>
+				<i class="mark"></i>
+				<span class="label_txt">check</span>
+			</label>
+			<label class="custom_check" for="">
+				<input type="checkbox" id="">
+				<i class="mark"></i>
+				<span class="label_txt">check</span>
+			</label>
+			<label class="custom_check" for="">
+				<input type="checkbox" id="">
+				<i class="mark"></i>
+				<span class="label_txt">check</span>
+			</label>
+		</div>
+		<!-- //.choice_group -->
+	</div>
+</div>
+<!-- //.field_item -->
+<!-- .field_item -->
+<div class="field_item">
+	<label for="" class="label">input + button</label>
+	<div class="control col">
+		<!-- .input_group -->
+		<div class="input_group auth">
+			<input type="text" id="">
+			<button type="button" class="btn btn_primary btn_sm"><span>버튼</span></button>
+		</div>
+		<!-- //.input_group -->
+	</div>
+</div>
+<!-- //.field_item -->
+<!-- .field_item -->
+<div class="field_item">
+	<p class="label">period</p>
+	<div class="control col">
+		<!-- .input_group -->
+		<div class="input_group period">
+			<div class="date_type"><input type="text" id="" placeholder="시작일"></div>
+			<span class="txt">~</span>
+			<div class="date_type"><input type="text" id="" placeholder="종료일"></div>
+			<button type="button" class="btn btn_reset">
+				<i class="ic ic_reset"></i><span class="sr_only">기간 재설정</span>
+			</button>
+		</div>
+		<!-- //.input_group -->
+	</div>
+</div>
+<!-- //.field_item -->
+
+
+
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+
+	<h2 class="h2_guide">form</h2>
+	<div class="guide_wrap">
+
+	</div>
+	<div class="code_wrap">
+		<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
 </div>
+<script type="text/javascript" src="../../assets/libs/pretty/pretty.js"></script>
+
+
 </body>
 </html>

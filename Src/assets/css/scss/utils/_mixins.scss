@@ -235,12 +235,6 @@
 	height: 38px;
 }
 
-@mixin when-inside($selector) {
-	#{$selector} & {
-		@content;
-	}
-}
-
 @mixin lh($height) {
 	height: $height;
 	line-height: $height;
@@ -264,5 +258,29 @@
 	&:nth-last-child(#{$mod}n+#{$remainder}):first-child,
 	&:nth-last-child(#{$mod}n+#{$remainder}):first-child ~ li {
 		@content;
+	}
+}
+
+// 스크롤바 커스텀
+@mixin scrollbarCustom($size) {
+	scrollbar-color: #D3D5DC #FEFEFE;
+	scrollbar-width: thin;
+	/* width */
+	&::-webkit-scrollbar {
+		width: rem($size);
+	}
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #FEFEFE;
+		border-radius: 100px;
+	}
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #D3D5DC;
+		border-radius: 100px;
+	}
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: #BFC2CC;
 	}
 }

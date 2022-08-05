@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* ================================== Font ================================== */
-$font-name : 'NotoSansCJKkr';
 $font-path : '../fonts/';
+// NotoSansCJKkr
+$font-name : 'NotoSansCJKkr';
 $fonts : (
 	'Thin' : 100, 
 	'Light' : 300, 
@@ -20,5 +21,25 @@ $fonts : (
 		url("#{$font-path}#{$font-name}-#{$fonts}.woff2") format("woff2"),
 		url("#{$font-path}#{$font-name}-#{$fonts}.woff") format("woff"),
 		url("#{$font-path}#{$font-name}-#{$fonts}.otf") format("opentype");
+	}
+}
+// Montserrat
+$font-name-secondary : 'Montserrat';
+$fonts-secondary : (
+	'Regular' : 400, 
+	'Medium' : 500, 
+	'Bold' : 700, 
+	'ExtraBold' : 800, 
+	'Black' : 900 ,
+);
+@each $fonts, $size in $fonts-secondary {
+	@font-face {
+		font-family: #{$font-name-secondary};
+		font-weight: $size;
+		font-style: normal;
+		src : local("#{$font-path}#{$font-name-secondary} #{$fonts}"),
+		url("#{$font-path}#{$font-name-secondary}-#{$fonts}.woff2") format("woff2"),
+		url("#{$font-path}#{$font-name-secondary}-#{$fonts}.woff") format("woff"),
+		url("#{$font-path}#{$font-name-secondary}-#{$fonts}.otf") format("opentype");
 	}
 }

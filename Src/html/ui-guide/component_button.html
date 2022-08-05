@@ -2,127 +2,223 @@
 <html lang="ko">
 <head>
 	${require('html-loader?interpolate!../_template/common_meta.html')}
-	<title>GS Supermarket</title>
+	<title>GS THE FLASH 모바일 통합운영 시스템</title>
 	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+	<link rel="stylesheet" type="text/css" href="../../assets/libs/pretty/pretty.css">
+	<style>
+		xmp {margin:0; padding:0; white-space:pre-wrap;font-family:inherit}
+		xmp .tag {width: auto;}
+		.coding_guide .h1_guide {margin-bottom: 15px; padding: 7px 0 12px 10px; background: #0e563c; color: white; font-size: 20px; font-weight: 500; line-height: normal;}
+		.coding_guide .h2_guide {margin: 20px 0 10px 20px; color: #000; font-size: 16px; font-weight: 500; line-height: normal;}
+		.coding_guide .guide_wrap, .coding_guide .code_wrap {position:relative;width:100%;padding:0 20px 10px 20px;box-sizing:border-box;}
+		.coding_guide .d_desc {padding:9px; border:1px dashed #bdbfc2; background:#f5f5f5; font-size:12px; line-height:15px;}
+		.coding_guide .d_desc.code {padding:0;}
+		.coding_guide .d_desc .num_list {padding-left:20px; list-style-type:decimal;}
+		.coding_guide .d_desc .num_list li {padding:0 0 5px 0;}
+		.coding_guide ol.linenums {padding: 20px 0 0;}
+		.coding_guide .t_point {margin:0 0 7px; padding-bottom:5px; border-bottom:1px solid #e5e5e5;}
+	</style>
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="coding_guide">
 
-	<!-- #main -->
-	<main id="container">
-		<!-- #section -->
-		<section>
-			<div class="inner">
+	<h1 class="h1_guide">Button</h1>
 
-				<!-- .cont_item -->
-				<div class="cont_item btm_line">
-					<div class="cont_head">
-						<h3 class="tit">버튼(기본)</h3>
-					</div>
-					<div class="cont_body mt10">
+	<h2 class="h2_guide">button (basic)</h2>
+	<div class="guide_wrap">
+		<div class="btn-group-col">
+			<button class="btn btn-primary"><span>배송진행</span></button>
+			<button class="btn btn-secondary"><span>배달기사 가입</span></button>
+		</div>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="btn-group-col">
+	<button class="btn btn-primary"><span>배송진행</span></button>
+	<button class="btn btn-secondary"><span>배달기사 가입</span></button>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-						<div class="btn_group_row">
-							<button class="btn btn_xs btn_primary">버튼</button>
-							<button class="btn btn_xs btn_secondary">버튼</button>
-							<button class="btn btn_xs btn_dark">버튼</button>
-							<button class="btn btn_xs btn_darkgray">버튼</button>
-							<button class="btn btn_xs btn_gray">버튼</button>
-							<button class="btn btn_xs btn_yellow">버튼</button>
-							<button class="btn btn_xs btn_green">버튼</button>
-							<button class="btn btn_xs btn_blue">버튼</button>
-							<button class="btn btn_xs btn_dashed">버튼</button>
-						</div>
+	<h2 class="h2_guide">button (basic) disabled</h2>
+	<div class="guide_wrap">
+		<div class="btn-group-col">
+			<button class="btn btn-primary"><span>배송진행</span></button>
+			<button class="btn btn-secondary"><span>배달기사 가입</span></button>
+		</div>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="btn-group-col">
+	<button class="btn btn-primary" disabled><span>배송진행</span></button>
+	<button class="btn btn-secondary" disabled><span>배달기사 가입</span></button>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-						<div class="btn_group_row">
-							<button class="btn btn_sm btn_primary">버튼</button>
-							<button class="btn btn_sm btn_secondary">버튼</button>
-							<button class="btn btn_sm btn_dark">버튼</button>
-							<button class="btn btn_sm btn_darkgray">버튼</button>
-							<button class="btn btn_sm btn_gray">버튼</button>
-							<button class="btn btn_sm btn_yellow">버튼</button>
-							<button class="btn btn_sm btn_green">버튼</button>
-							<button class="btn btn_sm btn_blue">버튼</button>
-							<button class="btn btn_sm btn_dashed">버튼</button>
-						</div>
+	<h2 class="h2_guide">button (in popup)</h2>
+	<div class="guide_wrap">
+		<div class="btn-group-row btn-half">
+			<button class="btn btn-pop-primary"><span>적용</span></button>
+			<button class="btn btn-pop-secondary"><span>초기화</span></button>
+		</div>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="btn-group-row btn-half">
+	<button class="btn btn-pop-primary"><span>적용</span></button>
+	<button class="btn btn-pop-secondary"><span>초기화</span></button>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-						<div class="btn_group_row">
-							<button class="btn btn_md btn_primary">버튼</button>
-							<button class="btn btn_md btn_secondary">버튼</button>
-							<button class="btn btn_md btn_dark">버튼</button>
-							<button class="btn btn_md btn_darkgray">버튼</button>
-							<button class="btn btn_md btn_gray">버튼</button>
-							<button class="btn btn_md btn_yellow">버튼</button>
-							<button class="btn btn_md btn_green">버튼</button>
-							<button class="btn btn_md btn_blue">버튼</button>
-							<button class="btn btn_md btn_dashed">버튼</button>
-						</div>
+	<h2 class="h2_guide">button (in popup) disabled</h2>
+	<div class="guide_wrap">
+		<div class="btn-group-row btn-half">
+			<button class="btn btn-pop-primary" disabled><span>적용</span></button>
+			<button class="btn btn-pop-secondary" disabled><span>초기화</span></button>
+		</div>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="btn-group-row btn-half">
+	<button class="btn btn-pop-primary" disabled><span>적용</span></button>
+	<button class="btn btn-pop-secondary" disabled><span>초기화</span></button>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-						<div class="btn_group_row">
-							<button class="btn btn_lg btn_primary">버튼</button>
-							<button class="btn btn_lg btn_secondary">버튼</button>
-							<button class="btn btn_lg btn_dark">버튼</button>
-							<button class="btn btn_lg btn_darkgray">버튼</button>
-							<button class="btn btn_lg btn_gray">버튼</button>
-							<button class="btn btn_lg btn_yellow">버튼</button>
-							<button class="btn btn_lg btn_green">버튼</button>
-							<button class="btn btn_lg btn_blue">버튼</button>
-							<button class="btn btn_lg btn_dashed">버튼</button>
-						</div>
+	<h2 class="h2_guide">button (in form)</h2>
+	<div class="guide_wrap">
+		<button class="btn btn-form"><span>인증번호 요청</span></button>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<button class="btn btn-form"><span>인증번호 요청</span></button>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-						<div class="btn_group_row">
-							<button class="btn btn_xl btn_primary">버튼</button>
-							<button class="btn btn_xl btn_secondary">버튼</button>
-							<button class="btn btn_xl btn_dark">버튼</button>
-							<button class="btn btn_xl btn_darkgray">버튼</button>
-							<button class="btn btn_xl btn_gray">버튼</button>
-							<button class="btn btn_xl btn_yellow">버튼</button>
-							<button class="btn btn_xl btn_green">버튼</button>
-							<button class="btn btn_xl btn_blue">버튼</button>
-							<button class="btn btn_xl btn_dashed">버튼</button>
-						</div>
+	<h2 class="h2_guide">button (in form) disabled</h2>
+	<div class="guide_wrap">
+		<button class="btn btn-form" disabled><span>인증번호 요청</span></button>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<button class="btn btn-form" disabled><span>인증번호 요청</span></button>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-					</div>
-				</div>
-				<!-- //.cont_item -->
+	<h2 class="h2_guide">button (select)</h2>
+	<div class="guide_wrap">
+		<div class="btn-group-row btn-half">
+			<button class="btn btn-sel-primary"><span>전체</span></button>
+			<button class="btn btn-sel-secondary"><span>배송 지연</span></button>
+		</div>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="btn-group-row btn-half">
+	<button class="btn btn-sel-primary"><span>전체</span></button>
+	<button class="btn btn-sel-secondary"><span>배송 지연</span></button>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-				<!-- .cont_item -->
-				<div class="cont_item btm_line">
-					<div class="cont_head">
-						<h3 class="tit">버튼(가로정렬)</h3>
-					</div>
-					<div class="cont_body mt10">
+	<h2 class="h2_guide">button (select) disabled</h2>
+	<div class="guide_wrap">
+		<div class="btn-group-row btn-half">
+			<button class="btn btn-sel-primary" disabled><span>전체</span></button>
+			<button class="btn btn-sel-secondary" disabled><span>배송 지연</span></button>
+		</div>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="btn-group-row btn-half">
+	<button class="btn btn-sel-primary" disabled><span>전체</span></button>
+	<button class="btn btn-sel-secondary" disabled><span>배송 지연</span></button>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-						<div class="btn_group_row">
-							<button class="btn btn_lg btn_gray">버튼</button>
-							<button class="btn btn_lg btn_primary">버튼</button>
-						</div>
+	<h2 class="h2_guide">button (select) .is-select</h2>
+	<div class="guide_wrap">
+		<div class="btn-group-row btn-half">
+			<button class="btn btn-sel-primary is-select"><span>전체</span></button>
+			<button class="btn btn-sel-secondary is-select"><span>배송 지연</span></button>
+		</div>
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="btn-group-row btn-half">
+	<button class="btn btn-sel-primary is-select"><span>전체</span></button>
+	<button class="btn btn-sel-secondary is-select"><span>배송 지연</span></button>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-					</div>
-				</div>
-				<!-- //.cont_item -->
+	<h2 class="h2_guide">button (icon)</h2>
+	<div class="guide_wrap">
 
-				<!-- .cont_item -->
-				<div class="cont_item btm_line">
-					<div class="cont_head">
-						<h3 class="tit">버튼(세로정렬)</h3>
-					</div>
-					<div class="cont_body mt10">
+		<div class="btn-group-row btn-inline">
+			<button class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+			<button class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+			<button class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+			<button class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+		</div>
 
-						<div class="btn_group_col">
-							<button class="btn btn_lg btn_gray">버튼</button>
-							<button class="btn btn_lg btn_primary">버튼</button>
-						</div>
-
-					</div>
-				</div>
-				<!-- //.cont_item -->
-
-			</div>
-		</section>
-		<!-- //#section -->
-	</main>
-	<!-- //#main -->
+	</div>
+	<div class="code_wrap">
+		<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="btn-group-row btn-inline">
+	<button class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+	<button class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+	<button class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+	<button class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
 </div>
+<script type="text/javascript" src="../../assets/libs/pretty/pretty.js"></script>
 </body>
 </html>

@@ -2,91 +2,93 @@
 <html lang="ko">
 <head>
 	${require('html-loader?interpolate!../_template/common_meta.html')}
-	<title>GS Supermarket</title>
+	<title>GS THE FLASH 모바일 통합운영 시스템</title>
 	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+	<link rel="stylesheet" type="text/css" href="../../assets/libs/pretty/pretty.css">
+	<style>
+		xmp {margin:0; padding:0; white-space:pre-wrap;font-family:inherit}
+		xmp .tag {width: auto;}
+		.coding_guide .h1_guide {margin-bottom: 15px; padding: 7px 0 12px 10px; background: #0e563c; color: white; font-size: 20px; font-weight: 500; line-height: normal;}
+		.coding_guide .h2_guide {margin: 20px 0 10px 20px; color: #000; font-size: 16px; font-weight: 500; line-height: normal;}
+		.coding_guide .guide_wrap, .coding_guide .code_wrap {position:relative;width:100%;padding:0 20px 10px 20px;box-sizing:border-box;}
+		.coding_guide .d_desc {padding:9px; border:1px dashed #bdbfc2; background:#f5f5f5; font-size:12px; line-height:15px;}
+		.coding_guide .d_desc.code {padding:0;}
+		.coding_guide .d_desc .num_list {padding-left:20px; list-style-type:decimal;}
+		.coding_guide .d_desc .num_list li {padding:0 0 5px 0;}
+		.coding_guide ol.linenums {padding: 20px 0 0;}
+		.coding_guide .t_point {margin:0 0 7px; padding-bottom:5px; border-bottom:1px solid #e5e5e5;}
+	</style>
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="coding_guide">
 
-	<!-- #main -->
-	<main id="container">
-		<!-- #section -->
-		<section>
-			<div class="inner">
+	<h1 class="h1_guide">Tab</h1>
 
-				<!-- .cont_item -->
-				<div class="cont_item btm_line">
-					<div class="cont_head">
-						<h3 class="tit">텝메뉴</h3>
-					</div>
-					<div class="cont_body mt10">
+	<h2 class="h2_guide">tab</h2>
+	<div class="guide_wrap">
+		<!-- .tab-group -->
+		<div class="tab-group">
+			<ul class="tab-list col3">
+				<li class="tab-item is-active"><button type="button" class="tab"><span>대기</span><i class="case-num">999</i></button></li>
+				<li class="tab-item"><button type="button" class="tab"><span>진행</span><i class="case-num">06</i></button></li>
+				<li class="tab-item"><button type="button" class="tab"><span>완료</span><i class="case-num">00</i></button></li>
+			</ul>
+		</div>
+		<!-- //.tab-group -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .tab-group -->
+<div class="tab-group">
+	<ul class="tab-list col3">
+		<li class="tab-item is-active"><button type="button" class="tab"><span>대기</span><i class="case-num">999</i></button></li>
+		<li class="tab-item"><button type="button" class="tab"><span>진행</span><i class="case-num">06</i></button></li>
+		<li class="tab-item"><button type="button" class="tab"><span>완료</span><i class="case-num">00</i></button></li>
+	</ul>
+</div>
+<!-- //.tab-group -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
-						<!-- .tab_group_wrap -->
-						<div class="tab_group_wrap">
-							<ul class="tab_group">
-								<li class="tab_item is_active"><button class="tab"><span>텝메뉴1</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴2</span></button></li>
-							</ul>
-						</div>
-						<!-- //.tab_group_wrap -->
-
-						<!-- .tab_group_wrap -->
-						<div class="tab_group_wrap">
-							<ul class="tab_group">
-								<li class="tab_item is_active"><button class="tab"><span>텝메뉴1</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴2</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴3</span></button></li>
-							</ul>
-						</div>
-						<!-- //.tab_group_wrap -->
-
-						<!-- .tab_group_wrap -->
-						<div class="tab_group_wrap">
-							<ul class="tab_group">
-								<li class="tab_item is_active"><button class="tab"><span>텝메뉴1</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴2</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴3</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴4</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴5</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴6</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴7</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴8</span></button></li>
-								<li class="tab_item"><button class="tab"><span>텝메뉴9</span></button></li>
-							</ul>
-						</div>
-						<!-- //.tab_group_wrap -->
-
-					</div>
-				</div>
-				<!-- //.cont_item -->
-
-				<!-- .cont_item -->
-				<div class="cont_item btm_line">
-					<div class="cont_head">
-						<h3 class="tit">텝(sort)</h3>
-					</div>
-					<div class="cont_body mt10">
-
-						<!-- .sort_group_wrap -->
-						<div class="sort_group_wrap">
-							<ul class="sort_group">
-								<li class="sort_item is_active"><button type="button" class="btn btn_sm"><span>진행중</span></button></li>
-								<li class="sort_item"><button type="button" class="btn btn_sm"><span>진행완료</span></button></li>
-								<li class="sort_item"><button type="button" class="btn btn_sm"><span>상품 미노출</span></button></li>
-							</ul>
-						</div>
-						<!-- //.tab_list_wrap -->
-
-					</div>
-				</div>
-				<!-- //.cont_item -->
-
-			</div>
-		</section>
-		<!-- //#section -->
-	</main>
-	<!-- //#main -->
+	<h2 class="h2_guide">sort</h2>
+	<div class="guide_wrap">
+		<!-- .sort-group -->
+		<div class="sort-group">
+			<ul class="sort-list">
+				<li class="sort-item is-active"><button type="button" class="sort"><span>전체</span></button></li>
+				<li class="sort-item"><button type="button" class="sort"><span>사전예약</span></button></li>
+				<li class="sort-item"><button type="button" class="sort"><span>퀵커머스</span></button></li>
+				<li class="sort-item"><button type="button" class="sort"><span>점포몰</span></button></li>
+				<li class="sort-item"><button type="button" class="sort"><span>일반배송</span></button></li>
+			</ul>
+		</div>
+		<!-- //.sort-group -->
+	</div>
+	<div class="code_wrap">
+		<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .sort-group -->
+<div class="sort-group">
+	<ul class="sort-list">
+		<li class="sort-item is-active"><button type="button" class="sort"><span>전체</span></button></li>
+		<li class="sort-item"><button type="button" class="sort"><span>사전예약</span></button></li>
+		<li class="sort-item"><button type="button" class="sort"><span>퀵커머스</span></button></li>
+		<li class="sort-item"><button type="button" class="sort"><span>점포몰</span></button></li>
+		<li class="sort-item"><button type="button" class="sort"><span>일반배송</span></button></li>
+	</ul>
+</div>
+<!-- //.sort-group -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
 
 </div>
+<script type="text/javascript" src="../../assets/libs/pretty/pretty.js"></script>
 </body>
 </html>

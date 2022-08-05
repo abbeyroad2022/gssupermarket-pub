@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* ================================== Mypage ================================== */
+.my-info {
+	display: block;
+	width: 100%;
+	min-height: rem(187);
+	padding: 0 rem(24) rem(18);
+	text-align: center;
+	color: $color-white;
+	.name {
+		margin-bottom: rem(1);
+		font-size: rem(26);
+		font-weight: 700;
+	}
+	.company {
+		font-weight: 500;
+	}
+	.store {
+		font-weight: 500;
+	}
+	.status {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: rem(12);
+		font-size: rem(14);
+		li {
+			display: flex;
+			flex-direction: column-reverse;
+			flex-grow: 1;
+			flex-basis: (1 / 3) * 100%;
+			padding: rem(12);
+		}
+		.case {
+			opacity: .8;
+		}
+		.count {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: rem(20);
+			font-weight: 700;
+			line-height: 1;
+			.num {
+				margin-right: rem(2);
+				font-family: $en-font-family;
+				font-size: rem(24);
+			}
+		}
+	}
+}

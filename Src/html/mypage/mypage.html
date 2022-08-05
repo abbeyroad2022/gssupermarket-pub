@@ -2,96 +2,72 @@
 <html lang="ko">
 <head>
 	${require('html-loader?interpolate!../_template/common_meta.html')}
-	<title>GS Supermarket</title>
+	<title>GS THE FLASH 모바일 통합운영 시스템</title>
 	${require('html-loader?interpolate!../_template/common_res_sub.html')}
 </head>
 <body>
-<div id="wrap">
+	<!-- #wrap -->
+	<div id="wrap">
 
-	<!-- #header -->
-	<header id="header" class="header">
-		<h1 class="header_logo"><a href="javascript:;"><span class="sr_only">쇼딜</span></a></h1>
-		<div class="header_search">
-			<i class="ic ic_search"></i>
-			<input type="search" id="keyword" placeholder="검색어를 입력해주세요.">
-		</div>
-	</header>
-	<!-- //#header -->
-
-	<!-- #main -->
-	<main id="container" class="is_header is_gnb">
-
-		<!-- #section -->
-		<section>
+		<!-- #header -->
+		<header id="header" class="header is-bg is-mypage">
 			<div class="inner">
-				<!-- .cont_item -->
-				<div class="cont_item">
-					<div class="cont_body">
-						<div class="card_box">
-							<a href="javascript:;">
-								<!-- .profile_item -->
-								<div class="profile_item">
-									<div class="profile_thumb">
-										<figure class="profile_img" style="background-image: url('../../assets/data/thum_profile1.jpg')"></figure>
-									</div>
-									<div>
-										<h3 class="profile_name">트렌드제이</h3>
-										<p class="txt">프로필 수정</p>
-									</div>
-									<i class="ic ic_move"></i>
-								</div>
-								<!-- //.profile_item -->
-							</a>
-						</div>
-					</div>
-				</div>
-				<!-- //.cont_item -->
-				<!-- .cont_item -->
-				<div class="cont_item">
-					<div class="cont_head">
-						<div class="tit_group in_icon">
-							<i class="ic ic_shop"></i>
-							<h3 class="tit_em">업체 비즈프로필 만들기</h3>
-							<p class="txt_em">(딜 작성시 필요합니다.)</p>
-							<button type="button" class="btn btn_link"><i class="ic ic_move"></i></button>
-						</div>
-					</div>
-					<div class="cont_body">
-						<div class="card_box mt15">
-							<div class="link_list">
-								<a href="javascript:;" class="link_item"><span>서비스 이용약관</span><i class="ic ic_move"></i></a>
-								<a href="javascript:;" class="link_item"><span>개인정보 취급방침</span><i class="ic ic_move"></i></a>
-								<a href="javascript:;" class="link_item"><span>로그아웃</span><i class="ic ic_move"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- //.cont_item -->
+				<h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
+				<h2 class="sr-only">마이페이지</h2>
+				<button class="btn btn-close-white"><i class="ic ic-close-white"></i><span class="sr-only">닫기</span></button>
 			</div>
-		</section>
-		<!-- //#section -->
+		</header>
+		<!-- //#header -->
 
-	</main>
-	<!-- //#main -->
+		<!-- #main -->
+		<main id="container" class="is-mypage">
+			
+			<!-- #section -->
+			<section class="fixed-top">
+				<div class="my-info">
+					<h3 class="name">홍길동 기사님</h3>
+					<p class="company">서울 12가 3456 - 운송업체</p>
+					<p class="store">GS리테일점</p>
+					<ul class="status">
+						<li>
+							<span class="case">전체</span>
+							<span class="count"><em class="num">12</em>건</span>
+						</li>
+						<li>
+							<span class="case">완료</span>
+							<span class="count"><em class="num">6</em>건</span>
+						</li>
+						<li>
+							<span class="case">잔여</span>
+							<span class="count"><em class="num">6</em>건</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //#section -->
 
-	<!-- #gnb -->
-	<nav id="gnb">
-		<div class="gnb_menu">
-			<button type="button" class="btn btn_gnb"><i class="ic ic_gnb_home"></i><span>홈</span></button><!-- //매뉴 선택 활성화 시 class="btn btn_gnb"에 'is_active' 클래스 추가 -->
-			<button type="button" class="btn btn_gnb"><i class="ic ic_gnb_deal"></i><span>천원딜</span></button>
-			<button type="button" class="btn btn_gnb"><i class="ic ic_gnb_shortcut"></i><span class="sr_only">바로가기</span></button>
-			<button type="button" class="btn btn_gnb"><i class="ic ic_gnb_scrap"></i><span>찜</span></button>
-			<button type="button" class="btn btn_gnb is_active"><i class="ic ic_gnb_mypage"></i><span>마이페이지</span></button>
-		</div>
-	</nav>
-	<!-- //#gnb -->
+			<!-- #section -->
+			<section class="content">
+				<div class="inner">
 
-	<!-- #footer -->
-	<footer id="footer">
-		<p class="copyright">Copyright ⓒ 2022 GS Supermarket. All rights reserved.</p>
-	</footer>
-	<!-- //#footer -->
 
-</div>
+
+
+
+
+
+
+
+
+				
+				</div>
+			</section>
+			<!-- //#section -->
+
+		</main>
+		<!-- //#main -->
+		
+	</div>
+	<!-- //#wrap -->
 </body>
 </html>

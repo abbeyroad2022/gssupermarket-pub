@@ -1,77 +1,112 @@
 @charset "utf-8";
 /* ================================== Ui ================================== */
+
+// tag
+.tag {
+	display: inline-block;
+	width: rem(52);
+	height: rem(20);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	&-type1 {
+		background-image: url("../img/tag-type1.svg");
+	} /* 일반배송 */
+	&-type2 {
+		background-image: url("../img/tag-type2.svg");
+	} /* 사전예약 */
+	&-type3 {
+		background-image: url("../img/tag-type3.svg");
+	} /* 퀵커머스 */
+	&-type4 {
+		background-image: url("../img/tag-type4.svg");
+	} /* 점포몰 */
+}
+
+// total-count
+.total-count {
+	margin: 0 rem(24) rem(10);
+	text-align: right;
+	font-family: $en-font-family;
+	font-size: rem(14);
+	font-weight: 500;
+	border-bottom: rem(1) solid $color-black;
+	background-color: $color-white;
+}
+
+
 // profile item
-.profile_item {
-	@include flexbox;
-	@include align-items(center);
-	padding: rem(10px) rem(16px);
-	background-color: #FFF;
-	.btn_interest {
-		margin-left: auto;
-	}
-	&.shop {
-		padding-top: rem(14px);
-		padding-bottom: rem(6px);
-	}
-	&.detail {
-		padding-top: rem(14px);
-		padding-bottom: rem(14px);
-	}
-}
-.profile_thumb {
-	position: relative;
-	width: rem(40px);
-	min-width: rem(40px);
-	height: rem(40px);
-	border-radius: 50%;
-	background: #EBE2E0 url('../../assets/img/noprofile@2x.png') no-repeat center / cover;
-	overflow: hidden;
-	.profile_img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		img {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			object-fit: cover;
-		}
-	}
-}
-.profile_name {
-	margin-left: rem(10px);
-	padding-right: rem(8px);
-	font-size: rem(14px);
-	font-weight: 700;
-	line-height: 1.5;
-	@include multiline-ellipsis(1.5);
-}
-.profile_txt {
-	margin-left: rem(10px);
-	padding-right: rem(8px);
-	font-size: rem(14px);
-	line-height: 1.5;
-}
-.profile_tel {
-	color: #666;
-	font-size: rem(14px);
-	margin-left: auto;
-	white-space: nowrap;
-}
-.profile_date {
-	color: #666;
-	font-size: rem(12px);
-	margin-left: auto;
-	padding-left: rem(8px);
-	white-space: nowrap;
-}
+// .profile_item {
+// 	@include flexbox;
+// 	@include align-items(center);
+// 	padding: rem(10px) rem(16px);
+// 	background-color: #FFF;
+// 	.btn_interest {
+// 		margin-left: auto;
+// 	}
+// 	&.shop {
+// 		padding-top: rem(14px);
+// 		padding-bottom: rem(6px);
+// 	}
+// 	&.detail {
+// 		padding-top: rem(14px);
+// 		padding-bottom: rem(14px);
+// 	}
+// }
+// .profile_thumb {
+// 	position: relative;
+// 	width: rem(40px);
+// 	min-width: rem(40px);
+// 	height: rem(40px);
+// 	border-radius: 50%;
+// 	background: #EBE2E0 url('../../assets/img/noprofile@2x.png') no-repeat center / cover;
+// 	overflow: hidden;
+// 	.profile_img {
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		background-repeat: no-repeat;
+// 		background-position: center;
+// 		background-size: cover;
+// 		img {
+// 			position: absolute;
+// 			width: 100%;
+// 			height: 100%;
+// 			top: 0;
+// 			left: 0;
+// 			object-fit: cover;
+// 		}
+// 	}
+// }
+// .profile_name {
+// 	margin-left: rem(10px);
+// 	padding-right: rem(8px);
+// 	font-size: rem(14px);
+// 	font-weight: 700;
+// 	line-height: 1.5;
+// 	@include multiline-ellipsis(1.5);
+// }
+// .profile_txt {
+// 	margin-left: rem(10px);
+// 	padding-right: rem(8px);
+// 	font-size: rem(14px);
+// 	line-height: 1.5;
+// }
+// .profile_tel {
+// 	color: #666;
+// 	font-size: rem(14px);
+// 	margin-left: auto;
+// 	white-space: nowrap;
+// }
+// .profile_date {
+// 	color: #666;
+// 	font-size: rem(12px);
+// 	margin-left: auto;
+// 	padding-left: rem(8px);
+// 	white-space: nowrap;
+// }
 
 // applicant
 .applicant {

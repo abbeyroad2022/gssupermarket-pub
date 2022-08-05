@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* ================================== Delivery  ================================== */
+.delivery-info {
+	display: flex;
+	align-items: center;
+	min-height: rem(68);
+	margin: 0 rem(24) rem(12);
+	padding: rem(12) rem(16);
+	line-height: 1.24;
+	background-color: $color-white;
+	.company {
+		margin-right: rem(16);
+		text-align: left;
+		font-weight: 300;
+		strong {
+			font-weight: 700;
+		}
+	}
+	.store {
+		margin-left: auto;
+		text-align: right;
+		i {
+			font-family: $en-font-family;
+			font-weight: 700;
+		}
+	}
+}
