@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+    <defs>
+        <filter id="m9z2sf9uka" x="0" y="0" width="31" height="31" filterUnits="userSpaceOnUse">
+            <feOffset dx="1" dy="1"/>
+            <feGaussianBlur result="blur"/>
+            <feFlood flood-color="#161b1d" flood-opacity=".259"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="filter:url(#m9z2sf9uka)">
+        <g data-name="타원 2125" style="stroke:#c8d265;fill:#fff">
+            <circle cx="15" cy="15" r="15" style="stroke:none"/>
+            <circle cx="15" cy="15" r="14.5" style="fill:none"/>
+        </g>
+    </g>
+    <g data-name="btn_more">
+        <g data-name="사각형 7241" transform="translate(13 12)" style="stroke:#181e3c;fill:none">
+            <rect width="5" height="12" rx="2.5" style="stroke:none"/>
+            <rect x=".5" y=".5" width="4" height="11" rx="2" style="fill:none"/>
+        </g>
+        <g data-name="사각형 7242" transform="translate(13 6)" style="fill:none;stroke:#c8d265">
+            <rect width="5" height="5" rx="2.5" style="stroke:none"/>
+            <rect x=".5" y=".5" width="4" height="4" rx="2" style="fill:none"/>
+        </g>
+    </g>
+</svg>
