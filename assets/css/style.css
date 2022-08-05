@@ -229,7 +229,7 @@ section.fixed-top { position: fixed; z-index: 2; }
 .content .inner.pt0 { padding-top: 0; }
 
 /* ================================== Button ================================== */
-.btn { display: flex; align-items: center; justify-content: center; flex-grow: 1; border: 0; padding: 0.375rem; font-weight: 500; border-radius: 0.375rem; transition: .4s; }
+.btn { display: flex; align-items: center; justify-content: center; border: 0; padding: 0.375rem; font-weight: 500; border-radius: 0.375rem; transition: .4s; }
 
 .btn.btn-inline { display: inline-flex; }
 
