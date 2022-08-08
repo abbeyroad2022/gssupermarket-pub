@@ -26,8 +26,8 @@
         <h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
         <h2 class="title">배송현황</h2>
         <div class="btn-group-row">
-          <button class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
-          <button class="btn btn-mypage"><i class="ic ic-mypage"></i><span class="sr-only">마이페이지</span></button>
+          <button type="button" class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
+          <button type="button" class="btn btn-mypage"><i class="ic ic-mypage"></i><span class="sr-only">마이페이지</span></button>
         </div>
       </div>
     </header>
@@ -66,26 +66,27 @@
         </div>
         <!-- //.sort-group -->
         <!-- .total-count -->
-        <p class="total-count">2/12</p>
+        <p class="inner total-count"><span>2/12</span></p>
         <!-- //.total-count -->
       </section>
       <!-- //#section -->
 
       <!-- #section -->
-      <section class="content">
+      <section class="content is-floating">
+        <!-- floating buttton 사용시 .is-floating 적용 -->
         <div class="inner pt0">
 
           <!-- card -->
           <div class="card">
-            <div class="card-box">
+            <div class="card-box is-active is-delete">
               <div class="card-head">
                 <h3 class="name">홍*동</h3>
                 <span class="tag tag-type1"><span class="sr-only">일반배송</span></span>
                 <div class="btn-group-row">
-                  <button class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
-                  <button class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
-                  <button class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
-                  <button class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+                  <a href="http://www.naver.com" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
                 </div>
               </div>
               <div class="card-body">
@@ -98,6 +99,34 @@
                   <p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
                 </div>
               </div>
+              <i class="card-area"></i>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box is-active">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+                  <button type="button" class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                  <p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
+                </div>
+              </div>
+              <i class="card-area"></i>
             </div>
           </div>
 
@@ -108,10 +137,10 @@
                 <h3 class="name">홍*동</h3>
                 <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
                 <div class="btn-group-row">
-                  <button class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
-                  <button class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
-                  <button class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
-                  <button class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+                  <button type="button" class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
                 </div>
               </div>
               <div class="card-body">
@@ -124,9 +153,126 @@
                   <p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
                 </div>
               </div>
+              <i class="card-area"></i>
             </div>
           </div>
 
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+                  <button type="button" class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                  <p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
+                </div>
+              </div>
+              <i class="card-area"></i>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+                  <button type="button" class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                  <p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
+                </div>
+              </div>
+              <i class="card-area"></i>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+                  <button type="button" class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                  <p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
+                </div>
+              </div>
+              <i class="card-area"></i>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-info"><i class="ic ic-info"></i><span class="sr-only">배송상태변경</span></button>
+                  <button type="button" class="btn btn-phone"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></button>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                  <p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
+                </div>
+              </div>
+              <i class="card-area"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="inner floating-btm">
+          <!-- .btn-group-col -->
+          <div class="btn-group-col">
+            <button type="button" class="btn btn-primary"><span>배송진행</span></button>
+          </div>
+          <!-- //.btn-group-col -->
         </div>
       </section>
       <!-- //#section -->
