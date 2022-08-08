@@ -261,7 +261,7 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .btn-back, .btn-refresh, .btn-mypage, .btn-close-white { width: 2.5rem; height: 2.5rem; padding: 0; }
 
-.btn-receipt, .btn-info, .btn-phone, .btn-location { width: 1.875rem; height: 1.875rem; padding: 0; border: 0.0625rem solid #e3e3e3; border-radius: 50%; box-shadow: 0.0625rem 0.0625rem 0 0 rgba(22, 27, 29, 0.24); overflow: hidden; }
+.btn-receipt, .btn-info, .btn-phone, .btn-location { width: 1.875rem; height: 1.875rem; padding: 0; border: 0.0625rem solid #e3e3e3; border-radius: 50%; box-shadow: 0.0625rem 0.0625rem 0 0 rgba(22, 27, 29, 0.24); }
 
 [class^="btn-group-"] { display: flex; align-items: center; }
 
@@ -304,13 +304,15 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .ic-etc { width: 1.25rem; height: 1.25rem; background-color: #f6f6f6; }
 
-.ic-receipt { width: 1.75rem; height: 1.75rem; background-image: url(../../assets/img/ic-receipt@3x.png); }
+.ic-receipt, .ic-info, .ic-phone, .ic-location { width: 1.75rem; height: 1.75rem; border-radius: 50%; }
 
-.ic-info { width: 1.75rem; height: 1.75rem; background-image: url(../../assets/img/ic-info@3x.png); }
+.ic-receipt { background-image: url(../../assets/img/ic-receipt@3x.png); }
 
-.ic-phone { width: 1.75rem; height: 1.75rem; background-image: url(../../assets/img/ic-phone@3x.png); }
+.ic-info { background-image: url(../../assets/img/ic-info@3x.png); }
 
-.ic-location { width: 1.75rem; height: 1.75rem; background-image: url(../../assets/img/ic-location@3x.png); }
+.ic-phone { background-image: url(../../assets/img/ic-phone@3x.png); }
+
+.ic-location { background-image: url(../../assets/img/ic-location@3x.png); }
 
 /* ================================== Tab ================================== */
 .tab-group { background-color: #0e563c; }
