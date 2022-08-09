@@ -26,8 +26,8 @@
         <h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
         <h2 class="title">배송현황</h2>
         <div class="btn-group-row">
-          <button class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
-          <button class="btn btn-mypage"><i class="ic ic-mypage"></i><span class="sr-only">마이페이지</span></button>
+          <button type="button" class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
+          <button type="button" class="btn btn-mypage"><i class="ic ic-mypage"></i><span class="sr-only">마이페이지</span></button>
         </div>
       </div>
     </header>
@@ -48,9 +48,9 @@
         <!-- .tab-group -->
         <div class="tab-group">
           <ul class="tab-list col3">
-            <li class="tab-item"><a href="javascript:vold(0)" class="tab"><span>대기</span><i class="case-num">999</i></a></li>
-            <li class="tab-item is-active"><a href="javascript:vold(0)" class="tab"><span>진행</span><i class="case-num">06</i></a></li>
-            <li class="tab-item"><a href="javascript:vold(0)" class="tab"><span>완료</span><i class="case-num">00</i></a></li>
+            <li class="tab-item is-active"><button type="button" class="tab"><span>대기</span><i class="case-num">999</i></button></li>
+            <li class="tab-item"><button type="button" class="tab"><span>진행</span><i class="case-num">06</i></button></li>
+            <li class="tab-item"><button type="button" class="tab"><span>완료</span><i class="case-num">00</i></button></li>
           </ul>
         </div>
         <!-- //.tab-group -->
@@ -72,9 +72,9 @@
       <!-- //#section -->
 
       <!-- #section -->
-      <section class="content is-floating is-select is-drag">
-        <!-- floating buttton 사용시 .is-floating 적용, is-select: 선택 기능 사용, is-deag: 삭제 기능 사용 -->
-        <div class="inner card-list">
+      <section class="content is-floating is-select">
+        <!-- floating buttton 사용시 .is-floating 적용, is-select: 선택 기능 사용 -->
+        <div class="inner pt0">
 
           <!-- card -->
           <div class="card">
@@ -102,7 +102,6 @@
               </div>
               <i class="card-area"></i>
             </div>
-            <button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>
           </div>
 
           <!-- card -->
@@ -131,7 +130,6 @@
               </div>
               <i class="card-area"></i>
             </div>
-            <button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>
           </div>
 
           <!-- card -->
@@ -160,7 +158,6 @@
               </div>
               <i class="card-area"></i>
             </div>
-            <button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>
           </div>
 
           <!-- card -->
@@ -189,7 +186,6 @@
               </div>
               <i class="card-area"></i>
             </div>
-            <button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>
           </div>
 
         </div>
@@ -197,7 +193,8 @@
         <div class="inner floating-btm">
           <!-- .btn-group-col -->
           <div class="btn-group-col">
-            <button type="button" class="btn btn-primary" disabled><span>계획수립</span></button>
+            <button type="button" class="btn btn-primary"><span>배송진행</span></button>
+            <button type="button" class="btn btn-primary" id="bottomSheetOpen"><span>팝업오픈</span></button>
           </div>
           <!-- //.btn-group-col -->
         </div>
@@ -206,6 +203,72 @@
 
     </main>
     <!-- //#main -->
+
+
+
+
+    <!-- .bottom_sheet -->
+    <div class="bottom_sheet is_active" id="bottomSheet">
+      <div class="inner">
+        <!-- .cont_item -->
+        <div class="cont_item">
+          <div class="cont_head">
+            <h3 class="tit">#쇼딜가로 구매하기</h3>
+          </div>
+          <div class="cont_body">
+            <!-- .profile_join -->
+            <div class="profile_join">
+              <div class="profile_thumb">
+                <figure class="profile_img" style="background-image: url('../../assets/data/thum_profile3.jpg')"></figure>
+              </div>
+              <i class="ic ic_plus"></i>
+              <div class="profile_thumb">
+                <figure class="profile_img" style="background-image: url('../../assets/data/thum_profile7.jpg')"></figure>
+              </div>
+            </div>
+            <!-- //.profile_join -->
+            <!---- 카톡채널형// ---->
+            <!-- .field_item -->
+            <div class="field_item">
+              <div class="control">
+                <label class="custom_check" for="">
+                  <input type="checkbox" id="" checked>
+                  <i class="mark"></i>
+                  <span class="label_txt">채널 추가시 이벤트 알림을 카카오톡, 메시지로 받아볼 수 있습니다.</span>
+                </label>
+              </div>
+            </div>
+            <!-- //.field_item -->
+            <!---- //카톡채널형 ---->
+            <p class="txt_guide mt5">프로필 사진/닉네임을 공개하여 서비스 영역에 노출합니다.</p>
+          </div>
+        </div>
+        <!-- //.cont_item -->
+        <!-- .btn_group_col -->
+        <div class="btn_group_col">
+          <button type="button" class="btn btn_yellow btn_xl"><span>다음</span></button>
+        </div>
+        <!-- //.btn_group_col -->
+        <!-- .btn_close -->
+        <button class="btn btn_close" id="bottomSheetClose"><i class="ic ic_close"></i><span class="sr_only">닫기</span></button>
+        <!-- //.btn_close -->
+      </div>
+    </div>
+    <!-- //bottom_sheet -->
+
+    <!-- .toast -->
+    <div class="toast is_active" id="toast">
+      <div class="inner">
+        <p>주말 깜짝 할인쿠폰! 주말 쇼핑혜택</p>
+        <button type="button" class="btn btn_del" id="toastClose">
+          <i class="ic ic_del"></i><span class="sr_only">삭제</span>
+        </button>
+      </div>
+    </div>
+    <!-- //toast -->
+
+
+
 
   </div>
   <!-- //#wrap -->
