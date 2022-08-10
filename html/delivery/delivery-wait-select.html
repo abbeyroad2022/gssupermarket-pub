@@ -85,7 +85,7 @@
                 <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
                 <span class="tag tag-type1"><span class="sr-only">일반배송</span></span>
                 <div class="btn-group-row">
-                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
                   <a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
                   <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
                 </div>
@@ -113,7 +113,7 @@
                 <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
                 <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
                 <div class="btn-group-row">
-                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
                   <a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
                   <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
                 </div>
@@ -140,7 +140,7 @@
                 <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
                 <span class="tag tag-type3"><span class="sr-only">퀵커머스</span></span>
                 <div class="btn-group-row">
-                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
                   <a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
                   <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
                 </div>
@@ -167,7 +167,7 @@
                 <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
                 <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
                 <div class="btn-group-row">
-                  <button type="button" class="btn btn-receipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
                   <a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
                   <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
                 </div>
@@ -199,6 +199,48 @@
 
     </main>
     <!-- //#main -->
+
+    <!-- .full-popup -->
+    <!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
+    <div class="full-popup pop-receipt" id="popReceipt">
+      <div class="inner">
+        <!-- .receipt-wrap -->
+        <div class="receipt-wrap">
+          <div class="pop-head">
+            <h3 class="logo"><i class="logo-img"><span class="sr-only">GS THE FLASH</span></i><span class="logo-txt">배달 접수증</span></h3>
+          </div>
+          <div class="pop-body">
+            <dl class="receipt-info">
+              <dt>배달 접수증</dt>
+              <dd><span class="date">2022.08.02</span><i class="line"></i><span class="detail">0002 - 1</span></dd>
+              <dt>접수시간</dt>
+              <dd><span class="date">2022.08.02</span><i class="line"></i><span class="detail">10:22</span></dd>
+              <dt>배달약속시간</dt>
+              <dd><span class="date">2022.08.02</span><i class="line"></i><span class="detail">11:5</span></dd>
+            </dl>
+            <p class="product-info"><strong>상품내역</strong><span><em>1</em> 박스</span></p>
+            <ul class="product-list">
+              <li><span class="name">유어스) 지리산 맑은 샘물 2L 유어스) 지리산 맑은 샘물 2L</span><span class="num">99</span><span class="price">999,999</li>
+							<li><span class="name">농심) 양파링(신) 84g</span><span class="num">1</span><span class="price">1,305</li>
+							<li><span class="name">친환경) 상해유기농요구르</span><span class="num">1</span><span class="price">3,400</li>
+							<li><span class="name">유어스) 지리산 맑은 샘물 2L</span><span class="num">5</span><span class="price">12,000</li>
+							<li><span class="name">농심) 양파링(신) 84g</span><span class="num">1</span><span class="price">1,305</li>
+							<li><span class="name">친환경) 상해유기농요구르</span><span class="num">1</span><span class="price">3,400</li>
+							<li><span class="name">유어스) 지리산 맑은 샘물 2L</span><span class="num">5</span><span class="price">12,000</li>
+							<li><span class="name">농심) 양파링(신) 84g</span><span class="num">1</span><span class="price">1,305</li>
+							<li><span class="name">친환경) 상해유기농요구르</span><span class="num">1</span><span class="price">3,400</li>
+						</ul>
+						<!-- .btn-group-col -->
+						<div class="btn-group-col">
+							<button type="button" class="btn btn-pop-primary popup-close"><span>닫기</span></button>
+          </div>
+          <!-- //.btn-group-col -->
+        </div>
+      </div>
+      <!-- //.receipt-wrap -->
+    </div>
+  </div>
+  <!-- //.full-popup -->
 
   </div>
   <!-- //#wrap -->

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+  <!-- mobile automatic link removal -->
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+  <title>GS THE FLASH 모바일 통합운영 시스템</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../../assets/libs/pretty/pretty.css">
+  <style>
+    xmp {
+      margin: 0;
+      padding: 0;
+      white-space: pre-wrap;
+      font-family: inherit
+    }
+
+    xmp .tag {
+      width: auto;
+    }
+
+    .coding_guide .h1_guide {
+      margin-bottom: 15px;
+      padding: 7px 0 12px 10px;
+      background: #0e563c;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .coding_guide .h2_guide {
+      margin: 20px 0 10px 20px;
+      color: #000;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .coding_guide .guide_wrap,
+    .coding_guide .code_wrap {
+      position: relative;
+      width: 100%;
+      padding: 0 20px 10px 20px;
+      box-sizing: border-box;
+    }
+
+    .coding_guide .d_desc {
+      padding: 9px;
+      border: 1px dashed #bdbfc2;
+      background: #f5f5f5;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .coding_guide .d_desc.code {
+      padding: 0;
+    }
+
+    .coding_guide .d_desc .num_list {
+      padding-left: 20px;
+      list-style-type: decimal;
+    }
+
+    .coding_guide .d_desc .num_list li {
+      padding: 0 0 5px 0;
+    }
+
+    .coding_guide ol.linenums {
+      padding: 20px 0 0;
+    }
+
+    .coding_guide .t_point {
+      margin: 0 0 7px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+  </style>
+  <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrap" class="coding_guide">
+
+    <h1 class="h1_guide">Popup</h1>
+
+    <h2 class="h2_guide">full popup</h2>
+    <div class="guide_wrap">
+      <div class="btn-group-col">
+        <button type="button" class="btn btn-pop-primary popup-open" data-popup="fullPopup"><span>팝업 오픈</span></button>
+      </div>
+      <!-- .full-popup -->
+      <!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
+      <div class="full-popup" id="fullPopup">
+        <div class="inner">
+          <div class="pop-head">
+            <h3 class="tit">팝업 타이틀</h3>
+          </div>
+          <div class="pop-body">
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+          </div>
+          <!-- .btn-group-col -->
+          <div class="btn-group-col">
+            <button type="button" class="btn btn-pop-secondary popup-close"><span>닫기</span></button>
+          </div>
+          <!-- //.btn-group-col -->
+        </div>
+      </div>
+      <!-- //.full-popup -->
+    </div>
+    <div class="code_wrap">
+      <!-- code// -->
+      <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+          <div class="btn-group-col">
+            <button type="button" class="btn btn-pop-primary popup-open" data-popup="fullPopup"><span>팝업 오픈</span></button>
+          </div>
+          <!-- .full-popup -->
+          <!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
+          <div class="full-popup" id="fullPopup">
+            <div class="inner">
+              <div class="pop-head">
+                <h3 class="tit">팝업 타이틀</h3>
+              </div>
+              <div class="pop-body">
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+                팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 <br>
+              </div>
+              <!-- .btn-group-col -->
+              <div class="btn-group-col">
+                <button type="button" class="btn btn-pop-secondary popup-close"><span>닫기</span></button>
+              </div>
+              <!-- //.btn-group-col -->
+            </div>
+          </div>
+          <!-- //.full-popup -->
+        </xmp>
+      </div>
+      <!-- //code -->
+    </div>
+
+    <h2 class="h2_guide">bottom sheet</h2>
+    <div class="guide_wrap">
+      <div class="btn-group-col">
+        <button type="button" class="btn btn-pop-primary popup-open" data-popup="bottomSheet"><span>팝업 오픈</span></button>
+      </div>
+      <!-- .bottom-sheet -->
+      <div class="bottom-sheet" id="bottomSheet">
+        <div class="inner">
+          <div class="pop-head">
+            <h3 class="tit">팝업 타이틀</h3>
+          </div>
+          <div class="pop-body">
+            <p class="alert-msg">팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용</p>
+          </div>
+          <!-- .btn-group-row -->
+          <div class="btn-group-row btn-half">
+            <button type="button" class="btn btn-pop-secondary popup-close"><span>취소</span></button>
+            <button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
+          </div>
+          <!-- //.btn-group-row -->
+        </div>
+      </div>
+      <i class="modal-dim"></i>
+      <!-- //bottom-sheet -->
+    </div>
+    <div class="code_wrap">
+      <!-- code// -->
+      <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+          <div class="btn-group-col">
+            <button type="button" class="btn btn-primary popup-open" data-popup="bottomSheet"><span>배송진행</span></button>
+          </div>
+          <!-- .bottom-sheet -->
+          <div class="bottom-sheet" id="bottomSheet">
+            <div class="inner">
+              <div class="pop-head">
+                <h3 class="tit">팝업 타이틀</h3>
+              </div>
+              <div class="pop-body">
+                <p class="alert-msg">팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용</p>
+              </div>
+              <!-- .btn-group-row -->
+              <div class="btn-group-row btn-half">
+                <button type="button" class="btn btn-pop-secondary popup-close"><span>취소</span></button>
+                <button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
+              </div>
+              <!-- //.btn-group-row -->
+            </div>
+          </div>
+          <i class="modal-dim"></i>
+          <!-- //bottom-sheet -->
+        </xmp>
+      </div>
+      <!-- //code -->
+    </div>
+
+  </div>
+  <script type="text/javascript" src="../../assets/libs/pretty/pretty.js"></script>
+  <script type="text/javascript" src="../../assets/js/ui.js"></script>
+</body>
+
+</html>
