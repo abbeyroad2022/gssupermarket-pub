@@ -148,8 +148,86 @@
       </section>
       <!-- //#section -->
 
+      <div id="floating-filter">
+        <button type="button" class="btn btn-filter popup-open" data-popup="popFilter"><i class="ic ic-filter"></i><span class="sr-only">필터 설정</span></button>
+      </div>
+
     </main>
     <!-- //#main -->
+
+    <!-- .bottom-sheet -->
+    <div class="bottom-sheet" id="popFilter">
+      <div class="inner">
+        <div class="pop-head">
+          <h3 class="tit">필터</h3>
+        </div>
+        <div class="pop-body">
+          <!-- .field-item -->
+          <div class="field-item">
+            <p class="label">점포별</p>
+            <div class="control">
+              <div class="choice-group">
+                <label class="custom-check btn-type primary" for="checkF1">
+                  <input type="checkbox" id="checkF1" name="checkF" checked>
+                  <span class="label-txt">전체</span>
+                </label>
+                <label class="custom-check btn-type primary" for="checkF2">
+                  <input type="checkbox" id="checkF2" name="checkF">
+                  <span class="label-txt">사전예약</span>
+                </label>
+                <label class="custom-check btn-type primary" for="checkF3">
+                  <input type="checkbox" id="checkF3" name="checkF">
+                  <span class="label-txt">퀵커머스</span>
+                </label>
+                <label class="custom-check btn-type primary" for="checkF4">
+                  <input type="checkbox" id="checkF4" name="checkF">
+                  <span class="label-txt">점포몰</span>
+                </label>
+                <label class="custom-check btn-type primary" for="checkF5">
+                  <input type="checkbox" id="checkF5" name="checkF">
+                  <span class="label-txt">일반배송</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- //.field_item -->
+          <!-- .field-item -->
+          <div class="field-item mgt30">
+            <p class="label">정렬방식</p>
+            <div class="control">
+              <div class="choice-group col2">
+                <label class="custom-radio btn-type primary" for="radioD1">
+                  <input type="radio" id="radioD1" name="radioD">
+                  <span class="label-txt">거리순(오름차순)</span>
+                </label>
+                <label class="custom-radio btn-type primary" for="radioD2">
+                  <input type="radio" id="radioD2" name="radioD" checked>
+                  <span class="label-txt">거리순(내림차순)</span>
+                </label>
+                <label class="custom-radio btn-type primary" for="radioD3">
+                  <input type="radio" id="radioD3" name="radioD">
+                  <span class="label-txt">배송요청시간(오름차순)</span>
+                </label>
+                <label class="custom-radio btn-type primary" for="radioD4">
+                  <input type="radio" id="radioD4" name="radioD">
+                  <span class="label-txt">배송요청시간(내림차순)</span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <!-- //.field_item -->
+        </div>
+        <!-- .btn-group-row -->
+        <div class="btn-group-row btn-half">
+          <button type="reset" class="btn btn-pop-secondary"><span>초기화</span></button>
+          <button type="button" class="btn btn-pop-primary popup-close"><span>적용</span></button>
+        </div>
+        <!-- //.btn-group-row -->
+      </div>
+    </div>
+    <i class="modal-dim"></i>
+    <!-- //bottom-sheet -->
 
   </div>
   <!-- //#wrap -->

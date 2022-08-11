@@ -247,105 +247,72 @@
   <!-- //.full-popup -->
 
   <!-- .bottom-sheet -->
-  <div class="bottom-sheet is-active" id="popFilter">
+  <div class="bottom-sheet" id="popFilter">
     <div class="inner">
       <div class="pop-head">
         <h3 class="tit">필터</h3>
       </div>
       <div class="pop-body">
-
-        <!-- //.field_group -->
-        <div class="field_group">
-
-
-          <!-- .field_item -->
-          <div class="field_item">
-            <label for="" class="label">input</label>
-            <div class="control">
-              <input type="text" id="" placeholder="">
+        <!-- .field-item -->
+        <div class="field-item">
+          <p class="label">점포별</p>
+          <div class="control">
+            <div class="choice-group">
+              <label class="custom-check btn-type primary" for="checkF1">
+                <input type="checkbox" id="checkF1" name="checkF" checked>
+                <span class="label-txt">전체</span>
+              </label>
+              <label class="custom-check btn-type primary" for="checkF2">
+                <input type="checkbox" id="checkF2" name="checkF">
+                <span class="label-txt">사전예약</span>
+              </label>
+              <label class="custom-check btn-type primary" for="checkF3">
+                <input type="checkbox" id="checkF3" name="checkF">
+                <span class="label-txt">퀵커머스</span>
+              </label>
+              <label class="custom-check btn-type primary" for="checkF4">
+                <input type="checkbox" id="checkF4" name="checkF">
+                <span class="label-txt">점포몰</span>
+              </label>
+              <label class="custom-check btn-type primary" for="checkF5">
+                <input type="checkbox" id="checkF5" name="checkF">
+                <span class="label-txt">일반배송</span>
+              </label>
             </div>
           </div>
-          <!-- //.field_item -->
-          <!-- .field_item -->
-          <div class="field_item">
-            <label for="" class="label">input + text</label>
-            <div class="control">
-              <input type="text" id="">
-              <span class="txt">text</span>
-            </div>
-          </div>
-          <!-- //.field_item -->
-          <!-- .field_item -->
-          <div class="field_item">
-            <p class="label">radio</p>
-            <div class="control">
-              <div class="choice_group">
-                <label class="custom_radio" for="">
-                  <input type="radio" id="" checked>
-                  <i class="mark"></i>
-                  <span class="label_txt">radio</span>
-                </label>
-                <label class="custom_radio" for="">
-                  <input type="radio" id="">
-                  <i class="mark"></i>
-                  <span class="label_txt">radio</span>
-                </label>
-                <label class="custom_radio" for="">
-                  <input type="radio" id="">
-                  <i class="mark"></i>
-                  <span class="label_txt">radio</span>
-                </label>
-              </div>
-              <!-- //.choice_group -->
-            </div>
-          </div>
-          <!-- //.field_item -->
-          <!-- .field_item -->
-          <div class="field_item">
-            <p class="label">check</p>
-            <div class="control">
-              <div class="choice_group">
-                <label class="custom_check" for="">
-                  <input type="checkbox" id="" checked>
-                  <i class="mark"></i>
-                  <span class="label_txt">check</span>
-                </label>
-                <label class="custom_check" for="">
-                  <input type="checkbox" id="">
-                  <i class="mark"></i>
-                  <span class="label_txt">check</span>
-                </label>
-                <label class="custom_check" for="">
-                  <input type="checkbox" id="">
-                  <i class="mark"></i>
-                  <span class="label_txt">check</span>
-                </label>
-              </div>
-              <!-- //.choice_group -->
-            </div>
-          </div>
-          <!-- //.field_item -->
-          <!-- .field_item -->
-          <div class="field_item">
-            <label for="" class="label">input + button</label>
-            <div class="control col">
-              <!-- .input_group -->
-              <div class="input_group auth">
-                <input type="text" id="">
-                <button type="button" class="btn btn_primary btn_sm"><span>버튼</span></button>
-              </div>
-              <!-- //.input_group -->
-            </div>
-          </div>
-          <!-- //.field_item -->
         </div>
-        <!-- //.field_group -->
+        <!-- //.field_item -->
+        <!-- .field-item -->
+        <div class="field-item mgt30">
+          <p class="label">정렬방식</p>
+          <div class="control">
+            <div class="choice-group col2">
+              <label class="custom-radio btn-type primary" for="radioD1">
+                <input type="radio" id="radioD1" name="radioD">
+                <span class="label-txt">거리순(오름차순)</span>
+              </label>
+              <label class="custom-radio btn-type primary" for="radioD2">
+                <input type="radio" id="radioD2" name="radioD" checked>
+                <span class="label-txt">거리순(내림차순)</span>
+              </label>
+              <label class="custom-radio btn-type primary" for="radioD3">
+                <input type="radio" id="radioD3" name="radioD">
+                <span class="label-txt">배송요청시간(오름차순)</span>
+              </label>
+              <label class="custom-radio btn-type primary" for="radioD4">
+                <input type="radio" id="radioD4" name="radioD">
+                <span class="label-txt">배송요청시간(내림차순)</span>
+              </label>
+            </div>
 
+          </div>
+        </div>
+        <!-- //.field_item -->
       </div>
       <!-- .btn-group-row -->
       <div class="btn-group-row btn-half">
-        <button type="button" class="btn btn-pop-secondary popup-close"><span>취소</span></button>
-        <button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
+        <button type="reset" class="btn btn-pop-secondary"><span>초기화</span></button>
+        <button type="button" class="btn btn-pop-primary popup-close"><span>적용</span></button>
       </div>
       <!-- //.btn-group-row -->
     </div>
