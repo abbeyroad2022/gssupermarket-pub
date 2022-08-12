@@ -1,27 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
-    <defs>
-        <filter id="m9z2sf9uka" x="0" y="0" width="31" height="31" filterUnits="userSpaceOnUse">
-            <feOffset dx="1" dy="1"/>
-            <feGaussianBlur result="blur"/>
-            <feFlood flood-color="#161b1d" flood-opacity=".259"/>
-            <feComposite operator="in" in2="blur"/>
-            <feComposite in="SourceGraphic"/>
-        </filter>
-    </defs>
-    <g style="filter:url(#m9z2sf9uka)">
-        <g data-name="타원 2125" style="stroke:#c8d265;fill:#fff">
-            <circle cx="15" cy="15" r="15" style="stroke:none"/>
-            <circle cx="15" cy="15" r="14.5" style="fill:none"/>
-        </g>
-    </g>
-    <g data-name="btn_more">
-        <g data-name="사각형 7241" transform="translate(13 12)" style="stroke:#181e3c;fill:none">
-            <rect width="5" height="12" rx="2.5" style="stroke:none"/>
-            <rect x=".5" y=".5" width="4" height="11" rx="2" style="fill:none"/>
-        </g>
-        <g data-name="사각형 7242" transform="translate(13 6)" style="fill:none;stroke:#c8d265">
-            <rect width="5" height="5" rx="2.5" style="stroke:none"/>
-            <rect x=".5" y=".5" width="4" height="4" rx="2" style="fill:none"/>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <path data-name="사각형 7245" style="fill:none;opacity:.1" d="M0 0h20v20H0z"/>
+    <path data-name="합치기 214" d="m9.213 13.85-1.2-1.02-1.221 1.021a.45.45 0 0 1-.575 0l-1.226-1.022-1.226 1.022a.45.45 0 0 1-.575 0l-1.226-1.022-1.227 1.022a.447.447 0 0 1-.286.1.461.461 0 0 1-.312-.124.445.445 0 0 1-.139-.321V1.964A1.966 1.966 0 0 1 1.964 0h9.082a1.965 1.965 0 0 1 1.963 1.964v4.602a.949.949 0 0 1-.017.315.449.449 0 0 1-.719.222l-.673-.561-.536-.442-1.083 1.133v6.272a.45.45 0 0 1-.462.45H9.5a.45.45 0 0 1-.287-.105zM5.278 11.9 6.5 12.92l1.231-1.02a.449.449 0 0 1 .575 0l.776.661V1.964A1.939 1.939 0 0 1 9.4.9H1.964A1.066 1.066 0 0 0 .9 1.964v10.582l.777-.648a.45.45 0 0 1 .288-.1.444.444 0 0 1 .287.1l1.225 1.022L4.7 11.9a.45.45 0 0 1 .575 0zm4.7-9.935v3.983l.773-.793a.449.449 0 0 1 .58 0l.776.648V1.964a1.064 1.064 0 1 0-2.129 0zm-3.222 8.711a.449.449 0 0 1 0-.9h.5a.449.449 0 1 1 0 .9zm-4.036 0a.449.449 0 0 1 0-.9h2.234a.449.449 0 0 1 0 .9zm0-2.271a.449.449 0 0 1 0-.9h4.541a.449.449 0 1 1 0 .9z" transform="translate(3.495 3.011)" style="fill:#2c2a29"/>
+    <path data-name="패스 92929" d="M2.708-4a1.441 1.441 0 0 0-.868-.48v-.6h-.517v.606A1.028 1.028 0 0 0 .434-3.4c0 1.092 1.589 1.03 1.589 1.735 0 .3-.167.46-.533.46a1.4 1.4 0 0 1-.862-.355l-.34.517a1.952 1.952 0 0 0 1.035.455v.585h.517v-.609a1.059 1.059 0 0 0 .92-1.108c0-1.171-1.589-1.072-1.589-1.72 0-.287.172-.434.481-.434a.931.931 0 0 1 .669.308z" transform="translate(7.1 9.994)" style="fill:#c8d265"/>
 </svg>

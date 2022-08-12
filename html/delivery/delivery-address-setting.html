@@ -205,7 +205,7 @@
     <!-- //#main -->
 
     <!-- .full-popup -->
-    <!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
+    <!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
     <div class="popup full-popup pop-receipt" id="popReceipt">
       <div class="inner">
         <!-- .receipt-wrap -->
@@ -247,6 +247,7 @@
   <!-- //.full-popup -->
 
   <!-- .bottom-sheet -->
+  <!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
   <div class="popup bottom-sheet" id="popFilter">
     <div class="inner">
       <div class="pop-head">
@@ -312,6 +313,45 @@
       <div class="btn-group-row btn-half">
         <button type="reset" class="btn btn-pop-secondary"><span>초기화</span></button>
         <button type="button" class="btn btn-pop-primary popup-close"><span>적용</span></button>
+      </div>
+      <!-- //.btn-group-row -->
+    </div>
+  </div>
+  <i class="modal-dim"></i>
+  <!-- //bottom-sheet -->
+
+  <!-- .bottom-sheet -->
+  <!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
+  <button type="button" class="popup-open hidden" data-popup="popAddressSetting"></button>
+  <div class="popup bottom-sheet is-active" id="popAddressSetting">
+    <div class="inner">
+      <div class="pop-head">
+        <h3 class="tit">주소보기 설정</h3>
+      </div>
+      <div class="pop-body">
+        <!-- .field-item -->
+        <div class="field-item">
+          <p class="label">보기편한 주소 방식을 선택해 주세요.</p>
+          <div class="control mgt20">
+            <div class="choice-group col2">
+              <label class="custom-radio" for="addressSetting1">
+                <input type="radio" id="addressSetting1" name="addressSetting" checked>
+                <i class="mark"></i>
+                <span class="label-txt">지번 주소</span>
+              </label>
+              <label class="custom-radio" for="addressSetting2">
+                <input type="radio" id="addressSetting2" name="addressSetting">
+                <i class="mark"></i>
+                <span class="label-txt">도로명 주소</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- //.field_item -->
+      </div>
+      <!-- .btn-group-row -->
+      <div class="btn-group-row btn-full">
+        <button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
       </div>
       <!-- //.btn-group-row -->
     </div>
