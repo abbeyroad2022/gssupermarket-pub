@@ -338,14 +338,39 @@
         <h3 class="tit">사진 첨부</h3>
       </div>
       <div class="pop-body">
-        <p class="tit">배송을 완료하셨나요? <br>배송 완료 사진을 첨부해주세요.</p>
-        <button type="button" class="btn btn-photo-upload"><i class="ic ic-photo"></i>사진업로드</button>
-        <p class="txt-guide center">*카메라를 아이콘을 선택하여 <br>배송 완료 사진을 촬영해 주세요.</p>
+        <p class="tit">카메라모양 아이콘을 선택하여 <br>배송완료 사진을 촬영해주세요</p>
+
+        <!-- .upload-item -->
+        <div class="upload-item">
+          <div class="upload-result">
+            <div class="upload-photo">
+              <img src="../../assets/img/thum-upload-photo@2x.png" class="upload-photo-img">
+            </div>
+            <p class="upload-photo-name"></p>
+            <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+          </div>
+          <!-- 첨부사진 미리보기 불가한 경우 사용 : 개발 적용 불필요시 삭제 -->
+          <!-- <div class="upload-result name-only">
+							<p class="upload-photo-name"></p>
+							<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+						</div> -->
+          <!-- [.control] 입력 오류/ 미입력: .is-error -->
+          <div class="control">
+            <div class="input-item">
+              <input type="file" id="photoUpload" class="input-photo-upload" accept="image/*" capture="camera">
+              <label for="photoUpload" class="btn btn-photo-upload"><i class="ic ic-photo"></i>사진업로드</label>
+            </div>
+            <p class="error-msg">배송완료 사진을 촬영해주세요</p>
+          </div>
+        </div>
+        <!-- //.upload-item -->
+
+        <p class="txt-guide center">*배달상품과 고객주소/호수가 <br>잘 보이게 촬영해 주시면 좋아요!</p>
       </div>
       <!-- .btn-group-row -->
       <div class="btn-group-row btn-half">
-        <button type="reset" class="btn btn-pop-secondary popup-close"><span>목록</span></button>
-        <button type="button" class="btn btn-pop-primary popup-close"><span>알림톡 발송</span></button>
+        <button type="reset" class="btn btn-pop-secondary popup-close"><span>목록으로</span></button>
+        <button type="button" class="btn btn-pop-primary popup-close" disabled><span>배송완료 처리하기</span></button>
       </div>
       <!-- //.btn-group-row -->
     </div>
@@ -401,6 +426,7 @@
 
   </div>
   <!-- //#wrap -->
+
   <script type="text/javascript" src="../../assets/js/ui.js"></script>
 </body>
 
