@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* ================================== Contents ================================== */
+
+
+
 // shortcut
 .shortcut_cont {
 	.shortcut_txt {
@@ -43,6 +46,13 @@
 		background: url("../img/txt_black_friday@2x.png") no-repeat center / cover;
 	}
 }
+
+
+
+
+
+
+
 
 // cont
 .cont_item {
@@ -540,7 +550,7 @@
 			padding: 0 rem(7px);
 			.list_item {
 				transform: scale(.9);
-				transition: .4s ease;
+				transition: .3s ease;
 			}
 			&-active {
 				.list_item {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	${require('html-loader?interpolate!../_template/common_meta.html')}
+	<title>GS THE FLASH 모바일 통합운영 시스템</title>
+	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+
+		<!-- #header -->
+		<header id="header" class="header is-full">
+			<div class="inner">
+				<h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
+			</div>
+		</header>
+		<!-- //#header -->
+
+		<!-- #main -->
+		<main id="container" class="is-full">
+
+			<!-- #section -->
+			<section class="content">
+				<div class="inner">
+
+					
+					
+				</div>
+			</section>
+			<!-- //#section -->
+
+		</main>
+		<!-- //#main -->
+
+		<!-- .bottom-sheet -->
+		<button type="button" class="popup-open hidden" data-popup="popBarcode"></button>
+		<div class="popup bottom-sheet is-active" id="popBarcode">
+			<div class="inner">
+				<div class="pop-head">
+					<h3 class="tit">수기입력</h3>
+				</div>
+				<div class="pop-body">
+
+					<p class="tit">바코드 번호를 직접 입력해주세요.</p>
+
+					<div class="img-barcode">
+						<img src="../../assets/img/thum-barcode@2x.png">
+					</div>
+
+					<!-- .field-item -->
+					<div class="field-item form-barcode">
+						<label for="" class="label hidden">바코드 입력</label>
+						<div class="control">
+							<div class="input-item">
+								<input type="number" id="" class="input" placeholder="바코드 번호">
+								<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+							</div>
+							<p class="error-msg">유효한 바코드 번호가 아닙니다.</p>
+						</div>
+					</div>
+					<!-- //.field_item -->
+
+				</div>
+				<!-- .btn-group-row -->
+				<div class="btn-group-row btn-half">
+					<button type="reset" class="btn btn-pop-secondary popup-close"><span>취소</span></button>
+					<button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
+				</div>
+				<!-- //.btn-group-row -->
+			</div>
+		</div>
+		<i class="modal-dim"></i>
+		<!-- //bottom-sheet -->
+
+	</div>
+	<!-- //#wrap -->
+</body>
+</html>

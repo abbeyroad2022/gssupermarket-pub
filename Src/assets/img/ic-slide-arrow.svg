@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <path transform="rotate(-90 10 10)" style="fill:none" d="M0 0h20v20H0z"/>
+    <path d="M7.739 10.049q-.037-.037-.07-.075L.479 2.785A1.631 1.631 0 0 1 2.786.478l6.109 6.109L15 .478a1.631 1.631 0 1 1 2.307 2.307l-7.19 7.19q-.034.038-.07.075a1.636 1.636 0 0 1-2.311 0z" transform="rotate(-90 11.743 6.931)" style="fill:#aeaeae"/>
+</svg>

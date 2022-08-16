@@ -15,7 +15,7 @@ body {
 	font-size: rem(16);
 	font-weight: 400;
 	line-height: 1.5;
-	// letter-spacing: -0.04em;
+	letter-spacing: -0.025em;
 	word-break: keep-all;
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
@@ -31,6 +31,13 @@ body {
 	margin: -1px;
 	border: 0;
 	clip: rect(0,0,0,0);
+}
+.hidden {
+	width: 0 !important;
+	height: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
 }
 
 input,
@@ -51,170 +58,48 @@ button {
 	background: transparent;
 }
 
-// background
-.bg_white {
-	background: #FFF !important;
+// placeholder
+input,
+textarea {
+	@include placeholder {
+		color: $color-gray_ae;
+	}
+	&:focus {
+		@include placeholder {
+			color: transparent;
+		}
+	}
 }
-.bg_showdeal {
-	background: #85DFE6 !important;
+.is-error {
+	input,
+	textarea {
+		@include placeholder {
+			color: $color-error;
+		}
+		&:focus {
+			@include placeholder {
+				color: transparent;
+			}
+		}
+	}
 }
-.bg_login {
-	background: transparent linear-gradient(314deg, #111 50%, #393939 110%) 0% 0% no-repeat !important;
-}
-
-// shadow
-.shadow_dark {
-	box-shadow: 2px 3px 7px #000 !important;
-}
-.shadow_orange {
-	box-shadow: 2px 3px 7px #F9BA95 !important;
-}
-.shadow_aqua {
-	box-shadow: 2px 3px 7px #56A8AE !important;
-}
-
-
-// align
-.txt_c {
-	text-align: center !important;
-}
-.txt_l {
-	text-align: left !important;
-}
-.txt_r {
-	text-align: right !important;
-}
-
-// font size
-.fs11 {
-	font-size: rem(11px) !important;
-}
-.fs12 {
-	font-size: rem(12px) !important;
-}
-.fs14 {
-	font-size: rem(14px) !important;
-}
-.fs16 {
-	font-size: rem(16px) !important;
-}
-.fs18 {
-	font-size: rem(18px) !important;
-}
-.fs20 {
-	font-size: rem(20px) !important;
-}
-.fs26 {
-	font-size: rem(26px) !important;
+.is-success {
+	input,
+	textarea {
+		@include placeholder {
+			color: $color-spruce;
+		}
+		&:focus {
+			@include placeholder {
+				color: transparent;
+			}
+		}
+	}
 }
 
-// font weight
-.fw400 {
-	font-weight: 400 !important;
-}
-.fw500 {
-	font-weight: 500 !important;
-}
-.fw700 {
-	font-weight: 700 !important;
-}
-
-// font color
-.fc000 {
-	color: #000 !important;
-}
-.fc333 {
-	color: #333 !important;
-}
-.fc555 {
-	color: #555 !important;
-}
-.fc666 {
-	color: #666 !important;
-}
-.fc999 {
-	color: #999 !important;
-}
-
-// margin
-.mt5 {
-	margin-top: rem(5px) !important;
-}
-.mt10 {
-	margin-top: rem(10px) !important;
-}
-.mt13 {
-	margin-top: rem(13px) !important;
-}
-.mt15 {
-	margin-top: rem(15px) !important;
-}
-.mt20 {
-	margin-top: rem(20px) !important;
-}
-
-
-/*-------------------------------------------------------------------
-	## Form Controls
--------------------------------------------------------------------*/
-@include placeholder {
-	color: #AEAEAE;
-	font-size: rem(12px);
-	letter-spacing: -0.05rem;
-}
-
-/* Default */
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-	color: #AEAEAE;
-}
-
-/* IE 10 + */
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-	color: #AEAEAE;
-}
-
-/* Webkit Browser */
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-	color: #AEAEAE;
-}
-
-/* Mozilla Firefox 4 to 18 */
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-	color: #AEAEAE;
-}
-
-/* Mozilla Firefox 19+ */
-input:focus:-ms-input-placeholder,
-textarea:focus:-ms-input-placeholder {
-	color: transparent;
-}
-
-/* IE 10 + */
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-
-/* Webkit Browser */
-input:focus:-moz-placeholder,
-textarea:focus:-moz-placeholder {
-	color: transparent;
-}
-
-/* Mozilla Firefox 4 to 18 */
-input:focus::-moz-placeholder,
-textarea:focus::-moz-placeholder {
-	color: transparent;
-}
-
-/* Mozilla Firefox 19+ */
 input {
-	border: 0px;
-	color: #333;
+	border: 0;
+	color: $color-black;
 	vertical-align: middle;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -240,10 +125,32 @@ textarea {
 	width: 100%;
 	vertical-align: middle;
 	resize: none !important;
-	color: #333;
+	color: $color-black;
 	word-break: break-all !important;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-o-appearance: none;
 	appearance: none;
+}
+
+// align
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+
+// margin
+.mgt10 {
+	margin-top: rem(10) !important;
+}
+.mgt20 {
+	margin-top: rem(20) !important;
+}
+.mgt30 {
+	margin-top: rem(30) !important;
 }

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <ellipse data-name="타원 5" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(3 3)" style="fill:#fff"/>
+    <path data-name="패스 72" d="M0 0h24v24H0z" style="fill:none"/>
+    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z" style="fill:#f73131"/>
+</svg>

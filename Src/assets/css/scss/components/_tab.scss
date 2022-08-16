@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* ================================== Tab ================================== */
 .tab-group {
-	background-color: $color-spruce;
+	background-color: $color-white;
 }
 .tab-list {
 	display: flex;
@@ -32,6 +32,8 @@
 		padding: rem(8);
 		color: $color-white;
 		font-weight: 700;
+        transition: all .3s;
+		background-color: $color-spruce;
 	}
 	&.is-active {
 		&:before {
@@ -43,12 +45,15 @@
 		}
 	}
 	.case-num {
+		display: inline-block;
 		min-width: rem(36);
 		height: rem(20);
 		line-height: rem(20);
 		margin-left: rem(9);
+		text-align: center;
 		color: $color-black;
 		font-family: $en-font-family;
+		letter-spacing: 0;
 		font-weight: 700;
 		font-size: rem(13);
 		border-radius: rem(20);
@@ -82,6 +87,7 @@
 		font-size: rem(14);
 		border-radius: rem(30);
 		background-color: $color-gray_f6;
+        transition: all .3s;
 	}
 	&.is-active {
 		.sort {

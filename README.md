@@ -3,6 +3,8 @@
 ## Design (재플린)
 https://app.zeplin.io/project/62e1d4b96fc6d261ca456af3
 
+## 화면설계
+
 ## git
 - https://github.com/abbeyroad2022/gssupermarket-pub
 

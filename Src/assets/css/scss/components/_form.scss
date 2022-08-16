@@ -1,80 +1,38 @@
 @charset "utf-8";
 /* ================================== Form ================================== */
-.field_item {
+.field-item {
 	width: 100%;
-	@include flexbox;
-	@include align-items(center);
-	.label {
-		width: rem(48px);
-		min-width: rem(48px);
-		padding-right: rem(4px);
-		&.al_top {
-			@include align-self (flex-start);
+	+ .field-item {
+		margin-top: rem(20);
+	}
+}
+.label {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(11);
+	font-size: rem(14);
+	font-weight: 500;
+	.necessary {
+		width: rem(4);
+		height: rem(4);
+		margin: rem(-9) 0 0 rem(4);
+		border-radius: 50%;
+		background-color: $color-point;
+
+	}
+}
+.input-group {
+	display: flex;
+	.input-item {
+		flex-grow: 1;
+		+ .btn-form {
+			min-width: rem(122);
+			margin-left: rem(10);
 		}
 	}
-	.control {
-		@include flex(1, 1, auto);
-		@include flexbox;
-		@include align-items(center);
-		padding: rem(7px) 0;
-		&.col {
-			display: block;
-			& > * {
-				margin-top: rem(6px);
-				&:first-child {
-					margin-top: 0;
-				}
-			}
-		}
-		.custom_check,
-		.custom_radio {
-			padding: rem(8px) 0;
-			padding-right: rem(12px);
-			.label_txt {
-				margin-top: 0;
-				font-size: rem(12px);
-			}
-		}
-		.input_group {
-			@include flexbox;
-			@include align-items(center);
-			&.period {
-				.date_type {
-					position: relative;
-					@include flex(1, 1, auto);
-					&:after {
-						content: '';
-						position: absolute;
-						top: 50%;
-						right: rem(8px);
-						width: rem(12px);
-						height: rem(12px);
-						//background: url("../img/ic_calendar@2x.png") no-repeat center / cover;
-						transform: translateY(-50%);
-					}
-				}
-				.txt {
-					padding-left: rem(4px);
-					padding-right: rem(4px);
-				}
-				.btn_reset {
-					margin-left: rem(10px);
-				}
-			}
-			&.auth {
-				.btn {
-					width: rem(86px);
-					margin-left: rem(4px);
-				}
-			}
-		}
-		.txt {
-			padding-left: rem(8px);
-		}
-	}
-	label {
-		cursor: pointer;
-	}
+}
+.input-item {
+	position: relative;
 	input[type='text'],
 	input[type='password'],
 	input[type='number'],
@@ -83,114 +41,270 @@
 	input[type='tel'],
 	textarea {
 		width: 100%;
-		padding: rem(8px) rem(8px);
-		line-height: 1.5;
-		border: 1px solid #DDD;
-		border-radius: rem(5px);
+		min-height: rem(48);
+		padding: rem(11) rem(54) rem(11) rem(15);
+		border: rem(1) solid $color-gray_e5;
+		border-radius: rem(6);
+		&:focus {
+			border-color: $color-spruce;
+		}
+		&:disabled {
+			color: $color-gray_ae;
+			border-color: $color-gray_f6;
+			background-color: $color-gray_f6;
+		}
+		&.underline {
+			min-height: 0;
+			margin-top: rem(3);
+			padding: rem(7) rem(38) rem(6) rem(6);
+			border-width: 0 0 rem(1) 0;
+			border-color: #707070;
+			border-radius: 0;
+			+ .btn-reset {
+				width: rem(38);
+				height: rem(38);
+				right: 0;
+				right: 0;
+			}
+		}
 	}
 	input[type='number'] {
-		text-align: right;
+		//text-align: right;
 		&::-webkit-outer-spin-button,
 		&::-webkit-inner-spin-button {
 			-webkit-appearance: none;
 		}
 	}
 	textarea {
-		margin: rem(1px) 0;
+		margin: rem(1) 0;
+	}
+}
+.control {
+	+ .control {
+		margin-top: rem(12);
+	}
+	.error-msg {
+		display: none;
+		padding: rem(4) rem(16) rem(1);
+		color: $color-error;
+		font-size: rem(12);
+	}
+	.btn-reset {
+		display: none;
+		position: absolute;
+		top: rem(2);
+		right: rem(4);
+		&.show {
+			display: flex;
+		}
+	}
+	&.is-error,
+	&.is-success {
+		.input-item:after {
+			content: '';
+			position: absolute;
+			top: rem(12);
+			right: rem(15);
+			display: block;
+			width: rem(24);
+			height: rem(24);
+		}
+		.btn-reset.show {
+			display: none;
+		}
+	} 
+	&.is-error {
+		.input-item:after {
+			background: url("../img/ic-error.svg") no-repeat center / contain;
+		}
+		input[type='text'],
+		input[type='password'],
+		input[type='number'],
+		input[type='email'],
+		input[type='url'],
+		input[type='tel'],
+		textarea {
+			color: $color-error;
+			border-color: $color-error;
+		}
+		.error-msg {
+			display: block;
+		}
+	}
+	&.is-success {
+		.input-item:after {
+			background: url("../img/ic-success.svg") no-repeat center / contain;
+		}
+		input[type='text'],
+		input[type='password'],
+		input[type='number'],
+		input[type='email'],
+		input[type='url'],
+		input[type='tel'],
+		textarea {
+			color: $color-spruce;
+			border-color: $color-success;
+		}
 	}
 }
 
-// choice_group
-.choice_group {
-	@include flexbox;
-	.custom_check,
-	.custom_radio {
-		padding: rem(6px) 0;
+// choice-group
+.choice-group {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: rem(-10);
+	margin-right: rem(-10);
+	.custom-check,
+	.custom-radio {
+		margin-top: rem(10);
 	}
-	&.col3 {
-		@include flex-wrap(wrap);
-		.custom_check,
-		.custom_radio {
-			@include flex(1, 1, 36%);
-			&:nth-child(3n) {
-				@include flex(1, 1, 28%);
+	&.col1 {
+		margin-right: 0;
+		.custom-check,
+		.custom-radio {
+			flex: 1 1 100%;
+			max-width: 100%;
+			&.btn-type .label-txt {
+				margin-right: 0;
+				padding: rem(6);
+			}
+		}
+	}
+	&.col2 {
+		margin-right: 0;
+		.custom-check,
+		.custom-radio {
+			flex: 1 1 calc(50% - 0.3125rem);
+			max-width: calc(50% - 0.3125rem);
+			margin-right: rem(5);
+			&:nth-child(2n) {
+				margin-left: rem(5);
+				margin-right: 0;
+			}
+			&.btn-type .label-txt {
+				margin-right: 0;
+				padding: rem(6);
 			}
 		}
 	}
 }
 
 // custom check/radio
-.custom_check,
-.custom_radio {
-	@include flexbox;
-	@include align-items(center);
-	//position: relative;
+.custom-check,
+.custom-radio {
+	display: flex;
+	align-items: center;
 	cursor: pointer;
 	input {
-		width: 1px;
-		height: 1px;
+		width: rem(1);
+		height: rem(1);
 		padding: 0;
 		border: 0;
-		margin: -1px;
+		margin: rem(-1);
 		clip: rect(0,0,0,0);
 		overflow: hidden;
 		position: absolute;
 		& + .mark {
-			position: relative;
-			@include flex(1, 0, rem(16px));
-			max-width: rem(16px);
-			width: rem(16px);
-			height: rem(16px);
-		}
-		& + .mark:before,
-		& + .mark:after {
-			position: absolute;
-			content: '';
-			top: 50%;
-			left: 0;
-			box-sizing: border-box;
-			transform: translateY(-50%);
-		}
-		& + .mark:before {
-			width: rem(16px);
-			height: rem(16px);
-			border: 1px solid #CCC;
-			background-color: #FFF;
+			display: inline-block;
+			width: rem(24);
+			height: rem(24);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
 		}
 		&[type="checkbox"] {
-			&:checked {
-				& + .mark:after {
-					left: rem(3px);
-					width: rem(10px);
-					height: rem(6px);
-					margin-top: rem(-4px);
-					border-left: rem(3px) solid;
-					border-bottom: rem(3px) solid;
-					border-color: $color-primary;
-					transform: rotate(-45deg);
-				}
+			& + .mark {
+				background-image: url("../img/ic-check-off.svg");
+			}
+			&:checked + .mark {
+				background-image: url("../img/ic-check-line.svg");
 			}
 		}
 		&[type="radio"] {
-			& + .mark:before {
-				border-radius: 50%;
+			& + .mark {
+				background-image: url("../img/ic-radio-off.svg");
 			}
-			&:checked {
-				& + .mark:after {
-					left: rem(4px);
-					width: rem(8px);
-					height: rem(8px);
-					border-radius: 50%;
-					background-color: $color-primary;
-				}
+			&:checked + .mark {
+				background-image: url("../img/ic-radio-line.svg");
 			}
 		}
 	}
-	.label_txt {
-		padding-left: rem(6px);
-		font-size: rem(14px);
+	.label-txt {
+		margin-right: rem(10);
+		padding: 0 rem(15) 0 rem(8);
+	}
+	&.fill-type {
+		input {	
+			&[type="checkbox"] {
+				&:checked + .mark {
+					background-image: url("../img/ic-check-fill.svg");
+				}
+			}
+			&[type="radio"] {
+				&:checked + .mark {
+					background-image: url("../img/ic-radio-fill.svg");
+				}
+			}
+		}
+		.label-txt {
+			padding-left: rem(6);
+			font-weight: 500;
+		}
+	}
+	&.btn-type {
+		justify-content: center;
+		input + .mark {
+			display: none;
+		}
+		.label-txt {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+			min-height: rem(36);
+			padding: rem(6) rem(15);
+			font-size: rem(14);
+			font-weight: 500;
+			border-width: rem(1);
+			border-style: solid;
+			border-radius: rem(6);
+			background-color: $color-white;
+			transition: background-color .3s;
+		}
+		input:checked ~ .label-txt {
+			color: $color-white;
+		}
+		&.primary {
+			.label-txt {
+				color: #29543e;
+				border-color: #29543e;
+			}
+			input:checked ~ .label-txt {
+				background-color: #29543e;
+			}
+		}
+		&.secondary {
+			.label-txt {
+				color: #171d38;
+				border-color: #171d38;
+			}
+			input:checked ~ .label-txt {
+				background-color: $color-black;
+			}
+		}
 	}
 }
+
+.reason-etc-input {
+	display: none;
+	&.show {
+		display: block;
+	}
+}
+
+
+
 
 // toggle switch 0n/0ff
 .custom_check {
@@ -210,7 +324,7 @@
 			left: 0;
 			border-radius: rem(15px);
 			background-color: #AAA;
-			transition: .4s;
+			transition: .3s;
 			cursor: pointer;
 			&:before {
 				position: absolute;
@@ -249,72 +363,122 @@
 	}
 }
 
+
 // upload
-.upload_group {
-	@include flexbox;
-	@include align-items;
-	@include justify-content(space-between);
-	.upload_item {
-		@include flex;
-		margin-left: rem(10px);
-		min-width: rem(66px);
-		width: auto;
-		padding-bottom: (77px/((66px*3)+(10px*2))) * 100%;
-		border-radius: 0;
-		&:first-child {
-			margin-left: 0;
+.upload-item {
+	.upload-result {
+		position: relative;
+		display: none;
+		max-width: rem(260);
+		margin: 0 auto rem(13);
+		.upload-photo {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: rem(6);
+			padding-top: (160/260) * 100%;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border: rem(2) dashed $color-gray_e3;
+				border-radius: rem(6);
+				z-index: 2;
+			}
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border-radius: rem(6);
+				object-fit: cover;
+			}
+		}
+		.upload-photo-name {
+			display: block;
+			overflow:hidden;
+			text-overflow: ellipsis; 
+			white-space: nowrap;
+			width: 100%;
+			text-align: center;
+			font-size: rem(14);
+		}
+		.btn-reset {
+			position: absolute;
+			top: rem(-1);
+			right: rem(-1);
+			z-index: 3;
+		}
+		&.name-only {
+			max-width: rem(230);
+			margin: 0 auto rem(13);
+			.upload-photo-name {
+				height: rem(52);
+				padding: 0 rem(50) 0 rem(16);
+				text-align: left;
+				font-weight: 500;
+				line-height: rem(52);
+				border: rem(2) dashed $color-gray_e3;
+				border-radius: rem(6);
+				background-color: $color-white;
+			}
+			.btn-reset {
+				top: rem(5);
+				right: rem(5);
+			}
 		}
 	}
-}
-
-.upload_item {
-	position: relative;
-	display: block;
-	width: 100%;
-	padding-bottom: (132px/288px) * 100%;
-	background-color: #EBE2E0;
-	border-radius: rem(5px);
-	overflow: hidden;
-	.btn_group {
-		@include flexbox;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		padding: 0;
-		transform: translate(-50%, -50%);
+	.control {
+		display: block;
+		max-width: rem(230);
+		margin: 0 auto rem(13);
+		&.is-error {
+			.input-item:after {
+				display: none;
+			}
+			.error-msg {
+				text-align: center;
+			}
+		}
 	}
-	.uploaded_img {
+	input[type='file'] {
 		position: absolute;
-		left: 0;
 		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
-		background-size: cover;
-		background-position: center;
-		img {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			object-fit: cover;
+		opacity: 0;
+		cursor: pointer;
+	}
+	&.is-upload {
+		.upload-result {
+			display: block;
+		}
+		.control {
+			display: none;
+		}
+		+ .txt-guide {
+			display: none;
 		}
 	}
 }
 
-.profile_thumb_modify {
-	position: relative;
-	.profile_thumb {
-		width: rem(50px);
-		min-width: rem(50px);
-		height: rem(50px);
+// 바코드 입력
+.img-barcode {
+	max-width: rem(240);
+	margin: rem(-3) auto rem(7);
+}
+.form-barcode {
+	
+	.control {
+		display: block;
+		max-width: rem(196);
 		margin: 0 auto;
-	}
-	.btn_group {
-		@include flexbox;
-		position: absolute;
-		left: 50%;
-		bottom: 0;
-		margin-left: rem(29px);
 	}
 }

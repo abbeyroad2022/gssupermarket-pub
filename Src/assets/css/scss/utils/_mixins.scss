@@ -92,6 +92,10 @@
 	-webkit-transform: translate($translateX, $translateY);
 }
 
+// :-webkit-input (Webkit Browser)
+// :-moz (Mozilla Firefox 19+)
+// -moz (Mozilla Firefox 4 to 18)
+// -ms-input (IE 10 +)
 @mixin placeholder {
 	$placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
 	@each $placeholder in $placeholders {
@@ -101,73 +105,11 @@
 	}
 }
 
-@mixin posFixedTop($top: 0, $left: 0, $right: 0) {
-	position: fixed;
-	top: $top;
-	left: $left;
-	right: $right;
-	z-index: 10;
-}
-@mixin posFixedBtm($bottom: 0, $left: 0, $right: 0) {
-	position: fixed;
-	bottom: $bottom;
-	left: $left;
-	right: $right;
-	z-index: 10;
-}
-
-@mixin posFixedFull {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-}
-
-@mixin posAbsoluteLT($left, $top, $width, $height) {
-	position: absolute;
-	left: $left;
-	top: $top;
-	display: block;
-	width: $width;
-	height: $height;
-}
-
-@mixin posAbsoluteLB($left, $bottom, $width, $height) {
-	position: absolute;
-	left: $left;
-	bottom: $bottom;
-	display: block;
-	width: $width;
-	height: $height;
-}
-
-@mixin posAbsoluteRT($right, $top, $width, $height) {
-	position: absolute;
-	right: $right;
-	top: $top;
-	display: block;
-	width: $width;
-	height: $height;
-}
-
-@mixin posAbsoluteRB($right, $bottom, $width, $height) {
-	position: absolute;
-	right: $right;
-	bottom: $bottom;
-	display: block;
-	width: $width;
-	height: $height;
-}
-
 @mixin boxShadow($hOffset, $hOffset, $blur, $color) {
 	box-shadow: $hOffset $hOffset $blur $color;
 	-moz-box-shadow: $hOffset $hOffset $blur $color;
 	-webkit-box-shadow: $hOffset $hOffset $blur $color;
 }
-
 
 @mixin prefix($declarations, $prefixes: ()) {
 	@each $property, $value in $declarations {

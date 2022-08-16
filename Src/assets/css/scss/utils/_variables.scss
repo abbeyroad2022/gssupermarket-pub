@@ -15,6 +15,8 @@ $html-font-size: 16px;
 $color-pale-skyblue: #cbe0ee;
 $color-darkblue-grey: #181e3b;
 $color-battleship-grey: #6a7682;
+$color-light-olive: #c5d352;
+$color-light-olive2: #c8d265;
 $color-weird-green: #3ddb87;
 $color-spruce: #0e563c;
 $color-gray_fe: #fefefe;
@@ -25,9 +27,17 @@ $color-gray_e3: #e3e3e3;
 $color-gray_e5: #e5e5e5;
 $color-black: #2c2a29;
 $color-white: #fff;
+$color-red: #f73131;
+
 
 $color-primary: $color-weird-green;
 $color-secondary: $color-darkblue-grey;
+
+$color-point: $color-red;
+$color-error: $color-red;
+
+$color-success: $color-light-olive2;
+
 
 // break points
 $breakpoints: (
