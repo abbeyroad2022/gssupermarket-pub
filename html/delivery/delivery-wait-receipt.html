@@ -10,8 +10,8 @@
   <meta name="format-detection" content="telephone=no, address=no, email=no">
 
   <title>GS THE FLASH 모바일 통합운영 시스템</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="../../assets/libs/swiper/swiper-bundle.min.css">
+  <script src="../../assets/libs/swiper/swiper-bundle.min.js"></script>
 
   <link href="../../assets/css/style.css" rel="stylesheet">
 </head>
@@ -58,10 +58,10 @@
         <div class="sort-group">
           <ul class="sort-list">
             <li class="sort-item is-active"><button type="button" class="sort"><span>전체</span></button></li>
-            <li class="sort-item"><button type="button" class="sort"><span>사전예약</span></button></li>
-            <li class="sort-item"><button type="button" class="sort"><span>퀵커머스</span></button></li>
-            <li class="sort-item"><button type="button" class="sort"><span>점포몰</span></button></li>
             <li class="sort-item"><button type="button" class="sort"><span>일반배송</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>점포몰</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>퀵커머스</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>사전예약</span></button></li>
           </ul>
         </div>
         <!-- //.sort-group -->
@@ -189,10 +189,11 @@
         <div class="inner floating-btm">
           <!-- .btn-group-col -->
           <div class="btn-group-col">
-            <button type="button" class="btn btn-primary" disabled><span>배송진행</span></button>
+            <button type="button" class="btn btn-primary" disabled><span>배차요청</span></button>
           </div>
           <!-- //.btn-group-col -->
         </div>
+
       </section>
       <!-- //#section -->
 
@@ -254,6 +255,23 @@
       <div class="pop-body">
         <!-- .field-item -->
         <div class="field-item">
+          <p class="label">정렬방식</p>
+          <div class="control">
+            <div class="choice-group col2">
+              <label class="custom-radio btn-type primary" for="filterSort1">
+                <input type="radio" id="filterSort1" name="filterSort">
+                <span class="label-txt">주소(가마다순)</span>
+              </label>
+              <label class="custom-radio btn-type primary" for="filterSort2">
+                <input type="radio" id="filterSort2" name="filterSort" checked>
+                <span class="label-txt">배송요청시간순</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- //.field_item -->
+        <!-- .field-item -->
+        <div class="field-item">
           <p class="label">점포별</p>
           <div class="control">
             <div class="choice-group">
@@ -263,44 +281,19 @@
               </label>
               <label class="custom-check btn-type primary" for="filterStore2">
                 <input type="checkbox" id="filterStore2" name="filterStore">
-                <span class="label-txt">사전예약</span>
+                <span class="label-txt">일반배송</span>
               </label>
               <label class="custom-check btn-type primary" for="filterStore3">
                 <input type="checkbox" id="filterStore3" name="filterStore">
-                <span class="label-txt">퀵커머스</span>
+                <span class="label-txt">점포몰</span>
               </label>
               <label class="custom-check btn-type primary" for="filterStore4">
                 <input type="checkbox" id="filterStore4" name="filterStore">
-                <span class="label-txt">점포몰</span>
+                <span class="label-txt">퀵커머스</span>
               </label>
               <label class="custom-check btn-type primary" for="filterStore5">
                 <input type="checkbox" id="filterStore5" name="filterStore">
-                <span class="label-txt">일반배송</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <!-- //.field_item -->
-        <!-- .field-item -->
-        <div class="field-item">
-          <p class="label">정렬방식</p>
-          <div class="control">
-            <div class="choice-group col2">
-              <label class="custom-radio btn-type primary" for="filterSort1">
-                <input type="radio" id="filterSort1" name="filterSort">
-                <span class="label-txt">거리순(오름차순)</span>
-              </label>
-              <label class="custom-radio btn-type primary" for="filterSort2">
-                <input type="radio" id="filterSort2" name="filterSort" checked>
-                <span class="label-txt">거리순(내림차순)</span>
-              </label>
-              <label class="custom-radio btn-type primary" for="filterSort3">
-                <input type="radio" id="filterSort3" name="filterSort">
-                <span class="label-txt">배송요청시간(오름차순)</span>
-              </label>
-              <label class="custom-radio btn-type primary" for="filterSort4">
-                <input type="radio" id="filterSort4" name="filterSort">
-                <span class="label-txt">배송요청시간(내림차순)</span>
+                <span class="label-txt">사전예약</span>
               </label>
             </div>
           </div>
