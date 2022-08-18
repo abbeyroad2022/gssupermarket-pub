@@ -25,6 +25,7 @@
 		'home': (rem(28), rem(28)),
 		'photo': (rem(24), rem(24)),
 		'slide-arrow': (rem(20), rem(20)),
+		'delete': (rem(40), rem(40)),
 	);
 	@each $name, $size in $icon {
 		&-#{$name} {

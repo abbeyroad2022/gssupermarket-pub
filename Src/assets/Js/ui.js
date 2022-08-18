@@ -137,15 +137,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// 사진 업로드
 	const uploadItem = document.querySelector('.upload-item'),
-		inputPhoto = uploadItem.querySelector('.input-photo-upload'), 
-		btnPhoto = uploadItem.querySelector('.btn-photo-upload'),
-		uploadResult = uploadItem.querySelector('.upload-result'),
-		btnReset = uploadResult.querySelector('.btn-reset'),
-		btnDeliveryComplete = document.querySelector('.btn-delivery-complete'),
-		photoName = uploadItem.querySelector(".upload-photo-name"),
-		photoImg = uploadItem.querySelector(".upload-photo-img");
-	
+		btnDeliveryComplete = document.querySelector('.btn-delivery-complete');
 	if (uploadItem !== null) {
+		const inputPhoto = uploadItem.querySelector('.input-photo-upload'), 
+			btnPhoto = uploadItem.querySelector('.btn-photo-upload'),
+			uploadResult = uploadItem.querySelector('.upload-result'),
+			btnReset = uploadResult.querySelector('.btn-reset'),
+			photoName = uploadItem.querySelector(".upload-photo-name"),
+			photoImg = uploadItem.querySelector(".upload-photo-img");
 		btnReset.addEventListener('click', function(e) {
 			inputPhoto.value = '';
 			// if (photoImg !== null) {

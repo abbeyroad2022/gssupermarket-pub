@@ -24,63 +24,181 @@
 
 	<h1 class="h1_guide">Form</h1>
 
-	<h2 class="h2_guide">form</h2>
+	<h2 class="h2_guide">input (basic)</h2>
 	<div class="guide_wrap">
-
-
 		<!-- .field-item -->
 		<div class="field-item">
-			<label for="" class="label">아이디 입력<i class="necessary"><span class="sr-only">필수</span></i></label>
-			<div class="control">
-				<div class="input-group">
-					<div class="input-item">
-						<input type="text" id="" class="input" placeholder="아이디를 입력해 주세요.">
-						<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
-					</div>
-					<button type="button" class="btn btn-form"><span>아이디 확인</span></button>
-				</div>
-				<p class="error-msg">핸드폰 인증을 먼저 진행해주세요.</p>
-			</div>
-		</div>
-		<!-- //.field_item -->
-		<!-- .field-item -->
-		<div class="field-item">
-			<label for="" class="label">핸드폰 인증<i class="necessary"><span class="sr-only">필수</span></i></label>
-			<div class="control">
-				<div class="input-group">
-					<div class="input-item">
-						<input type="text" id="" class="input" placeholder="핸드폰 번호">
-						<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
-					</div>
-					<button type="button" class="btn btn-form"><span>인증번호 요청</span></button>
-				</div>
-				<p class="error-msg">핸드폰 번호를 확인해 주세요.</p>
-			</div>
+			<label for="" class="label">레이블</label>
 			<div class="control">
 				<div class="input-item">
-					<input type="text" id="" class="input" placeholder="인증번호를 입력해주세요." disabled>
-					<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
-				</div>
-				<p class="error-msg">인증번호를 확인해 주세요.</p>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<label for="" class="label">레이블 레이블</label>
-			<div class="control">
-				<div class="input-item">
-					<input type="text" id="" class="input" placeholder="입력하세요" value="입력 상태">
+					<input type="text" id="" class="input" placeholder="입력하세요" value="">
 					<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
 				</div>
 			</div>
 		</div>
-		<!-- //.field_item -->
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <label for="" class="label">레이블</label>
+    <div class="control">
+        <div class="input-item">
+            <input type="text" id="" class="input" placeholder="입력하세요" value="">
+            <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">input (necessary)</h2>
+	<div class="guide_wrap">
 		<!-- .field-item -->
 		<div class="field-item">
-			<label for="" class="label">레이블 레이블</label>
+			<label for="" class="label">레이블<i class="necessary"><span class="sr-only">필수</span></i></label>
+			<div class="control">
+				<div class="input-item">
+					<input type="text" id="" class="input" placeholder="입력하세요" value="">
+					<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <label for="" class="label">레이블<i class="necessary"><span class="sr-only">필수</span></i></label>
+    <div class="control">
+        <div class="input-item">
+            <input type="text" id="" class="input" placeholder="입력하세요" value="">
+            <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">input (readonly)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<label for="" class="label">레이블</label>
+			<div class="control">
+				<div class="input-item">
+					<input type="text" id="" class="input" placeholder="입력하세요" value="읽기 전용" readonly>
+					<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <label for="" class="label">레이블</label>
+    <div class="control">
+        <div class="input-item">
+            <input type="text" id="" class="input" placeholder="입력하세요" value="" readonly>
+            <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">input (disabled)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<label for="" class="label">레이블</label>
+			<div class="control">
+				<div class="input-item">
+					<input type="text" id="" class="input" placeholder="입력하세요" value="" disabled>
+					<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <label for="" class="label">레이블</label>
+    <div class="control">
+        <div class="input-item">
+            <input type="text" id="" class="input" placeholder="입력하세요" value="" disabled>
+            <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">input (is-success)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<label for="" class="label">레이블</label>
+			<div class="control is-success">
+				<div class="input-item">
+					<input type="text" id="" class="input" placeholder="입력하세요" value="입력 성공">
+					<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <label for="" class="label">레이블</label>
+    <div class="control is-success">
+        <div class="input-item">
+            <input type="text" id="" class="input" placeholder="입력하세요" value="입력 성공">
+            <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">input (is-error)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<label for="" class="label">레이블</label>
 			<div class="control is-error">
 				<div class="input-item">
 					<input type="text" id="" class="input" placeholder="입력하세요" value="입력 실패">
@@ -89,337 +207,727 @@
 				<p class="error-msg">형식에 맞게 입력하여 주십시오</p>
 			</div>
 		</div>
-		<!-- //.field_item -->
-		<!-- .field-item -->
-		<div class="field-item">
-			<label for="" class="label">레이블 레이블</label>
-			<div class="control is-success">
-				<div class="input-item">
-					<input type="text" id="" class="input" placeholder="입력하세요" value="입력 성공">
-					<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-		<!-- .field-item -->
-		<div class="field-item">
-			<label for="" class="label">Textarea</label>
-			<div class="control">
-				<textarea name="" id="" rows="2" placeholder=""></textarea>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">radio (line)</p>
-			<div class="control">
-				<div class="choice-group">
-					<label class="custom-radio" for="radioA1">
-						<input type="radio" id="radioA1" name="radioA" checked>
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio" for="radioA2">
-						<input type="radio" id="radioA2" name="radioA">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio" for="radioA3">
-						<input type="radio" id="radioA3" name="radioA">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">check (line)</p>
-			<div class="control">
-				<div class="choice-group">
-					<label class="custom-check" for="checkA1">
-						<input type="checkbox" id="checkA1" name="checkA" checked>
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check" for="checkA2">
-						<input type="checkbox" id="checkA2" name="checkA">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check" for="checkA3">
-						<input type="checkbox" id="checkA3" name="checkA">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-
-
-
-
-
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">radio (fill)</p>
-			<div class="control">
-				<div class="choice-group">
-					<label class="custom-radio fill-type" for="radioB1">
-						<input type="radio" id="radioB1" name="radioB" checked>
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio fill-type" for="radioB2">
-						<input type="radio" id="radioB2" name="radioB">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio fill-type" for="radioB3">
-						<input type="radio" id="radioB3" name="radioB">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">check (fill)</p>
-			<div class="control">
-				<div class="choice-group">
-					<label class="custom-check fill-type" for="checkB1">
-						<input type="checkbox" id="checkB1" name="checkB" checked>
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check fill-type" for="checkB2">
-						<input type="checkbox" id="checkB2" name="checkB">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check fill-type" for="checkB3">
-						<input type="checkbox" id="checkB3" name="checkB">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-		
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">radio (col2)</p>
-			<div class="control">
-				<div class="choice-group col2">
-					<label class="custom-radio" for="radioC1">
-						<input type="radio" id="radioC1" name="radioC" checked>
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio" for="radioC2">
-						<input type="radio" id="radioC2" name="radioC">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio" for="radioC3">
-						<input type="radio" id="radioC3" name="radioC">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">check (col2)</p>
-			<div class="control">
-				<div class="choice-group col2">
-					<label class="custom-check" for="checkC1">
-						<input type="checkbox" id="checkC1" name="checkC" checked>
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check" for="checkC2">
-						<input type="checkbox" id="checkC2" name="checkC">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check" for="checkC3">
-						<input type="checkbox" id="checkC3" name="checkC">
-						<i class="mark"></i>
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-		
-		
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">radio (col1 button primary)</p>
-			<div class="control">
-				<div class="choice-group col1">
-					<label class="custom-radio btn-type primary" for="radioD1">
-						<input type="radio" id="radioD1" name="radioD" checked>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio btn-type primary" for="radioD2">
-						<input type="radio" id="radioD2" name="radioD">
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio btn-type primary" for="radioD3">
-						<input type="radio" id="radioD3" name="radioD">
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">check (col1 button primary)</p>
-			<div class="control">
-				<div class="choice-group col1">
-					<label class="custom-check btn-type primary" for="checkD1">
-						<input type="checkbox" id="checkD1" name="checkD" checked>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type primary" for="checkD2">
-						<input type="checkbox" id="checkD2" name="checkD">
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type primary" for="checkD3">
-						<input type="checkbox" id="checkD3" name="checkD">
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">radio (col2 button secondary)</p>
-			<div class="control">
-				<div class="choice-group col2">
-					<label class="custom-radio btn-type secondary" for="radioE1">
-						<input type="radio" id="radioE1" name="radioE" checked>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio btn-type secondary" for="radioE2">
-						<input type="radio" id="radioE2" name="radioE">
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-radio btn-type secondary" for="radioE3">
-						<input type="radio" id="radioE3" name="radioE">
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">check (col2 button secondary)</p>
-			<div class="control">
-				<div class="choice-group col2">
-					<label class="custom-check btn-type secondary" for="checkE1">
-						<input type="checkbox" id="checkE1" name="checkE" checked>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type secondary" for="checkE2">
-						<input type="checkbox" id="checkE2" name="checkE">
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type secondary" for="checkE3">
-						<input type="checkbox" id="checkE3" name="checkE">
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-
-		<!-- .field-item -->
-		<div class="field-item">
-			<p class="label">check (button primary)</p>
-			<div class="control">
-				<div class="choice-group">
-					<label class="custom-check btn-type primary" for="checkF1">
-						<input type="checkbox" id="checkF1" name="checkF" checked>
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type primary" for="checkF2">
-						<input type="checkbox" id="checkF2" name="checkF">
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type primary" for="checkF3">
-						<input type="checkbox" id="checkF3" name="checkF">
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type primary" for="checkF4">
-						<input type="checkbox" id="checkF4" name="checkF">
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type primary" for="checkF5">
-						<input type="checkbox" id="checkF5" name="checkF">
-						<span class="label-txt">선택선택</span>
-					</label>
-					<label class="custom-check btn-type primary" for="checkF6">
-						<input type="checkbox" id="checkF6" name="checkF">
-						<span class="label-txt">선택선택</span>
-					</label>
-				</div>
-			</div>
-		</div>
-		<!-- //.field_item -->
-
-
+		<!-- //.field-item -->
 	</div>
 	<div class="code_wrap">
 <!-- code// -->
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
-
+<!-- .field-item -->
+<div class="field-item">
+    <label for="" class="label">레이블</label>
+    <div class="control is-error">
+        <div class="input-item">
+            <input type="text" id="" class="input" placeholder="입력하세요" value="입력 실패">
+            <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+        </div>
+        <p class="error-msg">형식에 맞게 입력하여 주십시오</p>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">input + button</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<label for="" class="label">레이블</label>
+			<div class="control">
+				<div class="input-group">
+					<div class="input-item">
+						<input type="text" id="" class="input" placeholder="입력해 주세요.">
+						<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+					</div>
+					<button type="button" class="btn btn-form"><span>버튼</span></button>
+				</div>
+				<p class="error-msg">형식에 맞게 입력하여 주십시오</p>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <label for="" class="label">레이블</label>
+    <div class="control">
+        <div class="input-group">
+            <div class="input-item">
+                <input type="text" id="" class="input" placeholder="입력해 주세요.">
+                <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+            </div>
+            <button type="button" class="btn btn-form"><span>버튼</span></button>
+        </div>
+        <p class="error-msg">형식에 맞게 입력하여 주십시오</p>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">input (multi form)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<label for="" class="label">레이블</label>
+			<div class="control">
+				<div class="input-group">
+					<div class="input-item">
+						<input type="text" id="" class="input" placeholder="입력해 주세요.">
+						<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+					</div>
+					<button type="button" class="btn btn-form"><span>버튼</span></button>
+				</div>
+				<p class="error-msg">형식에 맞게 입력하여 주십시오</p>
+			</div>
+			<div class="control">
+				<div class="input-item">
+					<input type="text" id="" class="input" placeholder="입력해 주세요.">
+					<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <label for="" class="label">레이블</label>
+    <div class="control">
+        <div class="input-group">
+            <div class="input-item">
+                <input type="text" id="" class="input" placeholder="입력해 주세요.">
+                <button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+            </div>
+            <button type="button" class="btn btn-form"><span>버튼</span></button>
+        </div>
+        <p class="error-msg">형식에 맞게 입력하여 주십시오</p>
+    </div>
+	<div class="control">
+		<div class="input-item">
+			<input type="text" id="" class="input" placeholder="입력해 주세요.">
+			<button type="button" class="btn btn-reset"><i class="ic ic-reset"><span class="sr-only">입력 초기화</span></i></button>
+		</div>
+	</div>
+</div>
+<!-- //.field-item -->
 </xmp>
 </div>
 <!-- //code -->
 	</div>
 
-	<h2 class="h2_guide">form</h2>
+	<h2 class="h2_guide">radio (line)</h2>
 	<div class="guide_wrap">
-
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group">
+					<label class="custom-radio" for="radioA1">
+						<input type="radio" id="radioA1" name="radioA" checked>
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio" for="radioA2">
+						<input type="radio" id="radioA2" name="radioA">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio" for="radioA3">
+						<input type="radio" id="radioA3" name="radioA">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
 	</div>
 	<div class="code_wrap">
-		<!-- code// -->
+<!-- code// -->
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
-
+<!-- .field-item -->
+<div class="field-item">
+    <div class="control">
+        <div class="choice-group">
+            <label class="custom-radio" for="radioA1">
+                <input type="radio" id="radioA1" name="radioA" checked>
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-radio" for="radioA2">
+                <input type="radio" id="radioA2" name="radioA">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-radio" for="radioA3">
+                <input type="radio" id="radioA3" name="radioA">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">check (line)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group">
+					<label class="custom-check" for="checkA1">
+						<input type="checkbox" id="checkA1" name="checkA" checked>
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check" for="checkA2">
+						<input type="checkbox" id="checkA2" name="checkA">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check" for="checkA3">
+						<input type="checkbox" id="checkA3" name="checkA">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <div class="control">
+        <div class="choice-group">
+            <label class="custom-check" for="checkA1">
+                <input type="checkbox" id="checkA1" name="checkA" checked>
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check" for="checkA2">
+                <input type="checkbox" id="checkA2" name="checkA">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check" for="checkA3">
+                <input type="checkbox" id="checkA3" name="checkA">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">radio (fill)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group">
+					<label class="custom-radio fill-type" for="radioB1">
+						<input type="radio" id="radioB1" name="radioB" checked>
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio fill-type" for="radioB2">
+						<input type="radio" id="radioB2" name="radioB">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio fill-type" for="radioB3">
+						<input type="radio" id="radioB3" name="radioB">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <div class="control">
+        <div class="choice-group">
+            <label class="custom-radio fill-type" for="radioB1">
+                <input type="radio" id="radioB1" name="radioB" checked>
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-radio fill-type" for="radioB2">
+                <input type="radio" id="radioB2" name="radioB">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-radio fill-type" for="radioB3">
+                <input type="radio" id="radioB3" name="radioB">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">check (fill)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group">
+					<label class="custom-check fill-type" for="checkB1">
+						<input type="checkbox" id="checkB1" name="checkB" checked>
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check fill-type" for="checkB2">
+						<input type="checkbox" id="checkB2" name="checkB">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check fill-type" for="checkB3">
+						<input type="checkbox" id="checkB3" name="checkB">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <div class="control">
+        <dic:\Users\abbeyload\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmlv class="choice-group">
+            <label class="custom-check fill-type" for="checkB1">
+                <input type="checkbox" id="checkB1" name="checkB" checked>
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check fill-type" for="checkB2">
+                <input type="checkbox" id="checkB2" name="checkB">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check fill-type" for="checkB3">
+                <input type="checkbox" id="checkB3" name="checkB">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">radio (col2)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group col2">
+					<label class="custom-radio" for="radioC1">
+						<input type="radio" id="radioC1" name="radioC" checked>
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio" for="radioC2">
+						<input type="radio" id="radioC2" name="radioC">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio" for="radioC3">
+						<input type="radio" id="radioC3" name="radioC">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+	<div class="control">
+		<div class="choice-group col2">
+			<label class="custom-radio" for="radioC1">
+				<input type="radio" id="radioC1" name="radioC" checked>
+				<i class="mark"></i>
+				<span class="label-txt">선택</span>
+			</label>
+			<label class="custom-radio" for="radioC2">
+				<input type="radio" id="radioC2" name="radioC">
+				<i class="mark"></i>
+				<span class="label-txt">선택</span>
+			</label>
+			<label class="custom-radio" for="radioC3">
+				<input type="radio" id="radioC3" name="radioC">
+				<i class="mark"></i>
+				<span class="label-txt">선택</span>
+			</label>
+		</div>
+	</div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">check (col2)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group col2">
+					<label class="custom-check" for="checkC1">
+						<input type="checkbox" id="checkC1" name="checkC" checked>
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check" for="checkC2">
+						<input type="checkbox" id="checkC2" name="checkC">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check" for="checkC3">
+						<input type="checkbox" id="checkC3" name="checkC">
+						<i class="mark"></i>
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <div class="control">
+        <div class="choice-group col2">
+            <label class="custom-check" for="checkC1">
+                <input type="checkbox" id="checkC1" name="checkC" checked>
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check" for="checkC2">
+                <input type="checkbox" id="checkC2" name="checkC">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check" for="checkC3">
+                <input type="checkbox" id="checkC3" name="checkC">
+                <i class="mark"></i>
+                <span class="label-txt">선택</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">radio (col1 button primary)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group col1">
+					<label class="custom-radio btn-type primary" for="radioD1">
+						<input type="radio" id="radioD1" name="radioD" checked>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio btn-type primary" for="radioD2">
+						<input type="radio" id="radioD2" name="radioD">
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio btn-type primary" for="radioD3">
+						<input type="radio" id="radioD3" name="radioD">
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<div class="field-item">
+		<div class="control">
+			<div class="choice-group col1">
+				<label class="custom-radio btn-type primary" for="radioD1">
+					<input type="radio" id="radioD1" name="radioD" checked>
+					<span class="label-txt">선택</span>
+				</label>
+				<label class="custom-radio btn-type primary" for="radioD2">
+					<input type="radio" id="radioD2" name="radioD">
+					<span class="label-txt">선택</span>
+				</label>
+				<label class="custom-radio btn-type primary" for="radioD3">
+					<input type="radio" id="radioD3" name="radioD">
+					<span class="label-txt">선택</span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">check (col1 button primary)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group col1">
+					<label class="custom-check btn-type primary" for="checkD1">
+						<input type="checkbox" id="checkD1" name="checkD" checked>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check btn-type primary" for="checkD2">
+						<input type="checkbox" id="checkD2" name="checkD">
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check btn-type primary" for="checkD3">
+						<input type="checkbox" id="checkD3" name="checkD">
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <div class="control">
+        <div class="choice-group col1">
+            <label class="custom-check btn-type primary" for="checkD1">
+                <input type="checkbox" id="checkD1" name="checkD" checked>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check btn-type primary" for="checkD2">
+                <input type="checkbox" id="checkD2" name="checkD">
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check btn-type primary" for="checkD3">
+                <input type="checkbox" id="checkD3" name="checkD">
+                <span class="label-txt">선택</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">radio (col2 button secondary)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group col2">
+					<label class="custom-radio btn-type secondary" for="radioE1">
+						<input type="radio" id="radioE1" name="radioE" checked>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio btn-type secondary" for="radioE2">
+						<input type="radio" id="radioE2" name="radioE">
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-radio btn-type secondary" for="radioE3">
+						<input type="radio" id="radioE3" name="radioE">
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <div class="control">
+        <div class="choice-group col2">
+            <label class="custom-radio btn-type secondary" for="radioE1">
+                <input type="radio" id="radioE1" name="radioE" checked>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-radio btn-type secondary" for="radioE2">
+                <input type="radio" id="radioE2" name="radioE">
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-radio btn-type secondary" for="radioE3">
+                <input type="radio" id="radioE3" name="radioE">
+                <span class="label-txt">선택</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">check (col2 button secondary)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group col2">
+					<label class="custom-check btn-type secondary" for="checkE1">
+						<input type="checkbox" id="checkE1" name="checkE" checked>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check btn-type secondary" for="checkE2">
+						<input type="checkbox" id="checkE2" name="checkE">
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check btn-type secondary" for="checkE3">
+						<input type="checkbox" id="checkE3" name="checkE">
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+	<div class="control">
+		<div class="choice-group col2">
+			<label class="custom-check btn-type secondary" for="checkE1">
+				<input type="checkbox" id="checkE1" name="checkE" checked>
+				<span class="label-txt">선택</span>
+			</label>
+			<label class="custom-check btn-type secondary" for="checkE2">
+				<input type="checkbox" id="checkE2" name="checkE">
+				<span class="label-txt">선택</span>
+			</label>
+			<label class="custom-check btn-type secondary" for="checkE3">
+				<input type="checkbox" id="checkE3" name="checkE">
+				<span class="label-txt">선택</span>
+			</label>
+		</div>
+	</div>
+</div>
+<!-- //.field-item -->
+</xmp>
+</div>
+<!-- //code -->
+	</div>
+	
+	<h2 class="h2_guide">check (button primary)</h2>
+	<div class="guide_wrap">
+		<!-- .field-item -->
+		<div class="field-item">
+			<div class="control">
+				<div class="choice-group">
+					<label class="custom-check btn-type primary" for="checkF1">
+						<input type="checkbox" id="checkF1" name="checkF" checked>
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check btn-type primary" for="checkF2">
+						<input type="checkbox" id="checkF2" name="checkF">
+						<span class="label-txt">선택</span>
+					</label>
+					<label class="custom-check btn-type primary" for="checkF3">
+						<input type="checkbox" id="checkF3" name="checkF">
+						<span class="label-txt">선택</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- //.field-item -->
+	</div>
+	<div class="code_wrap">
+<!-- code// -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- .field-item -->
+<div class="field-item">
+    <div class="control">
+        <div class="choice-group">
+            <label class="custom-check btn-type primary" for="checkF1">
+                <input type="checkbox" id="checkF1" name="checkF" checked>
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check btn-type primary" for="checkF2">
+                <input type="checkbox" id="checkF2" name="checkF">
+                <span class="label-txt">선택</span>
+            </label>
+            <label class="custom-check btn-type primary" for="checkF3">
+                <input type="checkbox" id="checkF3" name="checkF">
+                <span class="label-txt">선택</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- //.field-item -->
 </xmp>
 </div>
 <!-- //code -->
