@@ -44,10 +44,10 @@
             <div class="control">
               <div class="input-group">
                 <div class="input-item">
-                  <input type="tel" id="" class="input" placeholder="핸드폰 번호">
+                  <input type="tel" id="" class="input" placeholder="핸드폰 번호" value="010-1234-5678">
                   <button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
                 </div>
-                <button type="button" class="btn btn-form popup-open" data-popup="popAlertSendNumber"><span>인증번호 요청</span></button>
+                <button type="button" class="btn btn-form popup-open" data-popup="popAlertSendNumber"><span>재전송</span></button>
               </div>
               <p class="error-msg">핸드폰 번호를 확인해 주세요.</p>
             </div>
@@ -81,7 +81,7 @@
 
     <!-- .bottom-sheet -->
     <!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
-    <div class="popup bottom-sheet" id="popAlertSendNumber">
+    <div class="popup bottom-sheet is-active" id="popAlertSendNumber">
       <div class="inner">
         <div class="pop-head">
           <h3 class="tit">알림</h3>

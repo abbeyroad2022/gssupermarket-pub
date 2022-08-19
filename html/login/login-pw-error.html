@@ -38,21 +38,21 @@
           <!-- .cont-item -->
           <div class="cont-item">
             <div class="title-group">
-              <h3 class="tit">로그인</h3>
-              <a href="#" class="btn btn-login-change"><span>배송기사 로그인</span></a>
+              <h3 class="tit">배달기사 전용 로그인</h3>
+              <a href="#" class="btn btn-login-change"><span>임직원 로그인</span></a>
             </div>
 
             <!-- .field-item -->
             <div class="field-item form-login">
               <div class="control">
                 <div class="input-item">
-                  <input type="text" id="" class="input" placeholder="아이디" title="아이디">
+                  <input type="text" id="" class="input" placeholder="아이디" title="아이디" value="Abcd1234">
                   <button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
                 </div>
               </div>
               <div class="control">
                 <div class="input-item">
-                  <input type="password" id="" class="input" placeholder="비밀번호" title="비밀번호">
+                  <input type="password" id="" class="input" placeholder="비밀번호" title="비밀번호" value="Abcd1234">
                   <button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
                 </div>
               </div>
@@ -73,13 +73,23 @@
                     <i class="mark"></i>
                     <span class="label-txt">비밀번호 저장</span>
                   </label>
+                  <label class="custom-check" for="checkLoginState">
+                    <input type="checkbox" id="checkLoginState" name="checkLogin">
+                    <i class="mark"></i>
+                    <span class="label-txt">로그인상태유지</span>
+                  </label>
                 </div>
               </div>
             </div>
             <!-- //.field-item -->
 
             <div class="btn-group-col mgt30">
-              <button type="button" class="btn btn-primary"><span>로그인</span></button>
+              <button type="button" class="btn btn-primary popup-open" data-popup="popAlertPwError"><span>로그인</span></button>
+              <button type="button" class="btn btn-secondary"><span>배달기사 가입</span></button>
+            </div>
+            <div class="btn-group-row mgt20">
+              <a href="#" class="btn btn-txt-link"><span>아이디 찾기</span></a>
+              <a href="#" class="btn btn-txt-link"><span>비밀번호 찾기</span></a>
             </div>
 
           </div>
@@ -91,6 +101,26 @@
 
     </main>
     <!-- //#main -->
+
+    <!-- .bottom-sheet -->
+    <!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
+    <div class="popup bottom-sheet is-active" id="popAlertPwError">
+      <div class="inner">
+        <div class="pop-head">
+          <h3 class="tit">알림</h3>
+        </div>
+        <div class="pop-body">
+          <p class="alert-msg">잘못된 비밀번호 입니다.</p>
+        </div>
+        <!-- .btn-group-row -->
+        <div class="btn-group-row btn-full">
+          <button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
+        </div>
+        <!-- //.btn-group-row -->
+      </div>
+    </div>
+    <i class="modal-dim"></i>
+    <!-- //bottom-sheet -->
 
   </div>
   <!-- //#wrap -->
