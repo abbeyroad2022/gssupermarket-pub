@@ -37,21 +37,67 @@
       <section class="content">
         <div class="inner">
 
+          <!-- .field-item -->
+          <div class="field-item">
+            <label for="" class="label">핸드폰 인증<i class="necessary"><span class="sr-only">필수</span></i></label>
+            <!-- [.control] 입력 오류/ 미입력: .is-error, 입력 유효: .is-success -->
+            <div class="control">
+              <div class="input-group">
+                <div class="input-item">
+                  <input type="tel" id="" class="input" placeholder="핸드폰 번호">
+                  <button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
+                </div>
+                <button type="button" class="btn btn-form popup-open" data-popup="popAlertSendNumber"><span>인증번호 요청</span></button>
+              </div>
+              <p class="error-msg">핸드폰 번호를 확인해 주세요.</p>
+            </div>
+            <!-- [.control] 입력 오류/ 미입력: .is-error -->
+            <div class="control">
+              <div class="input-item">
+                <input type="tel" id="" class="input" placeholder="인증번호를 입력해 주세요.">
+                <button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
+              </div>
+              <p class="error-msg">인증번호를 확인해 주세요.</p>
+            </div>
+          </div>
+          <!-- //.field-item -->
 
+        </div>
+      </section>
+      <!-- //#section -->
 
-
-
-
-
-
-
-
+      <!-- #section -->
+      <section class="content is-bottom">
+        <div class="inner">
+          <div class="btn-group-col">
+            <button type="button" class="btn btn-primary" disabled><span>인증 하기</span></button>
+          </div>
         </div>
       </section>
       <!-- //#section -->
 
     </main>
     <!-- //#main -->
+
+    <!-- .bottom-sheet -->
+    <!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
+    <div class="popup bottom-sheet" id="popAlertSendNumber">
+      <div class="inner">
+        <div class="pop-head">
+          <h3 class="tit">알림</h3>
+        </div>
+        <div class="pop-body">
+          <p class="alert-msg">인증번호가 전송되었습니다.</p>
+        </div>
+        <!-- .btn-group-row -->
+        <div class="btn-group-row btn-full">
+          <button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
+        </div>
+        <!-- //.btn-group-row -->
+      </div>
+    </div>
+    <i class="modal-dim"></i>
+    <!-- //bottom-sheet -->
 
   </div>
   <!-- //#wrap -->

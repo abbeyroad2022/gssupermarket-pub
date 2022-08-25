@@ -21,42 +21,516 @@
   <div id="wrap">
 
     <!-- #header -->
-    <header id="header" class="header">
+    <header id="header" class="header" class="is-history">
       <div class="inner">
         <h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
         <button class="btn btn-back"><i class="ic ic-back"></i><span class="sr-only">이전</span></button>
         <h2 class="title">과거 배송 이력</h2>
         <div class="btn-group-row">
           <button class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
-          <button class="btn btn-mypage"><i class="ic ic-mypage"></i><span class="sr-only">마이페이지</span></button>
         </div>
       </div>
     </header>
     <!-- //#header -->
 
     <!-- #main -->
-    <main id="container">
+    <main id="container" class="is-history">
 
       <!-- #section -->
-      <section class="content">
-        <div class="inner">
-
-
-
-
-
-
-
-
-
-
-
+      <section class="fixed-top">
+        <!-- .period-setting -->
+        <div class="period-setting">
+          <span>조회 기간: </span><span>2022.07.01</span><i class="ic ic-calendar"></i><span> ~ </span><span>2022.07.01</span><i class="ic ic-calendar"></i>
         </div>
+        <!-- //.period-setting -->
+        <!-- .sort-group -->
+        <div class="sort-group">
+          <ul class="sort-list">
+            <li class="sort-item is-active"><button type="button" class="sort"><span>전체</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>일반배송</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>점포몰</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>퀵커머스</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>사전예약</span></button></li>
+          </ul>
+        </div>
+        <!-- //.sort-group -->
+        <!-- .total-count --
+				<p class="inner total-count"><span>12</span></p>
+				!-- //.total-count -->
       </section>
       <!-- //#section -->
 
+      <!-- #section -->
+      <section class="content">
+        <div class="inner card-list">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type1"><span class="sr-only">일반배송</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
+                <div class="done-state">
+                  <p class="info-notdone"><i class="ic ic-notdone"></i><span>미완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type3"><span class="sr-only">퀵커머스</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="done-state">
+                  <p class="info-time"><i class="ic ic-time"></i><span>14:00 배송완료</span></p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- //#section -->
+
+      <div id="floating-filter">
+        <button type="button" class="btn btn-filter popup-open" data-popup="popFilter"><i class="ic ic-filter"></i><span class="sr-only">필터 설정</span></button>
+      </div>
+
     </main>
     <!-- //#main -->
+
+    <!-- .bottom-sheet -->
+    <div class="popup bottom-sheet" id="popFilter">
+      <div class="inner">
+        <div class="pop-head">
+          <h3 class="tit">필터</h3>
+        </div>
+        <div class="pop-body">
+          <!-- .field-item -->
+          <div class="field-item">
+            <p class="label">정렬방식</p>
+            <div class="control">
+              <div class="choice-group col2">
+                <label class="custom-radio btn-type primary" for="filterSort1">
+                  <input type="radio" id="filterSort1" name="filterSort">
+                  <span class="label-txt">주소(가나다순)</span>
+                </label>
+                <label class="custom-radio btn-type primary" for="filterSort2">
+                  <input type="radio" id="filterSort2" name="filterSort" checked>
+                  <span class="label-txt">배송요청시간순</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- //.field-item -->
+          <!-- .field-item -->
+          <div class="field-item">
+            <p class="label">점포별</p>
+            <div class="control">
+              <div class="choice-group">
+                <label class="custom-check btn-type primary" for="filterStore1">
+                  <input type="checkbox" id="filterStore1" name="filterStore" checked>
+                  <span class="label-txt">전체</span>
+                </label>
+                <label class="custom-check btn-type primary" for="filterStore2">
+                  <input type="checkbox" id="filterStore2" name="filterStore">
+                  <span class="label-txt">일반배송</span>
+                </label>
+                <label class="custom-check btn-type primary" for="filterStore3">
+                  <input type="checkbox" id="filterStore3" name="filterStore">
+                  <span class="label-txt">점포몰</span>
+                </label>
+                <label class="custom-check btn-type primary" for="filterStore4">
+                  <input type="checkbox" id="filterStore4" name="filterStore">
+                  <span class="label-txt">퀵커머스</span>
+                </label>
+                <label class="custom-check btn-type primary" for="filterStore5">
+                  <input type="checkbox" id="filterStore5" name="filterStore">
+                  <span class="label-txt">사전예약</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- //.field-item -->
+        </div>
+        <!-- .btn-group-row -->
+        <div class="btn-group-row btn-half">
+          <button type="reset" class="btn btn-pop-secondary"><span>초기화</span></button>
+          <button type="button" class="btn btn-pop-primary popup-close"><span>적용</span></button>
+        </div>
+        <!-- //.btn-group-row -->
+      </div>
+    </div>
+    <i class="modal-dim"></i>
+    <!-- //bottom-sheet -->
 
   </div>
   <!-- //#wrap -->

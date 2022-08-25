@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108.285" height="84.523" viewBox="0 0 108.285 84.523">
+    <defs>
+        <filter id="kwtlaeqkra" x="12.617" y="15.264" width="69" height="69" filterUnits="userSpaceOnUse">
+            <feOffset dx="4" dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-color="#efedc7" flood-opacity=".42" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="g7qoiyphhc" x="23.81" y="0" width="84.475" height="84.475" filterUnits="userSpaceOnUse">
+            <feOffset dx="3" dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur-2"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="e5o7erj6ge" x="23.81" y="0" width="84.475" height="84.475" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur-3"/>
+            <feFlood flood-opacity=".161" result="color-2"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+            <feComposite operator="in" in="color-2"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <linearGradient id="ml0s2bof3b" x1="1.011" y1=".5" x2=".021" y2=".495" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#e9d7d4"/>
+            <stop offset=".217" stop-color="#e5cbc6"/>
+            <stop offset=".567" stop-color="#f5ece9"/>
+            <stop offset=".818" stop-color="#ffebe6"/>
+            <stop offset="1" stop-color="#eadad6"/>
+        </linearGradient>
+        <linearGradient id="499cs97y8d" x1="1.133" y1=".485" x2="-.427" y2=".494" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#9b736e"/>
+            <stop offset=".266" stop-color="#efd6d2"/>
+            <stop offset=".498" stop-color="#f4ebe8"/>
+            <stop offset=".792" stop-color="#ffebe6"/>
+            <stop offset="1" stop-color="#eadad6"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-40.571 -2.064)">
+        <g data-type="innerShadowGroup">
+            <circle data-name="타원 2137" cx="34.5" cy="34.5" r="34.5" transform="translate(53.188 17.328)" style="fill:#3ddf83"/>
+            <g style="filter:url(#kwtlaeqkra)">
+                <circle data-name="타원 2137" cx="34.5" cy="34.5" r="34.5" transform="translate(53.19 17.32)" style="fill:#fff"/>
+            </g>
+        </g>
+        <rect data-name="사각형 7269" width="15" height="40" rx="7.5" transform="rotate(-45 80.238 -44.989)" style="opacity:.2"/>
+        <path data-name="패스 92947" d="M7.607-.088A7.485 7.485 0 0 1 15 7.5v41a7.5 7.5 0 0 1-15 0v-41A7.667 7.667 0 0 1 7.607-.088z" transform="rotate(135 32.457 50.891)" style="fill:url(#ml0s2bof3b)"/>
+        <g data-type="innerShadowGroup">
+            <g style="filter:url(#g7qoiyphhc)" transform="translate(40.57 2.06)">
+                <path data-name="패스 92946" d="M7.5 0A7.5 7.5 0 0 1 15 7.5v64c-.43 7.132-6.224 7.535-6.214 7.508L1.673 64.159 0 7.5A7.5 7.5 0 0 1 7.5 0z" transform="rotate(45 35.597 106.425)" style="fill:url(#499cs97y8d)"/>
+            </g>
+            <g style="filter:url(#e5o7erj6ge)" transform="translate(40.57 2.06)">
+                <path data-name="패스 92946" d="M7.5 0A7.5 7.5 0 0 1 15 7.5v64c-.43 7.132-6.224 7.535-6.214 7.508L1.673 64.159 0 7.5A7.5 7.5 0 0 1 7.5 0z" transform="rotate(45 35.597 106.425)" style="fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>
