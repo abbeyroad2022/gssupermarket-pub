@@ -434,11 +434,31 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .card .btn-info-more { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.9375rem; box-shadow: inset 0 0.0625rem 0.25rem 0 rgba(22, 27, 29, 0.26); background-color: #e3e3e3; }
 
+.card .app-connection { top: 3.625rem; right: 1.25rem; display: none; border: 0.0625rem solid #c5d352; background-color: #fff; box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.16); }
+
+.card .app-connection:after { position: absolute; content: ''; top: -0.375rem; right: 0.875rem; width: 0.5625rem; height: 0.5625rem; border-style: solid; border-color: #c5d352; border-width: 0.0625rem 0.0625rem 0 0; background-color: #fff; transform: rotate(-45deg); }
+
+.card .app-connection .btn { position: relative; width: 3.5rem; height: 2.875rem; margin: 0; }
+
+.card .app-connection .btn:not(:first-child):before { content: ''; position: absolute; top: 50%; left: -0.125rem; width: 0.125rem; height: 1.375rem; margin-left: 0.125rem; background-color: #f9f9f9; transform: translateY(-50%); }
+
+.card .app-connection .btn .ic { width: 1.75rem; height: 1.75rem; border-radius: 0.375rem; box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.16); }
+
+.card .app-connection .btn .ic-tmap { background-color: #fff; }
+
+.card .app-connection .btn .ic-kakao-navi { background-color: #f9e000; }
+
 .card.is-info-more { padding-bottom: 4.125rem; }
 
 .card.is-info-more .ic-info { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGRhdGEtbmFtZT0i7IKs6rCB7ZiVIDczMDUiIHN0eWxlPSJvcGFjaXR5Oi4xO2ZpbGw6bm9uZSIgZD0iTTAgMGgyMHYyMEgweiIvPgogICAgPGcgZGF0YS1uYW1lPSLsgqzqsIHtmJUgNzI0MSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOCA3KSIgc3R5bGU9InN0cm9rZTojZmZmZmZmO2ZpbGw6bm9uZSI+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjUiIGhlaWdodD0iMTIiIHJ4PSIyLjUiIHN0eWxlPSJzdHJva2U6bm9uZSIvPgogICAgICAgIDxyZWN0IHg9Ii41IiB5PSIuNSIgd2lkdGg9IjQiIGhlaWdodD0iMTEiIHJ4PSIyIiBzdHlsZT0iZmlsbDpub25lIi8+CiAgICA8L2c+CiAgICA8ZyBkYXRhLW5hbWU9IuyCrOqwge2YlSA3MjQyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4IDEpIiBzdHlsZT0ic3Ryb2tlOiNmZmZmZmY7ZmlsbDpub25lIj4KICAgICAgICA8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiByeD0iMi41IiBzdHlsZT0ic3Ryb2tlOm5vbmUiLz4KICAgICAgICA8cmVjdCB4PSIuNSIgeT0iLjUiIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHJ4PSIyIiBzdHlsZT0iZmlsbDpub25lIi8+CiAgICA8L2c+Cjwvc3ZnPgo=); }
 
 .card.is-info-more .btn-info { border-color: #c8d265; background-color: #c8d265; }
+
+.card.is-location-more .ic-location { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGRhdGEtbmFtZT0iaWNfIExvY2F0aW9uIj4KICAgICAgICA8cGF0aCBkYXRhLW5hbWU9IuyCrOqwge2YlSA3MzA2IiBzdHlsZT0iZmlsbDpub25lIiBkPSJNMCAwaDIwdjIwSDB6Ii8+CiAgICAgICAgPHBhdGggZGF0YS1uYW1lPSLtjKjsiqQgMjIzIiBkPSJNMTMuNTc1IDcuNGEyLjUgMi41IDAgMSAwIDIuNSAyLjUgMi41IDIuNSAwIDAgMC0yLjUtMi41em0wIDEuMDE1QTEuNDg1IDEuNDg1IDAgMSAxIDEyLjA5IDkuOWExLjQ4NiAxLjQ4NiAwIDAgMSAxLjQ4NS0xLjQ4NXoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zLjA3NSAtMS40KSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZmZmZiIvPgogICAgICAgIDxwYXRoIGRhdGEtbmFtZT0i7Yyo7IqkIDIyNCIgZD0iTTEwLjM2NiAxYTYuNTQzIDYuNTQzIDAgMCAwLTYuNDg4IDYuNTkgMTAuMjg2IDEwLjI4NiAwIDAgMCAyLjIgNi4wNzMgMTcuMTg2IDE3LjE4NiAwIDAgMCA0IDMuODMzLjUyOC41MjggMCAwIDAgLjU3NCAwIDE3LjE4NiAxNy4xODYgMCAwIDAgNC0zLjgzMyAxMC4yODYgMTAuMjg2IDAgMCAwIDIuMi02LjA3M0E2LjU0MyA2LjU0MyAwIDAgMCAxMC4zNjYgMXptMCAxLjA4N2E1LjQ2MyA1LjQ2MyAwIDAgMSA1LjQxOCA1LjVBOS4xODkgOS4xODkgMCAwIDEgMTMuOCAxMy4wMWExNi4zMTggMTYuMzE4IDAgMCAxLTMuNDMgMy4zNjkgMTYuMzE4IDE2LjMxOCAwIDAgMS0zLjQzLTMuMzY5IDkuMTg5IDkuMTg5IDAgMCAxLTEuOTkyLTUuNDIgNS40NjMgNS40NjMgMCAwIDEgNS40MTgtNS41eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLjEyMiAxKSIgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLXJ1bGU6ZXZlbm9kZCIvPgogICAgPC9nPgo8L3N2Zz4K); }
+
+.card.is-location-more .btn-location { border-color: #c8d265; background-color: #c8d265; }
+
+.card.is-location-more .app-connection { display: flex; }
 
 .is-order .card-box.is-active .card-area { background-color: rgba(197, 211, 82, 0.2); z-index: 9; }
 
