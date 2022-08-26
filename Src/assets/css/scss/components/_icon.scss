@@ -26,6 +26,12 @@
 		'photo': (rem(24), rem(24)),
 		'slide-arrow': (rem(20), rem(20)),
 		'delete': (rem(40), rem(40)),
+		'arrow-right': (rem(12), rem(27)),
+		'id-result': (rem(109), rem(85)),
+		'system-error': (rem(150), rem(150)),
+		'system-error-network': (rem(229), rem(85)),
+		'tmap': (rem(19), rem(19)),
+		'kakaonavi': (rem(18), rem(20)),
 	);
 	@each $name, $size in $icon {
 		&-#{$name} {
@@ -34,4 +40,14 @@
 			background-image: url("../img/ic-#{$name}.svg");
 		}
 	}
+}
+
+// expend
+.ic-system-error {
+	background-image: url("../img/ic-system-error.png");
+}
+.ic-calendar {
+	width: rem(24);
+	height: rem(24);
+	background-image: url("../img/ic-calendar.png");
 }

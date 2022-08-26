@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	${require('html-loader?interpolate!../_template/common_meta.html')}
+	<title>GS THE FLASH 모바일 통합운영 시스템</title>
+	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+
+		<!-- #header -->
+		<header id="header" class="header">
+			<div class="inner">
+				<h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
+				<button class="btn btn-back"><i class="ic ic-back"></i><span class="sr-only">이전</span></button>
+				<h2 class="title">배달 신청</h2>
+				<div class="btn-group-row">
+					<button class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
+					<button class="btn btn-mypage"><i class="ic ic-mypage"></i><span class="sr-only">마이페이지</span></button>
+				</div>
+			</div>
+		</header>
+		<!-- //#header -->
+
+		<!-- #main -->
+		<main id="container">
+
+			<!-- #section -->
+			<section class="content">
+				<div class="inner">
+
+					<!-- .field-item -->
+					<div class="field-item">
+						<label for="" class="label">고객 전화번호<i class="necessary"><span class="sr-only">필수</span></i></label>
+						<!-- [.control] 입력 오류/ 미입력: .is-error -->
+						<div class="control">
+							<div class="input-item">
+								<input type="tel" id="" class="input" placeholder="고객 전화번호를 입력하세요." value="010-1234-1234">
+								<button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
+							</div>
+							<p class="error-msg">고객 전화번호를 입력하세요.</p>
+						</div>
+					</div>
+					<!-- //.field-item -->
+					
+					<!-- .field-item -->
+					<div class="field-item">
+						<label for="" class="label">고객 주소<i class="necessary"><span class="sr-only">필수</span></i></label>
+						<!-- [.control] 입력 오류/ 미입력: .is-error -->
+						<div class="control">
+							<div class="input-group">
+								<div class="input-item">
+									<input type="text" id="" class="input" placeholder="주소를 검색해주세요." value="서울시 강남구 논현로" readonly>
+									<button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
+								</div>
+								<button type="button" class="btn btn-form"><span>주소 검색</span></button>
+							</div>
+							<p class="error-msg">주소를 검색해주세요.</p>
+						</div>
+						<!-- [.control] 입력 오류/ 미입력: .is-error -->
+						<div class="control">
+							<div class="input-item">
+								<input type="text" id="" class="input" placeholder="고객 상세주소를 입력하세요." value="508 (역삼동 679번지 GS타워)">
+								<button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
+							</div>
+							<p class="error-msg">고객 상세주소를 입력하세요.</p>
+						</div>
+					</div>
+					<!-- //.field-item -->
+
+					<!-- .field-item -->
+					<div class="field-item">
+						<label for="" class="label">고객 요청 사항</label>
+						<div class="control">
+							<div class="input-item">
+								<input type="tel" id="" class="input" placeholder="고객 요청 사항을 입력하세요.">
+								<button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- //.field-item -->
+					
+					<!-- .field-item -->
+					<div class="field-item">
+						<p class="label">주문채널<i class="necessary"><span class="sr-only">필수</span></i></p>
+						<div class="control">
+							<div class="choice-group col2">
+								<label class="custom-radio btn-type secondary" for="choiceChannel1">
+									<input type="radio" id="choiceChannel1" name="choiceChannel">
+									<span class="label-txt">일반배송</span>
+								</label>
+								<label class="custom-radio btn-type secondary" for="choiceChannel2">
+									<input type="radio" id="choiceChannel2" name="choiceChannel">
+									<span class="label-txt">퀵커머스</span>
+								</label>
+								<label class="custom-radio btn-type secondary" for="choiceChannel3">
+									<input type="radio" id="choiceChannel3" name="choiceChannel" checked>
+									<span class="label-txt">사전예약</span>
+								</label>
+								<label class="custom-radio btn-type secondary" for="choiceChannel4">
+									<input type="radio" id="choiceChannel4" name="choiceChannel">
+									<span class="label-txt">점포몰</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!-- //.field-item -->
+					
+					<!-- .field-item -->
+					<div class="field-item">
+						<p class="label">배송 신청 사유<i class="necessary"><span class="sr-only">필수</span></i></p>
+						<div class="control">
+							<div class="choice-group col2">
+								<label class="custom-radio btn-type secondary" for="choiceReason1">
+									<input type="radio" id="choiceReason1" name="choiceReason" checked>
+									<span class="label-txt">신규</span>
+								</label>
+								<label class="custom-radio btn-type secondary" for="choiceReason2">
+									<input type="radio" id="choiceReason2" name="choiceReason">
+									<span class="label-txt">재배송(고객사유)</span>
+								</label>
+								<label class="custom-radio btn-type secondary" for="choiceReason3">
+									<input type="radio" id="choiceReason3" name="choiceReason">
+									<span class="label-txt">오배송</span>
+								</label>
+								<label class="custom-radio btn-type secondary" for="choiceReason4">
+									<input type="radio" id="choiceReason4" name="choiceReason" checked>
+									<span class="label-txt">기타</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!-- //.field-item -->
+				</div>
+			</section>
+			<!-- //#section -->
+
+			<!-- #section -->
+			<section class="content is-bottom">
+				<div class="inner">
+					<div class="btn-group-col">
+						<button type="button" class="btn btn-primary popup-open" data-popup="popAlertRequestComplete"><span>배송신청</span></button>
+					</div>
+				</div>
+			</section>
+			<!-- //#section -->
+
+		</main>
+		<!-- //#main -->
+		
+		<!-- .bottom-sheet -->
+		<!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
+		<div class="popup bottom-sheet is-active" id="popAlertRequestComplete">
+			<div class="inner">
+				<div class="pop-head">
+					<h3 class="tit">알림</h3>
+				</div>
+				<div class="pop-body">
+					<p class="alert-msg">배송이 접수되었습니다.</p>
+				</div>
+				<!-- .btn-group-row -->
+				<div class="btn-group-row btn-full">
+					<button type="button" class="btn btn-primary popup-close"><span>확인</span></button>
+				</div>
+				<!-- //.btn-group-row -->
+			</div>
+		</div>
+		<i class="modal-dim"></i>
+		<!-- //bottom-sheet -->
+
+	</div>
+	<!-- //#wrap -->
+</body>
+</html>

@@ -98,8 +98,6 @@
 // 	}
 // }
 
-
-
 // txt
 .txt-guide {
 	color: $color-gray_ae;
@@ -139,6 +137,12 @@
 			text-align: center;
 			font-size: rem(20);
 			font-weight: 500;
+		}
+	}
+	.field-item {
+		margin-top: 0;
+		&:not(:first-child) {
+			margin-top: rem(20);
 		}
 	}
 	[class^='btn-group-'] {
@@ -185,7 +189,7 @@
 		margin-top: rem(10);
 	}
 	.field-item {
-		+ .field-item {
+		&:not(:first-child) {
 			margin-top: rem(30);
 		}
 		.label {

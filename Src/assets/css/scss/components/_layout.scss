@@ -38,6 +38,7 @@
 	.inner {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		width: 100%;
 		min-height: rem(68);
 		padding: 0 rem(16);
@@ -59,15 +60,15 @@
 		}
 	}
 	.title {
-		margin-left: rem(8);
-		margin-right: rem(16);
+		//margin-left: rem(8);
+		//margin-right: rem(16);
 		color: $color-white;
 		font-size: rem(20);
 		font-weight: 500;
 		white-space: nowrap;
 	}
 	.btn-group-row {
-		margin-left: auto;
+		//margin-left: auto;
 		.btn {
 			margin: 0;
 		}
@@ -81,13 +82,14 @@
 		}
 	}
 	&.is-delivery {
-		min-height: rem(146);
-		.title {
-			margin-left: rem(8);
-		}
+		min-height: rem(147);
+		// .title {
+		// 	margin-left: rem(8);
+		// }
 	}
 	&.is-mypage {
-		min-height: rem(29 + 187);
+		min-height: rem(29 + 187 + 8);
+		border-bottom: rem(8) solid #f5f5f5;
 		[class*='btn-'] {
 			position: absolute;
 			top: rem(1);
@@ -101,10 +103,23 @@
 		min-height: 0;
 	}
 	.btn-back {
-		margin-left: rem(-6);
-		+ .title {
-			margin-left: 0;
-		}
+		position: absolute;
+		top: rem(14);
+		left: rem(15);
+		// margin-left: rem(-6);
+		// + .title {
+		// 	margin-left: 0;
+		// }
+	}
+	.btn-mypage {
+		position: absolute;
+		top: rem(14);
+		left: rem(16);
+	}
+	.btn-refresh {
+		position: absolute;
+		top: rem(14);
+		right: rem(16);
 	}
 }
 #container {
@@ -120,13 +135,30 @@
 		padding-top: rem(92);
 	}
 	&.is-delivery {
-		padding-top: rem(146 + 60 + 57 + 32);
+		padding-top: rem(147 + 60 + 57 + 32);
 		.fixed-top {
 			top: rem(62);
 		}
 	}
+	&.is-history {
+		padding-top: rem(68 + 46 + 57);
+		.fixed-top {
+			top: rem(68);
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: rem(24);
+				right: rem(24);
+				border-bottom: rem(1) solid $color-black;
+			}
+			.sort-list {
+				padding-top: rem(5);
+			}
+		}
+	}
 	&.is-mypage {
-		padding-top: rem(187 + 29);
+		padding-top: rem(187 + 29 + 8);
 		.fixed-top {
 			top: rem(29);
 		}
@@ -158,6 +190,22 @@ section {
 			flex-direction: column;
 			padding-top: 0;
 			min-height: 100%;
+		}
+		&.note-list {
+			display: flex;
+			flex-direction: column;
+			min-height: 100%;
+		}
+		&.my-menu {
+			padding-top: 0;
+		}
+	}
+	&.is-bottom {
+		flex-grow: 0;
+		margin-top: auto;
+		.inner {
+			padding-top: rem(16);
+			padding-bottom: rem(26);
 		}
 	}
 	&.is-floating {

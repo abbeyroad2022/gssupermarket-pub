@@ -62,6 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	const cardList = document.querySelectorAll('.card-list .card');
 	for(var i = 0; i < cardList.length; i++){
 		const btnInfo = cardList[i].querySelector('.btn-info');
+		const btnLocation = cardList[i].querySelector('.btn-location');
+		const appConnection = cardList[i].querySelector('.app-connection');
+		const btnTmap = cardList[i].querySelector('.btn-tmap');
+		const btnKakaoNavi = cardList[i].querySelector('.btn-kakaonavi');
 		if (btnInfo !== null) {
 			btnInfo.addEventListener('click', function(e){
 				e.preventDefault();
@@ -74,6 +78,30 @@ document.addEventListener("DOMContentLoaded", () => {
 					}
 					parentElement.classList.add('is-info-more');
 				}
+			});
+		}
+		if (appConnection !== null) {
+			btnLocation.addEventListener('click', function(e){
+				e.preventDefault();
+				const parentElement = this.parentElement.parentElement.parentElement.parentElement;
+				if (parentElement.classList.contains('is-location-more')) {
+					parentElement.classList.remove('is-location-more');
+				} else {
+					for(var j = 0; j < cardList.length; j++){
+						cardList[j].classList.remove('is-location-more');
+					}
+					parentElement.classList.add('is-location-more');
+				}
+			});
+			btnTmap.addEventListener('click', function(e){
+				e.preventDefault();
+				const parentElement = this.parentElement.parentElement.parentElement.parentElement;
+				parentElement.classList.remove('is-location-more');
+			});
+			btnKakaoNavi.addEventListener('click', function(e){
+				e.preventDefault();
+				const parentElement = this.parentElement.parentElement.parentElement.parentElement;
+				parentElement.classList.remove('is-location-more');
 			});
 		}
 	}

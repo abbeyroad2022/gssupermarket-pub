@@ -4,6 +4,7 @@
 .cont-item {
 	margin-top: rem(16);
 	.tit {
+		color: #000;
 		font-size: rem(20);
 		font-weight: 500;
 		margin-bottom: rem(2);
@@ -17,9 +18,26 @@
 }
 .cont-body {
 	
-
 }
 
+// title
+.title-group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// login
+.form-login {
+	&.field-item {
+		margin-top: rem(12);
+	}
+	.control + .control {
+		margin-top: rem(14);
+	}
+}
+
+// pin number
 .pin-number {
 	margin: rem(30) 0;
 	.control {
@@ -88,9 +106,6 @@
 }
 
 /* keypad */
-.keypad {
-
-}
 .keypad-group {
 	display: flex;
 	align-items: center;
@@ -102,7 +117,30 @@
 	}
 }
 
-
+/* id result */
+.id-result {
+	.tit {
+		font-size: rem(24);
+		font-weight: 700;
+		margin-bottom: rem(12);
+	}
+	.ic-id-result {
+		margin: rem(16) 0 rem(8) rem(16);
+	}
+}
+.result-box {
+	margin-top: rem(40);
+	padding: rem(14) rem(10) rem(12);
+	text-align: center;
+	color: #000;
+	border-radius: rem(6);
+	background-color: $color-gray-f6;
+	em {
+		color: $color-light-olive2;
+		font-family: $en-font-family;
+		font-weight: 700;
+	}
+}
 
 /* swiper slide */
 .slider-wrap {
@@ -178,4 +216,21 @@
 			object-fit: cover;
 		}
 	}
+}
+
+/* error info */
+.error-info {
+	.ic-system-error {
+		margin: rem(40) 0 rem(8);
+	}
+	.ic-system-error-network {
+		margin: rem(64) 0 rem(30);
+	}
+	.tit {
+		margin-bottom: rem(18);
+	}
+	.txt {
+		line-height: 1.38;
+	}
+
 }

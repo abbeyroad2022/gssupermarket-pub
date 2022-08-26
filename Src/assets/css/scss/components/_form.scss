@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* ================================== Form ================================== */
 .field-item {
-	width: 100%;
-	+ .field-item {
+	margin-top: rem(6);
+	&:not(:first-child) {
 		margin-top: rem(20);
 	}
 }
@@ -12,14 +12,14 @@
 	margin-bottom: rem(11);
 	font-size: rem(14);
 	font-weight: 500;
-	.necessary {
-		width: rem(4);
-		height: rem(4);
-		margin: rem(-9) 0 0 rem(4);
-		border-radius: 50%;
-		background-color: $color-point;
-
-	}
+}
+.necessary {
+	display: inline-block;
+	width: rem(4);
+	height: rem(4);
+	margin: rem(-9) 0 0 rem(4);
+	border-radius: 50%;
+	background-color: $color-point;
 }
 .input-group {
 	display: flex;
@@ -89,6 +89,12 @@
 		color: $color-error;
 		font-size: rem(12);
 	}
+	.success-msg {
+		display: none;
+		padding: rem(4) rem(16) rem(1);
+		color: $color-success;
+		font-size: rem(12);
+	}
 	.btn-reset {
 		display: none;
 		position: absolute;
@@ -130,6 +136,9 @@
 		.error-msg {
 			display: block;
 		}
+		.success-msg {
+			display: none;
+		}
 	}
 	&.is-success {
 		.input-item:after {
@@ -144,6 +153,12 @@
 		textarea {
 			color: $color-spruce;
 			border-color: $color-success;
+		}
+		.error-msg {
+			display: none;
+		}
+		.success-msg {
+			display: block;
 		}
 	}
 }
@@ -230,6 +245,8 @@
 		}
 	}
 	.label-txt {
+		display: flex;
+		align-items: center;
 		margin-right: rem(10);
 		padding: 0 rem(15) 0 rem(8);
 	}
@@ -247,7 +264,6 @@
 			}
 		}
 		.label-txt {
-			padding-left: rem(6);
 			font-weight: 500;
 		}
 	}
@@ -302,9 +318,6 @@
 		display: block;
 	}
 }
-
-
-
 
 // toggle switch 0n/0ff
 .custom_check {
@@ -362,7 +375,6 @@
 		}
 	}
 }
-
 
 // upload
 .upload-item {
@@ -475,10 +487,45 @@
 	margin: rem(-3) auto rem(7);
 }
 .form-barcode {
-	
 	.control {
 		display: block;
 		max-width: rem(196);
 		margin: 0 auto;
 	}
+}
+
+// 약관동의
+.agree-check {
+	.choice-group {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.custom-check {
+		margin-top: rem(14);
+		padding: rem(7) rem(16);
+		~ .btn-terms-view {
+			padding-left: rem(50);
+		}
+	}
+	.fill-type {
+		margin-top: rem(10);
+		margin-bottom: rem(-5);
+		padding: rem(12) rem(14);
+		border: rem(2) solid $color-gray_e5;
+		border-radius: rem(6);
+		&.is-checked {
+			border-color: $color-light-olive2;
+			background-color: rgba($color-light-olive2, .15);
+		}
+	}
+}
+
+// 조회기간
+.period-setting {
+	display: flex;
+	align-items: center;
+	padding: rem(15) rem(24) rem(7);
+	font-weight: 500;
+	background-color: $color-white;
 }

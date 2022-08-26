@@ -49,7 +49,7 @@
 	max-height: $max-height;
 
 	// ie
-	max-height: ($max-height * $lines) + em;
+	// max-height: ($max-height * $lines) + em;
 	display: block;
 
 	// Webkit solution for multiline ellipsis
