@@ -470,7 +470,7 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .is-order .card-area { display: flex; align-items: center; justify-content: center; }
 
-.is-order .card-area .order-num { display: none; color: #2c2a29; font-family: "Montserrat", sans-serif; font-size: 5rem; font-weight: 700; }
+.is-order .card-area .order-num { display: none; color: #2c2a29; font-family: "Montserrat", sans-serif; font-size: 5rem; font-weight: 700; pointer-events: none; }
 
 /* ================================== List ================================== */
 .note-list .list-group, .note-list .no-data { border-top: 0.0625rem solid #222; }
