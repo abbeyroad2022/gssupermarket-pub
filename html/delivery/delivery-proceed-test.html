@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+  <!-- mobile automatic link removal -->
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+  <title>GS THE FLASH 모바일 통합운영 시스템</title>
+  <link rel="stylesheet" href="../../assets/libs/swiper/swiper-bundle.min.css">
+  <script src="../../assets/libs/swiper/swiper-bundle.min.js"></script>
+
+  <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- #wrap -->
+  <div id="wrap">
+
+    <!-- #header -->
+    <header id="header" class="header is-bg is-delivery">
+      <div class="inner">
+        <h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
+        <h2 class="title">배송현황</h2>
+        <div class="btn-group-row">
+          <button class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
+          <button class="btn btn-mypage"><i class="ic ic-mypage"></i><span class="sr-only">마이페이지</span></button>
+        </div>
+      </div>
+    </header>
+    <!-- //#header -->
+
+    <!-- #main -->
+    <main id="container" class="is-delivery">
+
+      <!-- #section -->
+      <section class="fixed-top">
+        <!-- .delivery-info -->
+        <div class="delivery-info">
+          <i class="ic ic-delivery"></i>
+          <p class="company">운송업체<br><strong>서울 12가 3456</strong></p>
+          <p class="store"><i>GS</i> 더프레시<br>강남대치 점</p>
+        </div>
+        <!-- //.delivery-info -->
+        <!-- .tab-group -->
+        <div class="tab-group">
+          <ul class="tab-list col3">
+            <li class="tab-item"><a href="javascript:vold(0)" class="tab"><span>대기</span><i class="case-num">999</i></a></li>
+            <li class="tab-item is-active"><a href="javascript:vold(0)" class="tab"><span>진행</span><i class="case-num">06</i></a></li>
+            <li class="tab-item"><a href="javascript:vold(0)" class="tab"><span>완료</span><i class="case-num">00</i></a></li>
+          </ul>
+        </div>
+        <!-- //.tab-group -->
+        <!-- .sort-group -->
+        <div class="sort-group">
+          <ul class="sort-list">
+            <li class="sort-item is-active"><button type="button" class="sort"><span>전체</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>일반배송</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>점포몰</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>퀵커머스</span></button></li>
+            <li class="sort-item"><button type="button" class="sort"><span>사전예약</span></button></li>
+          </ul>
+        </div>
+        <!-- //.sort-group -->
+        <!-- .total-count -->
+        <p class="inner total-count"><span>2/12</span></p>
+        <!-- //.total-count -->
+      </section>
+      <!-- //#section -->
+
+      <button id="bt">요소 생성</button>
+
+      <!-- #section -->
+      <section class="content is-floating is-select is-drag is-order">
+        <!-- floating buttton 사용시 .is-floating 적용, is-select: 선택 기능 사용, is-deag: 삭제 기능 사용, is-order: 순번부여 기능 사용 -->
+        <div class="inner card-list">
+
+          <!-- card -->
+          <div class="card">
+            <!-- [.card-box 클래스 추가] .is-active: 선택 활성화, .is-delete: 삭제버튼 활성화 -->
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type1"><span class="sr-only">일반배송</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+                <div class="btn-group-row app-connection">
+                  <button type="button" class="btn btn-tmap"><i class="ic ic-tmap"></i><span class="sr-only">TMAP</span></button>
+                  <button type="button" class="btn btn-kakaonavi"><i class="ic ic-kakaonavi"></i><span class="sr-only">카카오내비</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                  <p class="info-etc"><i class="ic ic-etc"></i><span>기타사항 : 쌀 20kg</span></p>
+                </div>
+              </div>
+              <i class="card-area"><span class="order-num">1</span></i>
+            </div>
+            <button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <!-- [.card-box 클래스 추가] .is-active: 선택 활성화, .is-delete: 삭제버튼 활성화 -->
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type2"><span class="sr-only">사전예약</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+                <div class="btn-group-row app-connection">
+                  <button type="button" class="btn btn-tmap"><i class="ic ic-tmap"></i><span class="sr-only">TMAP</span></button>
+                  <button type="button" class="btn btn-kakaonavi"><i class="ic ic-kakaonavi"></i><span class="sr-only">카카오내비</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                </div>
+              </div>
+              <i class="card-area"><span class="order-num">2</span></i>
+            </div>
+            <button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <!-- [.card-box 클래스 추가] .is-active: 선택 활성화, .is-delete: 삭제버튼 활성화 -->
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type3"><span class="sr-only">퀵커머스</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+                <div class="btn-group-row app-connection">
+                  <button type="button" class="btn btn-tmap"><i class="ic ic-tmap"></i><span class="sr-only">TMAP</span></button>
+                  <button type="button" class="btn btn-kakaonavi"><i class="ic ic-kakaonavi"></i><span class="sr-only">카카오내비</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                </div>
+              </div>
+              <i class="card-area"><span class="order-num">3</span></i>
+            </div>
+            <button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <!-- [.card-box 클래스 추가] .is-active: 선택 활성화, .is-delete: 삭제버튼 활성화 -->
+            <div class="card-box">
+              <div class="card-head">
+                <h3 class="name">홍*동</h3>
+                <!-- [tag type] .tag-type1: 일반배송, .tag-type2: 사전예약, .tag-type3: 퀵커머스, .tag-type4: 점포몰 -->
+                <span class="tag tag-type4"><span class="sr-only">점포몰</span></span>
+                <div class="btn-group-row">
+                  <button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button>
+                  <a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a>
+                  <button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button>
+                </div>
+                <div class="btn-group-row app-connection">
+                  <button type="button" class="btn btn-tmap"><i class="ic ic-tmap"></i><span class="sr-only">TMAP</span></button>
+                  <button type="button" class="btn btn-kakaonavi"><i class="ic ic-kakaonavi"></i><span class="sr-only">카카오내비</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p>
+                <div class="request">
+                  <ul class="request-info">
+                    <li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li>
+                    <li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li>
+                  </ul>
+                </div>
+              </div>
+              <i class="card-area"><span class="order-num">4</span></i>
+            </div>
+            <button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>
+          </div>
+
+        </div>
+
+        <div class="inner floating-btm">
+          <!-- .btn-group-col -->
+          <div class="btn-group-col">
+            <button type="button" class="btn btn-primary" disabled><span>배차 순서 확정</span></button>
+          </div>
+          <!-- //.btn-group-col -->
+        </div>
+      </section>
+      <!-- //#section -->
+
+      <div id="floating-filter">
+        <button type="button" class="btn btn-filter popup-open" data-popup="popFilter"><i class="ic ic-filter"></i><span class="sr-only">필터 설정</span></button>
+      </div>
+
+    </main>
+    <!-- //#main -->
+
+    <!-- .full-popup -->
+    <!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
+    <div class="popup full-popup pop-receipt" id="popReceipt">
+      <div class="inner">
+        <!-- .receipt-wrap -->
+        <div class="receipt-wrap">
+          <div class="pop-head">
+            <h3 class="logo"><i class="logo-img"><span class="sr-only">GS THE FLASH</span></i><span class="logo-txt">배달 접수증</span></h3>
+          </div>
+          <div class="pop-body">
+            <dl class="receipt-info">
+              <dt>배달 접수증</dt>
+              <dd><span class="date">2022.08.02</span><i class="line"></i><span class="detail">0002 - 1</span></dd>
+              <dt>접수시간</dt>
+              <dd><span class="date">2022.08.02</span><i class="line"></i><span class="detail">10:22</span></dd>
+              <dt>배달약속시간</dt>
+              <dd><span class="date">2022.08.02</span><i class="line"></i><span class="detail">11:5</span></dd>
+            </dl>
+            <p class="product-info"><strong>상품내역</strong><span><em>1</em> 박스</span></p>
+            <ul class="product-list">
+              <li><span class="name">유어스) 지리산 맑은 샘물 2L 유어스) 지리산 맑은 샘물 2L</span><span class="num">99</span><span class="price">999,999</li>
+							<li><span class="name">농심) 양파링(신) 84g</span><span class="num">1</span><span class="price">1,305</li>
+							<li><span class="name">친환경) 상해유기농요구르</span><span class="num">1</span><span class="price">3,400</li>
+							<li><span class="name">유어스) 지리산 맑은 샘물 2L</span><span class="num">5</span><span class="price">12,000</li>
+							<li><span class="name">농심) 양파링(신) 84g</span><span class="num">1</span><span class="price">1,305</li>
+							<li><span class="name">친환경) 상해유기농요구르</span><span class="num">1</span><span class="price">3,400</li>
+							<li><span class="name">유어스) 지리산 맑은 샘물 2L</span><span class="num">5</span><span class="price">12,000</li>
+							<li><span class="name">농심) 양파링(신) 84g</span><span class="num">1</span><span class="price">1,305</li>
+							<li><span class="name">친환경) 상해유기농요구르</span><span class="num">1</span><span class="price">3,400</li>
+						</ul>
+						<!-- .btn-group-col -->
+						<div class="btn-group-col">
+							<button type="button" class="btn btn-pop-primary popup-close"><span>닫기</span></button>
+          </div>
+          <!-- //.btn-group-col -->
+        </div>
+      </div>
+      <!-- //.receipt-wrap -->
+    </div>
+  </div>
+  <!-- //.full-popup -->
+
+  <!-- .bottom-sheet -->
+  <div class="popup bottom-sheet" id="popFilter">
+    <div class="inner">
+      <div class="pop-head">
+        <h3 class="tit">필터</h3>
+      </div>
+      <div class="pop-body">
+        <!-- .field-item -->
+        <div class="field-item">
+          <p class="label">정렬방식</p>
+          <div class="control">
+            <div class="choice-group col2">
+              <label class="custom-radio btn-type primary" for="filterSort1">
+                <input type="radio" id="filterSort1" name="filterSort">
+                <span class="label-txt">주소(가나다순)</span>
+              </label>
+              <label class="custom-radio btn-type primary" for="filterSort2">
+                <input type="radio" id="filterSort2" name="filterSort" checked>
+                <span class="label-txt">배송요청시간순</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- //.field-item -->
+        <!-- .field-item -->
+        <div class="field-item">
+          <p class="label">점포별</p>
+          <div class="control">
+            <div class="choice-group">
+              <label class="custom-check btn-type primary" for="filterStore1">
+                <input type="checkbox" id="filterStore1" name="filterStore" checked>
+                <span class="label-txt">전체</span>
+              </label>
+              <label class="custom-check btn-type primary" for="filterStore2">
+                <input type="checkbox" id="filterStore2" name="filterStore">
+                <span class="label-txt">일반배송</span>
+              </label>
+              <label class="custom-check btn-type primary" for="filterStore3">
+                <input type="checkbox" id="filterStore3" name="filterStore">
+                <span class="label-txt">점포몰</span>
+              </label>
+              <label class="custom-check btn-type primary" for="filterStore4">
+                <input type="checkbox" id="filterStore4" name="filterStore">
+                <span class="label-txt">퀵커머스</span>
+              </label>
+              <label class="custom-check btn-type primary" for="filterStore5">
+                <input type="checkbox" id="filterStore5" name="filterStore">
+                <span class="label-txt">사전예약</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- //.field-item -->
+      </div>
+      <!-- .btn-group-row -->
+      <div class="btn-group-row btn-half">
+        <button type="reset" class="btn btn-pop-secondary"><span>초기화</span></button>
+        <button type="button" class="btn btn-pop-primary popup-close"><span>적용</span></button>
+      </div>
+      <!-- //.btn-group-row -->
+    </div>
+  </div>
+  <i class="modal-dim"></i>
+  <!-- //bottom-sheet -->
+
+  </div>
+  <!-- //#wrap -->
+
+  <script>
+    var bt = document.getElementById("bt");
+
+    function createNode() {
+      var cardListCreate = document.querySelector(".card-list");
+      var div = document.createElement("div");
+      div.setAttribute("class", "card");
+      div.innerHTML = `<div class="card-box"><div class="card-head"><h3 class="name">홍*동</h3><span class="tag tag-type4"><span class="sr-only">점포몰</span></span><div class="btn-group-row"><button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button><a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a><button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button></div><div class="btn-group-row app-connection"><button type="button" class="btn btn-tmap"><i class="ic ic-tmap"></i><span class="sr-only">TMAP</span></button><button type="button" class="btn btn-kakaonavi"><i class="ic ic-kakaonavi"></i><span class="sr-only">카카오내비</span></button></div></div><div class="card-body"><p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p><div class="request"><ul class="request-info"><li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li><li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li></ul></div></div><i class="card-area"><span class="order-num">4</span></i></div><button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>`;
+      cardListCreate.appendChild(div);
+    }
+    bt.onclick = createNode;
+
+  </script>
+
+  <script type="text/javascript" src="../../assets/js/ui.js"></script>
+</body>
+
+</html>
