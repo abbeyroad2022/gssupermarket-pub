@@ -525,7 +525,24 @@
 .period-setting {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	width: 100%;
 	padding: rem(15) rem(24) rem(7);
 	font-weight: 500;
+	white-space: nowrap;
 	background-color: $color-white;
+	.tit {
+		margin-right: rem(8);
+	}
+	.tilde {
+		margin: 0 rem(8) 0 rem(5);
+	}
+	input {
+		max-width: rem(100);
+		font-family: $en-font-family;
+		font-weight: 500;
+	}
+	img {
+		cursor: pointer;
+	}
 }

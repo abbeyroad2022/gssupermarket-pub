@@ -188,6 +188,9 @@
             display: flex;
         }
     }
+    .btn > * {
+        pointer-events: none;
+    }
 }
 
 .is-order {
@@ -208,6 +211,7 @@
             font-family: $en-font-family;
             font-size: rem(80);
             font-weight: 700;
+            pointer-events: none;
         }
     }
 }

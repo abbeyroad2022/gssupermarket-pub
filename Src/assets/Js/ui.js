@@ -27,83 +27,71 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
-	// card toggle select
-	document.querySelectorAll('.is-select .card-area').forEach(toggle => {
-		toggle.addEventListener('click', (e) => {
-			e.preventDefault()
-			if (!toggle.parentNode.classList.contains('is-delete')) {
-				toggle.parentNode.classList.toggle('is-active')
-			}
-		})
-	})
+	// card list control
+	const content = document.querySelector('.content'),
+		cardList = document.querySelector('.card-list');
 
-	// card drag
-	document.querySelectorAll('.is-drag .card-box').forEach(cardBox => {
-		let start_x, end_x;
-		cardBox.addEventListener('touchstart', touch_start);
-		cardBox.addEventListener('touchend', touch_end);
-		function touch_start(e) {
-			start_x = e.touches[0].pageX
-		}
-		function touch_end(e) {
-			end_x = e.changedTouches[0].pageX;
-			if (cardBox.classList.contains('is-active')) {
-				const xPos = start_x - end_x;
-				if (xPos > 80) {
-					cardBox.classList.add('is-delete')
-				} else if (xPos < -80) {
-					cardBox.classList.remove('is-delete')
+	if (cardList !== null) {
+		cardList.addEventListener('click', function(e) {
+			//console.log(e.target, e.target.parentNode);
+			// card toggle select
+			if (content.classList.contains('is-select') && e.target.className === 'card-area' && !e.target.parentNode.classList.contains('is-delete')) {
+				e.target.parentNode.classList.toggle('is-active');
+			}
+			// card drag
+			if (content.classList.contains('is-drag') && e.target.className === 'card-area') {
+				let start_x, end_x;
+				e.target.addEventListener('touchstart', touch_start);
+				e.target.addEventListener('touchend', touch_end);
+				function touch_start(pos) {
+					start_x = pos.touches[0].pageX;
+				}
+				function touch_end(pos) {
+					end_x = pos.changedTouches[0].pageX;
+					if (e.target.parentNode.classList.contains('is-active')) {
+						const xPos = start_x - end_x;
+						if (xPos > 80) {
+							e.target.parentNode.classList.add('is-delete')
+						} else if (xPos < -80) {
+							e.target.parentNode.classList.remove('is-delete')
+						}
+					}
 				}
 			}
-		}
-	})
-	
-	// btn info more
-	const cardList = document.querySelectorAll('.card-list .card');
-	for(var i = 0; i < cardList.length; i++){
-		const btnInfo = cardList[i].querySelector('.btn-info');
-		const btnLocation = cardList[i].querySelector('.btn-location');
-		const appConnection = cardList[i].querySelector('.app-connection');
-		const btnTmap = cardList[i].querySelector('.btn-tmap');
-		const btnKakaoNavi = cardList[i].querySelector('.btn-kakaonavi');
-		if (btnInfo !== null) {
-			btnInfo.addEventListener('click', function(e){
-				e.preventDefault();
-				const parentElement = this.parentElement.parentElement.parentElement.parentElement;
-				if (parentElement.classList.contains('is-info-more')) {
-					parentElement.classList.remove('is-info-more');
+			// popup
+			if (e.target.classList.contains('popup-open')) {
+				const popId = e.target.dataset.popup;
+				const elPop = document.querySelector('#' + popId);
+				elPop.classList.add('is-active');
+			}
+			const elCardAll = document.querySelectorAll('.card-list .card');
+			const parentNode = e.target.parentNode.parentNode.parentNode.parentNode;
+			// btn info
+			if (e.target.className === 'btn btn-info') {
+				if (parentNode.classList.contains('is-info-more')) {
+					parentNode.classList.remove('is-info-more');
 				} else {
-					for(var j = 0; j < cardList.length; j++){
-						cardList[j].classList.remove('is-info-more');
+					for(var j = 0; j < elCardAll.length; j++){
+						elCardAll[j].classList.remove('is-info-more');
 					}
-					parentElement.classList.add('is-info-more');
+					parentNode.classList.add('is-info-more');
 				}
-			});
-		}
-		if (appConnection !== null) {
-			btnLocation.addEventListener('click', function(e){
-				e.preventDefault();
-				const parentElement = this.parentElement.parentElement.parentElement.parentElement;
-				if (parentElement.classList.contains('is-location-more')) {
-					parentElement.classList.remove('is-location-more');
+			}
+			// btn location
+			if (e.target.className === 'btn btn-location') {
+				if (parentNode.classList.contains('is-location-more')) {
+					parentNode.classList.remove('is-location-more');
 				} else {
-					for(var j = 0; j < cardList.length; j++){
-						cardList[j].classList.remove('is-location-more');
+					for(var j = 0; j < elCardAll.length; j++){
+						elCardAll[j].classList.remove('is-location-more');
 					}
-					parentElement.classList.add('is-location-more');
+					parentNode.classList.add('is-location-more');
 				}
-			});
-			btnTmap.addEventListener('click', function(e){
-				e.preventDefault();
-				const parentElement = this.parentElement.parentElement.parentElement.parentElement;
-				parentElement.classList.remove('is-location-more');
-			});
-			btnKakaoNavi.addEventListener('click', function(e){
-				e.preventDefault();
-				const parentElement = this.parentElement.parentElement.parentElement.parentElement;
-				parentElement.classList.remove('is-location-more');
-			});
-		}
+			}
+			if (e.target.className === 'btn btn-tmap' || e.target.className === 'btn btn-kakaonavi') {
+				parentNode.classList.remove('is-location-more');
+			}
+		});
 	}
 
 	// toast close
@@ -135,14 +123,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.querySelectorAll('.field-item .control').forEach(control => {
 		const elInput = control.querySelector('.input');
 		const btnReset = control.querySelector('.btn-reset');
-		
 		if (elInput !== null) {
 			elInput.addEventListener('input', function(e){
 				e.preventDefault();
 				return elInput.value.length > 0 ? btnReset.classList.add('show') : btnReset.classList.remove('show');
 			});
 		}
-
 		if (btnReset !== null) {
 			btnReset.addEventListener('click', function(){
 				elInput.value = '';
@@ -197,5 +183,4 @@ document.addEventListener("DOMContentLoaded", () => {
 			btnDeliveryComplete.disabled = false;
 		});
 	}
-
 });
