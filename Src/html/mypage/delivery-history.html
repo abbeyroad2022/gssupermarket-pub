@@ -525,8 +525,8 @@
 	<!-- //#wrap -->
 
 	<i class="modal-dim datepicker-dim"></i>
-
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 	<script>
 		// INCLUDE JQUERY & JQUERY UI 1.11.2
@@ -541,11 +541,11 @@
 				changeYear: true,
 				changeMonth:true,
 				showButtonPanel: true,
-				gotoCurrent: true,
+				// gotoCurrent: true,
 				closeText: "닫기",
 				currentText: "오늘로 이동",
 				showOn: "both",
-				todayBtn: true,
+				//todayBtn: true,
 				buttonImage: "../../assets/img/ic-calendar.svg",
 				buttonImageOnly: true,
 				beforeShow: function(input, inst) {
@@ -559,7 +559,7 @@
 					modalDim.style.zIndex = '-1';
 				},
 			});
-		} );
+		});
 	</script>
 
 </body>

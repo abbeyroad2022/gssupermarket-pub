@@ -36,27 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			//console.log(e.target, e.target.parentNode);
 			// card toggle select
 			if (content.classList.contains('is-select') && e.target.className === 'card-area' && !e.target.parentNode.classList.contains('is-delete')) {
-				e.target.parentNode.classList.toggle('is-active');
-			}
-			// card drag
-			if (content.classList.contains('is-drag') && e.target.className === 'card-area') {
-				let start_x, end_x;
-				e.target.addEventListener('touchstart', touch_start);
-				e.target.addEventListener('touchend', touch_end);
-				function touch_start(pos) {
-					start_x = pos.touches[0].pageX;
-				}
-				function touch_end(pos) {
-					end_x = pos.changedTouches[0].pageX;
-					if (e.target.parentNode.classList.contains('is-active')) {
-						const xPos = start_x - end_x;
-						if (xPos > 80) {
-							e.target.parentNode.classList.add('is-delete')
-						} else if (xPos < -80) {
-							e.target.parentNode.classList.remove('is-delete')
-						}
-					}
-				}
+				//e.stopPropagation();
+				//e.target.parentNode.classList.toggle('is-active');
+				e.target.parentNode.classList.contains('is-active') ? e.target.parentNode.classList.remove('is-active') : e.target.parentNode.classList.add('is-active');
 			}
 			// popup
 			if (e.target.classList.contains('popup-open')) {
@@ -92,6 +74,26 @@ document.addEventListener("DOMContentLoaded", () => {
 				parentNode.classList.remove('is-location-more');
 			}
 		});
+		// card drag
+		let start_x, end_x;
+		cardList.addEventListener('touchstart', function(e) {
+			if (content.classList.contains('is-drag') && e.target.parentNode.classList.contains('is-active') && e.target.className === 'card-area') {
+				start_x = e.touches[0].pageX;
+				//console.log(e.target, e.target.parentNode, start_x);
+			}
+		})
+		cardList.addEventListener('touchend', function(e) {
+			if (content.classList.contains('is-drag') && e.target.parentNode.classList.contains('is-active') && e.target.className === 'card-area') {
+				end_x = e.changedTouches[0].pageX;
+				//console.log(e.target, e.target.parentNode, end_x);
+				const xPos = start_x - end_x;
+				if (xPos > 80) {
+					e.target.parentNode.classList.add('is-delete')
+				} else if (xPos < -80) {
+					e.target.parentNode.classList.remove('is-delete')
+				}
+			}
+		})
 	}
 
 	// toast close
