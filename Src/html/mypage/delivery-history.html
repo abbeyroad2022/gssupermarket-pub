@@ -531,7 +531,7 @@
 	<script>
 		// INCLUDE JQUERY & JQUERY UI 1.11.2
 		$( function() {
-			$( ".datepicker" ).datepicker({
+			$.datepicker.regional['ko'] = {
 				dateFormat: "yy.mm.dd",
 				language: "kr",
 				monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ],
@@ -549,16 +549,31 @@
 				buttonImage: "../../assets/img/ic-calendar.svg",
 				buttonImageOnly: true,
 				beforeShow: function(input, inst) {
-					const modalDim = document.querySelector('.datepicker-dim');
-					modalDim.style.opacity = '1';
-					modalDim.style.zIndex = '10';
+					datepickerDim('1', '10');
 				},
-				onClose: function(dateText, inst) {
-					const modalDim = document.querySelector('.datepicker-dim');
-					modalDim.style.opacity = '0';
-					modalDim.style.zIndex = '-1';
-				},
+			};
+    		$.datepicker.setDefaults($.datepicker.regional['ko']);
+			// 시작일
+			$('#startDate').datepicker();
+			$('#startDate').datepicker("option", "maxDate", $("#endDate").val());
+			$('#startDate').datepicker("option", "onClose", function ( selectedDate ) {
+				$("#endDate").datepicker( "option", "minDate", selectedDate );
+				datepickerDim('0', '-1');
+
 			});
+			// 종료일
+			$('#endDate').datepicker();
+			$('#endDate').datepicker("option", "minDate", $("#startDate").val());
+			$('#endDate').datepicker("option", "onClose", function ( selectedDate ) {
+				$("#startDate").datepicker( "option", "maxDate", selectedDate );
+				datepickerDim('0', '-1');
+			});
+			// 달력 팝업 배경 딤처리
+			function datepickerDim(opacity, zIndex) {
+				const modalDim = document.querySelector('.datepicker-dim');
+				modalDim.style.opacity = opacity;
+				modalDim.style.zIndex = zIndex;
+			}
 		});
 	</script>
 

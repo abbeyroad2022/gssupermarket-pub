@@ -135,6 +135,20 @@
 				}
 			}
 		}
+		span {
+			display: block;
+			text-decoration: none;
+			padding: rem(10) rem(2);
+			color: $color-black;
+			font-family: $en-font-family;
+			font-weight: 500;
+			border-radius: rem(6);
+			background-color: $color-gray_f6;
+			opacity: .3;
+			&:hover {	
+				background-color: $color-gray_f6;
+			}
+		}
 		&:first-child a {
 			color: $color-red;
 			&.ui-state-active {
