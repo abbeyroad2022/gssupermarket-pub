@@ -430,6 +430,31 @@
 
 	</div>
 	<!-- //#wrap -->
-	
+
+
+	<script>
+
+
+		document.getElementsByName('choiceReason').forEach(choice => {
+			
+			choice.addEventListener('click', function(){
+				if(choice.checked == true) { 
+					console.log(choice.id) 
+				}
+				if(document.querySelector('#choiceReason1').checked == false) { 
+					console.log('choiceReason1 unchecked') 
+				}
+				if(document.querySelector('#choiceReason2').checked == false) { 
+					console.log('choiceReason2 unchecked') 
+				}
+				if(document.querySelector('#choiceReason3').checked == false) { 
+					console.log('choiceReason3 unchecked') 
+				}
+			});
+		})
+
+
+	</script>
+
 </body>
 </html>
