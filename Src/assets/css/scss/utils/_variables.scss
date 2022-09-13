@@ -14,20 +14,21 @@ $html-font-size: 16px;
 // color
 $color-pale-skyblue: #cbe0ee;
 $color-darkblue-grey: #181e3b;
-$color-battleship-grey: #6a7682;
+$color-battleship-grey: #6a7682; //(Font color: Secondary2)
 $color-light-olive: #c5d352;
-$color-light-olive2: #c8d265;
-$color-weird-green: #3ddb87;
+$color-light-olive2: #c8d265; //(Font color: Secondary1)
+$color-weird-green: #3ddb87; //(Primary: Primary1)
 $color-spruce: #0e563c;
 $color-gray_fe: #fefefe;
 $color-gray_f7: #f7f7f7;
 $color-gray_f6: #f6f6f6;
-$color-gray_ae: #aeaeae;
-$color-gray_e3: #e3e3e3;
+$color-gray_ae: #aeaeae; //(Font color: Secondary3)
+$color-gray_e3: #e3e3e3; //(Line, BG)
 $color-gray_e5: #e5e5e5;
-$color-black: #2c2a29;
-$color-white: #fff;
-$color-red: #f73131;
+
+$color-black: #2c2a29; //(Primary: Primary2)
+$color-white: #fff; //(Font color: Secondary4, BG)
+$color-red: #f73131; //(Accent: Status)
 
 
 $color-primary: $color-weird-green;
