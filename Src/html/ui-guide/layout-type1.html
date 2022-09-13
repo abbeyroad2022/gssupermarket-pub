@@ -44,5 +44,38 @@
 		
 	</div>
 	<!-- //#wrap -->
+
+	<!-- <script>
+		function responsive() {
+		  const rootClass = document.querySelector('html').classList;
+		  return window.innerWidth > 1024 
+		  ? ( rootClass.add('pc'), rootClass.remove('mobile'), console.log('pc') ) 
+		  : ( rootClass.add('mobile'), rootClass.remove('pc'), console.log('mobile') )
+		}
+    
+		(function() {
+			responsive();
+			// 디바이스 종류 설정
+			const pcDevice = "win16|win32|win64|mac|macintel";
+			// 접속한 디바이스 환경
+			const thisDevice = navigator.platform;
+			if ( thisDevice ) {
+				if ( pcDevice.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+					//console.log('mobile')
+				} else {
+					//console.log('pc')
+				}
+			}
+		})();
+
+		window.addEventListener("load", function() {
+			responsive();
+			window.dispatchEvent(new Event('resize'));
+		});
+
+		window.onresize = function() {
+		  responsive();
+		}
+	</script> -->
 </body>
 </html>
