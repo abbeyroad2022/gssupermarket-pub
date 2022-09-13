@@ -361,7 +361,7 @@ section.fixed-top { position: fixed; z-index: 10; }
 .ic-calendar { width: 1.5rem; height: 1.5rem; background-image: url(../../assets/img/ic-calendar.png); }
 
 /* ================================== Tab ================================== */
-.tab-group { background-color: #0e563c; }
+.tab-group { background-color: #fff; }
 
 .tab-list { display: flex; align-items: center; }
 
