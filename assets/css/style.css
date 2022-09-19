@@ -308,6 +308,8 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .ic-refresh { width: 1.5rem; height: 1.5rem; background-image: url(../../assets/img/ic-refresh.svg); }
 
+.ic-refresh-black { width: 1.5rem; height: 1.5rem; background-image: url(../../assets/img/ic-refresh-black.svg); }
+
 .ic-mypage { width: 1.5rem; height: 1.5rem; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0ienZra2RxdWFsYSI+CiAgICAgICAgICAgIDxwYXRoIGRhdGEtbmFtZT0i7IKs6rCB7ZiVIDE4OSIgc3R5bGU9ImZpbGw6bm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDwvY2xpcFBhdGg+CiAgICA8L2RlZnM+CiAgICA8ZyBkYXRhLW5hbWU9ImljLW15cGFnZSIgc3R5bGU9ImNsaXAtcGF0aDp1cmwoI3p2a2tkcXVhbGEpIj4KICAgICAgICA8cGF0aCBkYXRhLW5hbWU9Iu2MqOyKpCAzNzU2IiBkPSJNMjMwLjUgODUuODM1YTUuNzUgNS43NSAwIDEgMSA1Ljc1LTUuNzUgNS43NTcgNS43NTcgMCAwIDEtNS43NSA1Ljc1bTAtMTBhNC4yNSA0LjI1IDAgMSAwIDQuMjUgNC4yNSA0LjI1NSA0LjI1NSAwIDAgMC00LjI1LTQuMjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMTguNTc3IC03Mi4wODYpIiBzdHlsZT0iZmlsbDojZmJmYmZiIi8+CiAgICAgICAgPHBhdGggZGF0YS1uYW1lPSLtjKjsiqQgMzc1NyIgZD0iTTIzOS41IDkzLjgzNWEuNzUuNzUgMCAwIDEtLjc1LS43NSA3LjI1OCA3LjI1OCAwIDAgMC03LjI1LTcuMjVoLTJhNy4yNTggNy4yNTggMCAwIDAtNy4yNSA3LjI1Ljc1Ljc1IDAgMCAxLTEuNSAwIDguNzYgOC43NiAwIDAgMSA4Ljc1LTguNzVoMmE4Ljc2IDguNzYgMCAwIDEgOC43NSA4Ljc1Ljc1Ljc1IDAgMCAxLS43NS43NSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxOC41NzcgLTcyLjA4NikiIHN0eWxlPSJmaWxsOiNmYmZiZmIiLz4KICAgIDwvZz4KPC9zdmc+Cg==); }
 
 .ic-close-white { width: 1.5rem; height: 1.5rem; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIHRyYW5zZm9ybT0icm90YXRlKDE4MCAxMiAxMikiIHN0eWxlPSJmaWxsOm5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgIDxwYXRoIGRhdGEtbmFtZT0i7ZWp7LmY6riwIDY4IiBkPSJtLTUxNDkuMzUyIDIwLjM0Mi03Ljc3OC03Ljc3OC03Ljc3OCA3Ljc3OGExIDEgMCAwIDEtMS40MTMgMCAxIDEgMCAwIDEgMC0xLjQxNWw3Ljc3Ny03Ljc3Ny03Ljc3OS03Ljc3OWExIDEgMCAwIDEgMC0xLjQxNSAxIDEgMCAwIDEgMS40MTUgMGw3Ljc3OSA3Ljc3OSA3Ljc3OS03Ljc3OWExIDEgMCAwIDEgMS40MTQgMCAxIDEgMCAwIDEgMCAxLjQxNWwtNy43NzggNy43NzggNy43NzggNy43NzhhMSAxIDAgMCAxIDAgMS40MTUgMSAxIDAgMCAxLS43MDguMjkzIDEgMSAwIDAgMS0uNzA4LS4yOTN6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MTY5LjEzMSAuODM2KSIgc3R5bGU9ImZpbGw6I2ZmZiIvPgo8L3N2Zz4K); }
@@ -671,6 +673,8 @@ section.fixed-top { position: fixed; z-index: 10; }
 .period-setting input { max-width: 6.25rem; font-family: "Montserrat", sans-serif; font-weight: 500; }
 
 .period-setting img { cursor: pointer; }
+
+.period-setting .btn-refresh { width: 1.5rem; height: 1.5rem; margin-left: 0.75rem; }
 
 /* ================================== Ui ================================== */
 .tag { display: inline-block; width: 3.25rem; height: 1.25rem; background-repeat: no-repeat; background-position: center; background-size: contain; /* 일반배송 */ /* 사전예약 */ /* 퀵커머스 */ /* 점포몰 */ }

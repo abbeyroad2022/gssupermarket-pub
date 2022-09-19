@@ -1,1 +1,188 @@
-!function(e){function t(a){if(s[a])return s[a].exports;var n=s[a]={i:a,l:!1,exports:{}};return e[a].call(n.exports,n,n.exports,t),n.l=!0,n.exports}var s={};t.m=e,t.c=s,t.d=function(e,s,a){t.o(e,s)||Object.defineProperty(e,s,{configurable:!1,enumerable:!0,get:a})},t.n=function(e){var s=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(s,"a",s),s},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=0)}([function(e,t,s){s(1),e.exports=s(2)},function(e,t){},function(e,t,s){"use strict";document.addEventListener("DOMContentLoaded",function(){console.log("loadding page");for(var e=document.querySelectorAll(".tab-list li"),t=0;t<e.length;t++)e[t].querySelector(".tab").addEventListener("click",function(t){t.preventDefault();for(var s=0;s<e.length;s++)e[s].classList.remove("is-active");this.parentNode.classList.add("is-active")});for(var s=document.querySelectorAll(".sort-list li"),t=0;t<s.length;t++)s[t].querySelector(".sort").addEventListener("click",function(e){e.preventDefault();for(var t=0;t<s.length;t++)s[t].classList.remove("is-active");this.parentNode.classList.add("is-active")});var a=document.querySelector(".content"),n=document.querySelector(".card-list");if(null!==n){n.addEventListener("click",function(e){if(a.classList.contains("is-select")&&"card-area"===e.target.className&&!e.target.parentNode.classList.contains("is-delete")&&(e.target.parentNode.classList.contains("is-active")?e.target.parentNode.classList.remove("is-active"):e.target.parentNode.classList.add("is-active")),e.target.classList.contains("popup-open")){var t=e.target.dataset.popup;document.querySelector("#"+t).classList.add("is-active")}var s=document.querySelectorAll(".card-list .card"),n=e.target.parentNode.parentNode.parentNode.parentNode;if("btn btn-info"===e.target.className)if(n.classList.contains("is-info-more"))n.classList.remove("is-info-more");else{for(var o=0;o<s.length;o++)s[o].classList.remove("is-info-more");n.classList.add("is-info-more")}if("btn btn-location"===e.target.className)if(n.classList.contains("is-location-more"))n.classList.remove("is-location-more");else{for(var o=0;o<s.length;o++)s[o].classList.remove("is-location-more");n.classList.add("is-location-more")}"btn btn-tmap"!==e.target.className&&"btn btn-kakaonavi"!==e.target.className||n.classList.remove("is-location-more")});var o=void 0,r=void 0;n.addEventListener("touchstart",function(e){a.classList.contains("is-drag")&&e.target.parentNode.classList.contains("is-active")&&"card-area"===e.target.className&&(o=e.touches[0].pageX)}),n.addEventListener("touchend",function(e){if(a.classList.contains("is-drag")&&e.target.parentNode.classList.contains("is-active")&&"card-area"===e.target.className){r=e.changedTouches[0].pageX;var t=o-r;t>80?e.target.parentNode.classList.add("is-delete"):t<-80&&e.target.parentNode.classList.remove("is-delete")}})}var c=document.getElementById("toast"),i=document.getElementById("toastClose");null!==c&&i.addEventListener("click",function(){c.classList.remove("is_active")}),document.querySelectorAll(".popup-open").forEach(function(e){var t=e.dataset.popup,s=document.querySelector("#"+t);null!==s&&(e.addEventListener("click",function(){s.classList.add("is-active")}),s.querySelectorAll(".popup-close").forEach(function(e){e.addEventListener("click",function(){s.classList.remove("is-active")})}))}),document.querySelectorAll(".field-item .control").forEach(function(e){var t=e.querySelector(".input"),s=e.querySelector(".btn-reset");null!==t&&t.addEventListener("input",function(e){return e.preventDefault(),t.value.length>0?s.classList.add("show"):s.classList.remove("show")}),null!==s&&s.addEventListener("click",function(){t.value="",s.classList.remove("show")})});var l=document.querySelector(".reason-etc"),d=document.querySelector(".reason-etc-input");null!==l&&document.querySelectorAll(".choice-group input").forEach(function(e){e.addEventListener("click",function(){return!0===l.checked?d.classList.add("show"):d.classList.remove("show")})});var u=document.querySelector(".upload-item"),v=document.querySelector(".btn-delivery-complete");if(null!==u){var p=u.querySelector(".input-photo-upload"),f=u.querySelector(".btn-photo-upload"),m=u.querySelector(".upload-result"),L=m.querySelector(".btn-reset"),g=u.querySelector(".upload-photo-name");u.querySelector(".upload-photo-img");L.addEventListener("click",function(e){p.value="",g.innerHTML="",u.classList.remove("is-upload"),v.disabled=!0}),f.addEventListener("click",function(e){return p.focus(),!1}),p.addEventListener("change",function(e){var t=this.value,s=t.split("/").pop().split("\\").pop();g.innerHTML=s,u.classList.add("is-upload"),v.disabled=!1})}})}]);
+"use strict";
+
+document.addEventListener("DOMContentLoaded", () => {
+	console.log("loadding page")
+
+	// tab
+	const tabList = document.querySelectorAll('.tab-list li');
+	for(var i = 0; i < tabList.length; i++){
+		tabList[i].querySelector('.tab').addEventListener('click', function(e){
+			e.preventDefault();
+			for(var j = 0; j < tabList.length; j++){
+				tabList[j].classList.remove('is-active');
+			}
+			this.parentNode.classList.add('is-active');
+		});
+	}
+
+	// sort
+	const sortList = document.querySelectorAll('.sort-list li');
+	for(var i = 0; i < sortList.length; i++){
+		sortList[i].querySelector('.sort').addEventListener('click', function(e){
+			e.preventDefault();
+			for(var j = 0; j < sortList.length; j++){
+				sortList[j].classList.remove('is-active');
+			}
+			this.parentNode.classList.add('is-active');
+		});
+	}
+
+	// card list control
+	const content = document.querySelector('.content'),
+		cardList = document.querySelector('.card-list');
+
+	if (cardList !== null) {
+		cardList.addEventListener('click', function(e) {
+			//console.log(e.target, e.target.parentNode);
+			// card toggle select
+			if (content.classList.contains('is-select') && e.target.className === 'card-area' && !e.target.parentNode.classList.contains('is-delete')) {
+				//e.stopPropagation();
+				//e.target.parentNode.classList.toggle('is-active');
+				e.target.parentNode.classList.contains('is-active') ? e.target.parentNode.classList.remove('is-active') : e.target.parentNode.classList.add('is-active');
+			}
+			// popup
+			if (e.target.classList.contains('popup-open')) {
+				const popId = e.target.dataset.popup;
+				const elPop = document.querySelector('#' + popId);
+				elPop.classList.add('is-active');
+			}
+			const elCardAll = document.querySelectorAll('.card-list .card');
+			const parentNode = e.target.parentNode.parentNode.parentNode.parentNode;
+			// btn info
+			if (e.target.className === 'btn btn-info') {
+				if (parentNode.classList.contains('is-info-more')) {
+					parentNode.classList.remove('is-info-more');
+				} else {
+					for(var j = 0; j < elCardAll.length; j++){
+						elCardAll[j].classList.remove('is-info-more');
+					}
+					parentNode.classList.add('is-info-more');
+				}
+			}
+			// btn location
+			if (e.target.className === 'btn btn-location') {
+				if (parentNode.classList.contains('is-location-more')) {
+					parentNode.classList.remove('is-location-more');
+				} else {
+					for(var j = 0; j < elCardAll.length; j++){
+						elCardAll[j].classList.remove('is-location-more');
+					}
+					parentNode.classList.add('is-location-more');
+				}
+			}
+			if (e.target.className === 'btn btn-tmap' || e.target.className === 'btn btn-kakaonavi') {
+				parentNode.classList.remove('is-location-more');
+			}
+		});
+		// card drag
+		let start_x, end_x;
+		cardList.addEventListener('touchstart', function(e) {
+			if (content.classList.contains('is-drag') && e.target.parentNode.classList.contains('is-active') && e.target.className === 'card-area') {
+				start_x = e.touches[0].pageX;
+				//console.log(e.target, e.target.parentNode, start_x);
+			}
+		})
+		cardList.addEventListener('touchend', function(e) {
+			if (content.classList.contains('is-drag') && e.target.parentNode.classList.contains('is-active') && e.target.className === 'card-area') {
+				end_x = e.changedTouches[0].pageX;
+				//console.log(e.target, e.target.parentNode, end_x);
+				const xPos = start_x - end_x;
+				if (xPos > 80) {
+					e.target.parentNode.classList.add('is-delete')
+				} else if (xPos < -80) {
+					e.target.parentNode.classList.remove('is-delete')
+				}
+			}
+		})
+	}
+
+	// toast close
+	const toast = document.getElementById('toast');
+	const toastClose = document.getElementById('toastClose');
+	if (toast !== null) {
+		toastClose.addEventListener('click', () => {
+			toast.classList.remove('is_active')
+		})
+	}
+
+	// popup
+	document.querySelectorAll('.popup-open').forEach(popOpen => {
+		const popId = popOpen.dataset.popup;
+		const elPop = document.querySelector('#' + popId);
+		if (elPop !== null) {
+			popOpen.addEventListener('click', () => {
+				elPop.classList.add('is-active');
+			})
+			elPop.querySelectorAll('.popup-close').forEach(popClose => {
+				popClose.addEventListener('click', () => {
+					elPop.classList.remove('is-active');
+				});
+			})
+		}
+	})
+
+	// input reset
+	document.querySelectorAll('.field-item .control').forEach(control => {
+		const elInput = control.querySelector('.input');
+		const btnReset = control.querySelector('.btn-reset');
+		if (elInput !== null) {
+			elInput.addEventListener('input', function(e){
+				e.preventDefault();
+				return elInput.value.length > 0 ? btnReset.classList.add('show') : btnReset.classList.remove('show');
+			});
+		}
+		if (btnReset !== null) {
+			btnReset.addEventListener('click', function(){
+				elInput.value = '';
+				btnReset.classList.remove('show');
+			});
+		}
+	})
+
+	// 기타 사유 입력
+	const reasonEtc = document.querySelector('.reason-etc');
+	const reasonEtcInput = document.querySelector('.reason-etc-input');
+	if (reasonEtc !== null) {
+		document.querySelectorAll('.choice-group input').forEach(choice => {
+			choice.addEventListener('click', function(){
+				const isChecked = reasonEtc.checked;
+				return isChecked === true ? reasonEtcInput.classList.add('show') : reasonEtcInput.classList.remove('show');
+			})
+		})
+	}
+
+	// 사진 업로드
+	const uploadItem = document.querySelector('.upload-item'),
+		btnDeliveryComplete = document.querySelector('.btn-delivery-complete');
+	if (uploadItem !== null) {
+		const inputPhoto = uploadItem.querySelector('.input-photo-upload'), 
+			btnPhoto = uploadItem.querySelector('.btn-photo-upload'),
+			uploadResult = uploadItem.querySelector('.upload-result'),
+			btnReset = uploadResult.querySelector('.btn-reset'),
+			photoName = uploadItem.querySelector(".upload-photo-name"),
+			photoImg = uploadItem.querySelector(".upload-photo-img");
+		btnReset.addEventListener('click', function(e) {
+			inputPhoto.value = '';
+			// if (photoImg !== null) {
+			// 	photoImg.src = ''; 
+			// }
+			photoName.innerHTML = '';
+			uploadItem.classList.remove('is-upload');
+			btnDeliveryComplete.disabled = true;
+		});  
+		btnPhoto.addEventListener('click', function(e) {
+			inputPhoto.focus();
+			return false;
+		});  
+		inputPhoto.addEventListener('change', function(e) {
+			const fileUrl = this.value;
+			const fileName = fileUrl.split('/').pop().split('\\').pop();
+			// if (photoImg !== null) {
+			// 	photoImg.src = fileUrl; 
+			// }
+			photoName.innerHTML = fileName; 
+			uploadItem.classList.add('is-upload');
+			btnDeliveryComplete.disabled = false;
+		});
+	}
+});

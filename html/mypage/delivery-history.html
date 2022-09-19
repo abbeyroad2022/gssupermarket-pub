@@ -26,9 +26,6 @@
         <h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
         <button class="btn btn-back"><i class="ic ic-back"></i><span class="sr-only">이전</span></button>
         <h2 class="title">과거 배송 이력</h2>
-        <div class="btn-group-row">
-          <button class="btn btn-refresh"><i class="ic ic-refresh"></i><span class="sr-only">초기화</span></button>
-        </div>
       </div>
     </header>
     <!-- //#header -->
@@ -41,9 +38,10 @@
         <!-- .period-setting -->
         <div class="period-setting">
           <span class="tit">조회 기간: </span>
-          <input type="text" id="startDate" name="startDate" class="datepicker" autocomplete="off" readonly>
+          <input type="text" id="startDate" name="startDate" class="datepicker" autocomplete="off">
           <span class="tilde"> ~ </span>
           <input type="text" id="endDate" name="endDate" class="datepicker" autocomplete="off" readonly>
+          <button class="btn btn-refresh"><i class="ic ic-refresh-black"></i><span class="sr-only">초기화</span></button>
         </div>
         <!-- //.period-setting -->
         <!-- .sort-group -->
