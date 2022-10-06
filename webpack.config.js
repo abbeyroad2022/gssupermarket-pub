@@ -24,7 +24,14 @@ function generateHtmlPlugins(htmlDir) {
 		}),
 	);
 	// folderList Array에 html내 폴더명 추가
-	const subList = ['login', 'join', 'delivery', 'mypage', 'error', 'ui-guide'];
+	const subList = [
+		'login', 
+		'join', 
+		'delivery', 
+		'mypage', 
+		'error', 
+		'ui-guide'
+	];
 	for (i = 0; i < subList.length; i++) {
 		const htmlSubFile = fs.readdirSync(`./src/html/${subList[i]}/`).filter(file => file.substr(-5) === '.html');
 		const htmlSub = htmlSubFile.map(file => new HtmlWebpackPlugin({
@@ -62,14 +69,18 @@ module.exports = (env) => {
 				force: true,
 			},
 			{
-				from: './assets/data/**/*',
+				from: './assets/js/**/*',
 				force: true,
 			},
-			{
-				from: './Src/assets/img/**',
-				to: './assets/img',
-				flatten: true
-			},
+			// {
+			// 	from: './assets/data/**/*',
+			// 	force: true,
+			// },
+			// {
+			// 	from: './Src/assets/img/**',
+			// 	to: './assets/img',
+			// 	flatten: true
+			// },
 			// {
 			// 	from: './favicon.ico',
 			// 	to: 'favicon.ico'
@@ -111,7 +122,7 @@ module.exports = (env) => {
 		entry: {
 			ui: [
 				'./assets/css/style.scss',
-				'./assets/js/ui.js'
+				// './assets/js/ui.js'
 			],
 		},
 		output: {
