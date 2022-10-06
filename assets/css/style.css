@@ -468,13 +468,15 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .card .btn > * { pointer-events: none; }
 
-.is-order .card-box.is-active .card-area { background-color: rgba(197, 211, 82, 0.2); z-index: 9; }
+.is-order .card-box.is-active:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(197, 211, 82, 0.2); z-index: 8; }
+
+.is-order .card-box.is-active .card-area { z-index: 9; }
 
 .is-order .card-box.is-active .card-area .order-num { display: block; }
 
 .is-order .card-area { display: flex; align-items: center; justify-content: center; }
 
-.is-order .card-area .order-num { display: none; color: #2c2a29; font-family: "Montserrat", sans-serif; font-size: 5rem; font-weight: 700; pointer-events: none; }
+.is-order .card-area .order-num { position: relative; display: none; color: #2c2a29; font-family: "Montserrat", sans-serif; font-size: 5rem; font-weight: 700; pointer-events: none; }
 
 /* ================================== List ================================== */
 .note-list .list-group, .note-list .no-data { border-top: 0.0625rem solid #222; }
