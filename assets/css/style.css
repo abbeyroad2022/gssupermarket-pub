@@ -170,6 +170,8 @@ textarea { width: 100%; vertical-align: middle; resize: none !important; color: 
 
 .header .btn-back { position: absolute; top: 0.875rem; left: 0.9375rem; }
 
+.header .btn-close-white { position: absolute; top: 0.875rem; right: 0.9375rem; }
+
 .header .btn-mypage { position: absolute; top: 0.875rem; left: 1rem; }
 
 .header .btn-refresh { position: absolute; top: 0.875rem; right: 1rem; }
@@ -908,6 +910,24 @@ button.ui-datepicker-close { display: flex; align-items: center; justify-content
 .result-box { margin-top: 2.5rem; padding: 0.875rem 0.625rem 0.75rem; text-align: center; color: #000; border-radius: 0.375rem; background-color: #f6f6f6; }
 
 .result-box em { color: #c8d265; font-family: "Montserrat", sans-serif; font-weight: 700; }
+
+/* tracking info */
+.tracking-info { margin-top: 0; }
+
+.tracking-info .tit { margin-bottom: 0; color: #0e563c; font-size: 1rem; font-weight: 500; }
+
+.tracking-info .order-number { padding-bottom: 1rem; margin-bottom: 1rem; font-family: "Montserrat", sans-serif; font-size: 1.5rem; font-weight: 500; border-bottom: 0.0625rem dashed #0e563c; }
+
+.tracking-info .order-info { display: flex; align-items: flex-start; padding: 0.25rem 0; }
+
+.tracking-info .order-info .tit { text-align: left; flex-basis: 5.5rem; min-width: 5.5rem; color: #2c2a29; font-size: 0.875rem; font-weight: 500; }
+
+.tracking-info .order-info .txt { text-align: left; flex-grow: 1; font-size: 0.875rem; }
+
+/* map info */
+.map-info { position: relative; margin-left: -1.5rem; margin-right: -1.5rem; padding-bottom: 100%; }
+
+.map-info .map-area { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #f6f6f6; }
 
 /* swiper slide */
 .slider-wrap { position: relative; width: 100%; }

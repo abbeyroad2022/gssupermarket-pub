@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+  <!-- mobile automatic link removal -->
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+  <title>GS THE FLASH 모바일 통합운영 시스템</title>
+  <link rel="stylesheet" href="../../assets/libs/swiper/swiper-bundle.min.css">
+  <script src="../../assets/libs/swiper/swiper-bundle.min.js"></script>
+
+  <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- #wrap -->
+  <div id="wrap">
+
+    <!-- #header -->
+    <header id="header" class="header">
+      <div class="inner">
+        <h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
+        <h2 class="title">실시간 배송 위치</h2>
+      </div>
+    </header>
+    <!-- //#header -->
+
+    <!-- #main -->
+    <main id="container">
+
+      <!-- #section -->
+      <section class="content">
+        <div class="inner">
+          <!-- .tracking-info -->
+          <div class="cont-item center tracking-info">
+            <h3 class="tit">주문번호</h3>
+            <p class="order-number">22401215121511</p>
+            <p class="order-info">
+							<span class="tit">배송점포</span>
+							<span class="txt">잠실점</span>
+						</p>
+            <p class="order-info">
+							<span class="tit">전화번호</span>
+							<span class="txt">02)123-1234</span>
+						</p>
+            <p class="order-info">
+							<span class="tit">도착예정시간</span>
+							<span class="txt">10/05(수) 16:00 ~ 20:00</span>
+						</p>
+          </div>
+          <!-- //.tracking-info -->
+          <!-- .map-info -->
+          <div class="cont-item map-info">
+            <!-- 지도 영역 -->
+            <div class="map-area">
+
+            </div>
+            <!-- //지도 영역 -->
+          </div>
+          <!-- //.map-info -->
+        </div>
+      </section>
+      <!-- //#section -->
+
+    </main>
+    <!-- //#main -->
+
+    <!-- .bottom-sheet -->
+    <button type="button" class="popup-open hidden" data-popup="popAlertDeliveryComplete"></button>
+    <!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
+    <div class="popup bottom-sheet is-active" id="popAlertDeliveryComplete">
+      <div class="inner">
+        <div class="pop-head">
+          <h3 class="tit">알림</h3>
+        </div>
+        <div class="pop-body">
+          <p class="alert-msg">배송이 완료되었습니다.</p>
+        </div>
+        <!-- .btn-group-row -->
+        <div class="btn-group-row btn-full">
+          <button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
+        </div>
+        <!-- //.btn-group-row -->
+      </div>
+    </div>
+    <i class="modal-dim"></i>
+    <!-- //bottom-sheet -->
+
+  </div>
+  <!-- //#wrap -->
+  <script type="text/javascript" src="../../assets/js/ui.js"></script>
+</body>
+
+</html>
