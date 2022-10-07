@@ -55,11 +55,26 @@
           <!-- //.tracking-info -->
           <!-- .map-info -->
           <div class="cont-item map-info">
-            <!-- 지도 영역 -->
-            <div class="map-area">
 
-            </div>
-            <!-- //지도 영역 -->
+            <!-- 지도를 표시할 div 입니다 -->
+            <div id="map" class="map-area"></div>
+
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e196b8eaba17974a90e96e5b9be548c9"></script>
+            <!-- 04353fffa711bea2c4e02ae7b670849c (local) -->
+            <!-- e196b8eaba17974a90e96e5b9be548c9 (git) -->
+
+            <script>
+              var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                mapOption = {
+                  center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                  level: 3 // 지도의 확대 레벨
+                };
+
+              // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+              var map = new kakao.maps.Map(mapContainer, mapOption);
+
+            </script>
+
           </div>
           <!-- //.map-info -->
         </div>
