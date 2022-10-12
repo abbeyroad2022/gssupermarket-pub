@@ -259,6 +259,8 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .btn-reset { width: 2.75rem; height: 2.75rem; padding: 0; }
 
+.btn-reset .ic { pointer-events: none; }
+
 .btn-slide-prev, .btn-slide-next { width: 2.75rem; height: 2.75rem; padding: 0; }
 
 .btn-slide-next .ic { transform: rotate(-180deg); }
