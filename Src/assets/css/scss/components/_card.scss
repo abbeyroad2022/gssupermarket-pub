@@ -32,6 +32,7 @@
             top: rem(16);
             right: rem(15);
             margin-left: auto;
+            margin-right: 0;
             z-index: 5;
             .btn {
                 margin: 0 0 0 rem(15);
@@ -48,10 +49,10 @@
     }
     &-area {
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        top: rem(15);
+        left: rem(15);
+        right: rem(15);
+        bottom: rem(15);
         z-index: 4;
     }
     .name {
@@ -194,11 +195,22 @@
 }
 
 .is-order {
-    .card-box.is-active .card-area {
-        background-color: rgba($color-light-olive, .2);
-        z-index: 9;
-        .order-num {
-            display: block;
+    .card-box.is-active {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($color-light-olive, .2);
+            z-index: 8;
+        }
+        .card-area {
+            z-index: 9;
+            .order-num {
+                display: block;
+            }
         }
     }
     .card-area {
@@ -206,12 +218,27 @@
         align-items: center;
         justify-content: center;
         .order-num {
+            position: relative;
             display: none;
             color: $color-black;
             font-family: $en-font-family;
             font-size: rem(80);
             font-weight: 700;
             pointer-events: none;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        &-head {
+            padding-bottom: rem(40);
+            [class^='btn-group-'] {
+                top: rem(50);
+            }
+        }
+        .app-connection {
+            top: rem(92);
         }
     }
 }

@@ -13,6 +13,7 @@
 .tab-item {
 	position: relative;
 	display: flex;
+	background-color: $color-spruce;
 	&:not(:first-child):before {
 		content: '';
 		position: absolute;
@@ -30,18 +31,20 @@
 		width: 100%;
 		height: rem(60);
 		padding: rem(8);
+		margin: 0 rem(15);
 		color: $color-white;
 		font-weight: 700;
         transition: all .3s;
-		background-color: $color-spruce;
+		//background-color: $color-spruce;
 	}
 	&.is-active {
+		background-color: $color-white;
 		&:before {
 			display: none;
 		}
 		.tab {
 			color: $color-black;
-			background-color: $color-white;
+			//background-color: $color-white;
 		}
 	}
 	.case-num {

@@ -151,6 +151,33 @@ document.addEventListener("DOMContentLoaded", () => {
 		})
 	}
 
+	// 기타 사유 입력 (동적 요소 이벤트)
+	const reasonControl = document.querySelector('.reason-control');
+	if (reasonControl !== null) {
+		reasonControl.addEventListener('click', function(e) {
+			const elInput = reasonControl.querySelector('.input');
+			const btnReset = reasonControl.querySelector('.btn-reset');
+			const reasonEtcInput = reasonControl.querySelector('.reason-etc-input');
+			// console.log(e.target);
+			if (e.target.classList.contains('reason-etc') && e.target.checked === true || e.target.classList.contains('input') || e.target.classList.contains('btn')) {
+				reasonEtcInput.classList.add('show');
+			} else {
+				reasonEtcInput.classList.remove('show')
+			}
+			if (e.target.classList.contains('btn')) {
+				elInput.value = '';
+				btnReset.classList.remove('show');
+			}
+		});
+		reasonControl.addEventListener('input', function(e) {
+			const elInput = reasonControl.querySelector('.input');
+			const btnReset = reasonControl.querySelector('.btn-reset');
+			//console.log(elInput.value.length );
+			return elInput.value.length > 0 ? btnReset.classList.add('show') : btnReset.classList.remove('show');
+		});
+	}
+
+
 	// 사진 업로드
 	const uploadItem = document.querySelector('.upload-item'),
 		btnDeliveryComplete = document.querySelector('.btn-delivery-complete');

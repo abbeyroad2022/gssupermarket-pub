@@ -391,29 +391,33 @@
 				</div>
 				<div class="pop-body">
 					<!-- .field-item -->
-					<div class="field-item mgt20">
-						<div class="control">
-							<div class="choice-group col1">
-								<label class="custom-radio btn-type primary" for="choiceReason1">
-									<input type="radio" id="choiceReason1" name="choiceReason" checked>
-									<span class="label-txt">고객 부재</span>
-								</label>
-								<label class="custom-radio btn-type primary mgt20" for="choiceReason2">
-									<input type="radio" id="choiceReason2" name="choiceReason">
-									<span class="label-txt">차량 이슈</span>
-								</label>
-								<label class="custom-radio btn-type primary mgt20" for="choiceReason3">
-									<input type="radio" id="choiceReason3" class="reason-etc" name="choiceReason">
-									<span class="label-txt">기타 (사유 입력)</span>
-								</label>
+					<div class="reason-control"><!-- 동적 요소를 감싸는 div -->
+						<!-- 동적 요소-->
+						<div class="field-item mgt20">
+							<div class="control">
+								<div class="choice-group col1">
+									<label class="custom-radio btn-type primary" for="choiceReason1">
+										<input type="radio" id="choiceReason1" name="choiceReason" checked>
+										<span class="label-txt">고객 부재</span>
+									</label>
+									<label class="custom-radio btn-type primary mgt20" for="choiceReason2">
+										<input type="radio" id="choiceReason2" name="choiceReason">
+										<span class="label-txt">차량 이슈</span>
+									</label>
+									<label class="custom-radio btn-type primary mgt20" for="choiceReason3">
+										<input type="radio" id="choiceReason3" class="reason-etc" name="choiceReason">
+										<span class="label-txt">기타 (사유 입력)</span>
+									</label>
+								</div>
+							</div>
+							<div class="control reason-etc-input">
+								<div class="input-item">
+									<input type="text" id="" class="input underline" placeholder="사유를 입력해 주세요.">
+									<button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
+								</div>
 							</div>
 						</div>
-						<div class="control reason-etc-input">
-							<div class="input-item">
-								<input type="text" id="" class="input underline" placeholder="사유를 입력해 주세요.">
-								<button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
-							</div>
-						</div>
+						<!-- //동적 요소-->
 					</div>
 					<!-- //.field-item -->
 				</div>

@@ -142,6 +142,58 @@
 	}
 }
 
+/* tracking info */
+.tracking-info {
+	margin-top: 0;
+	.tit {
+		margin-bottom: 0;
+		color: $color-spruce;
+		font-size: rem(16);
+		font-weight: 500;
+	}
+	.order-number {
+		padding-bottom: rem(16);
+		margin-bottom: rem(16);
+		font-family: $en-font-family;
+		font-size: rem(24);
+		font-weight: 500;
+		border-bottom: rem(1) dashed #0e563c;
+	}
+	.order-info {
+		display: flex;
+		align-items: flex-start;
+		padding: rem(4) 0;
+		.tit {
+			text-align: left;
+			flex-basis: rem(88);
+			min-width: rem(88);
+			color: $color-black;
+			font-size: rem(14);
+			font-weight: 500;
+		}
+		.txt {
+			text-align: left;
+			flex-grow: 1;
+			font-size: rem(14);
+		}
+	}
+}
+/* map info */
+.map-info {
+	position: relative;
+	margin-left: rem(-24);
+	margin-right: rem(-24);
+	padding-bottom: 100%;
+	.map-area {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $color-gray-f6;;
+	}
+}
+
 /* swiper slide */
 .slider-wrap {
 	position: relative;

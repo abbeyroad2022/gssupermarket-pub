@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	${require('html-loader?interpolate!../_template/common_meta.html')}
+	<title>GS THE FLASH 모바일 통합운영 시스템</title>
+	${require('html-loader?interpolate!../_template/common_res_sub.html')}
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+
+		<!-- #header -->
+		<header id="header" class="header">
+			<div class="inner">
+				<h1 class="sr-only">GS THE FLASH 모바일 통합운영 시스템</h1>
+				<h2 class="title">실시간 배송 위치</h2>
+			</div>
+		</header>
+		<!-- //#header -->
+
+		<!-- #main -->
+		<main id="container">
+
+			<!-- #section -->
+			<section class="content">
+				<div class="inner">
+					<!-- .tracking-info -->
+					<div class="cont-item center tracking-info">
+						<h3 class="tit">주문번호</h3>
+						<p class="order-number">22401215121511</p>
+						<p class="order-info">
+							<span class="tit">배송점포</span>
+							<span class="txt">잠실점</span>
+						</p>
+						<p class="order-info">
+							<span class="tit">전화번호</span>
+							<span class="txt">02)123-1234</span>
+						</p>
+						<p class="order-info">
+							<span class="tit">도착예정시간</span>
+							<span class="txt">10/05(수) 16:00 ~ 20:00</span>
+						</p>
+					</div>
+					<!-- //.tracking-info -->
+					<!-- .map-info -->
+					<div class="cont-item map-info">
+						
+						<!-- 지도를 표시할 div 입니다 -->
+						<div id="map" class="map-area"></div>
+
+						<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e196b8eaba17974a90e96e5b9be548c9"></script>
+						<!-- 04353fffa711bea2c4e02ae7b670849c (local) -->
+						<!-- e196b8eaba17974a90e96e5b9be548c9 (git) -->
+
+						<script>
+						var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+							mapOption = { 
+								center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+								level: 3 // 지도의 확대 레벨
+							};
+
+						// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+						var map = new kakao.maps.Map(mapContainer, mapOption); 
+						</script>
+
+					</div>
+					<!-- //.map-info -->
+				</div>
+			</section>
+			<!-- //#section -->
+
+		</main>
+		<!-- //#main -->
+		
+		<!-- .bottom-sheet -->
+		<button type="button" class="popup-open hidden" data-popup="popAlertDeliveryComplete"></button>
+		<!-- [.popup 클래스 추가] .is-active: 팝업 활성화 -->
+		<div class="popup bottom-sheet is-active" id="popAlertDeliveryComplete">
+			<div class="inner">
+				<div class="pop-head">
+					<h3 class="tit">알림</h3>
+				</div>
+				<div class="pop-body">
+					<p class="alert-msg">배송이 완료되었습니다.</p>
+				</div>
+				<!-- .btn-group-row -->
+				<div class="btn-group-row btn-full">
+					<button type="button" class="btn btn-pop-primary popup-close"><span>확인</span></button>
+				</div>
+				<!-- //.btn-group-row -->
+			</div>
+		</div>
+		<i class="modal-dim"></i>
+		<!-- //bottom-sheet -->
+
+	</div>
+	<!-- //#wrap -->
+</body>
+</html>

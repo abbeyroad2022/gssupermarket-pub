@@ -30,6 +30,7 @@ function generateHtmlPlugins(htmlDir) {
 		'delivery', 
 		'mypage', 
 		'error', 
+		'customer',
 		'ui-guide'
 	];
 	for (i = 0; i < subList.length; i++) {

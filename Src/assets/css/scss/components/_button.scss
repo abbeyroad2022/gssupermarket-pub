@@ -125,6 +125,9 @@
 		width: rem(44);
 		height: rem(44);
 		padding: 0;
+		.ic {
+			pointer-events: none;
+		}
 	}
 	&-slide-prev,
 	&-slide-next {
