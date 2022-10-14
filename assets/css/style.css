@@ -482,6 +482,10 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .is-order .card-area .order-num { position: relative; display: none; color: #2c2a29; font-family: "Montserrat", sans-serif; font-size: 5rem; font-weight: 700; pointer-events: none; }
 
+@media (max-width: 425px) { .card-head { padding-bottom: 2.5rem; }
+  .card-head [class^='btn-group-'] { top: 3.125rem; }
+  .card .app-connection { top: 5.75rem; } }
+
 /* ================================== List ================================== */
 .note-list .list-group, .note-list .no-data { border-top: 0.0625rem solid #222; }
 
