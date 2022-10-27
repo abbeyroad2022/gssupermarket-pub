@@ -552,6 +552,10 @@ section.fixed-top { position: fixed; z-index: 10; }
 
 .control.is-success .success-msg { display: block; }
 
+.control.show { display: block; }
+
+.control.hide { display: none; }
+
 .choice-group { display: flex; flex-wrap: wrap; margin-top: -0.625rem; margin-right: -0.625rem; }
 
 .choice-group .custom-check, .choice-group .custom-radio { margin-top: 0.625rem; }
