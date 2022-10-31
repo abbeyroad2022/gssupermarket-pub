@@ -43,3 +43,20 @@ $fonts-secondary : (
 		url("#{$font-path}#{$font-name-secondary}-#{$fonts}.otf") format("opentype");
 	}
 }
+// NanumGothic
+$font-name-terms : 'NanumGothic';
+$fonts-terms : (
+	'Regular' : 400,
+	'Bold' : 700, 
+	'ExtraBold' : 800, 
+);
+@each $fonts, $size in $fonts-terms {
+	@font-face {
+		font-family: #{$font-name-terms};
+		font-weight: $size;
+		font-style: normal;
+		src : local("#{$font-path}#{$font-name-terms} #{$fonts}"),
+		url("#{$font-path}#{$font-name-terms}-#{$fonts}.woff2") format("woff2"),
+		url("#{$font-path}#{$font-name-terms}-#{$fonts}.woff") format("woff");
+	}
+}

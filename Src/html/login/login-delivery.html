@@ -28,7 +28,7 @@
 					<div class="cont-item">
 						<div class="title-group">
 							<h3 class="tit">배달기사 전용 로그인</h3>
-							<a href="#" class="btn btn-login-change"><span>임직원 로그인</span></a>
+							<a href="#" class="btn btn-login-change hide" id="loginChangeBtn"><span id="loginChangeBtn">임직원 로그인</span></a>
 						</div>
 
 						<!-- .field-item -->
@@ -42,6 +42,12 @@
 							<div class="control">
 								<div class="input-item">
 									<input type="password" id="" class="input" placeholder="비밀번호" title="비밀번호">
+									<button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
+								</div>
+							</div>
+							<div class="control hide" id="joinCodeControl">
+								<div class="input-item">
+									<input type="text" id="" class="input" placeholder="가입코드" title="가입코드">
 									<button type="button" class="btn btn-reset"><i class="ic ic-reset"></i><span class="sr-only">입력 초기화</span></button>
 								</div>
 							</div>
@@ -93,5 +99,33 @@
 
 	</div>
 	<!-- //#wrap -->
+
+	<script type="text/javascript">
+		// 임직원로그인 이벤트
+		const loginChangeBtn = document.querySelector('#loginChangeBtn'),
+			joinCodeControl = document.querySelector('#joinCodeControl'),
+			elInput = joinCodeControl.querySelector('.input'),
+			btnReset = joinCodeControl.querySelector('.btn-reset');
+		if (joinCodeControl !== null) {
+			loginChangeBtn.addEventListener('click', function(e) {
+				if (this.classList.contains('hide')) {
+					this.classList.remove('hide');
+					this.classList.add('show');
+					this.innerText = '임직원로그인';
+					joinCodeControl.classList.remove('hide');
+					joinCodeControl.classList.add('show');
+				} else {
+					this.classList.remove('show');
+					this.classList.add('hide');
+					this.innerText = '임직원로그인';
+					joinCodeControl.classList.remove('show');
+					joinCodeControl.classList.add('hide');
+					elInput.value = '';
+					btnReset.classList.remove('show');
+				}
+			});
+		}
+	</script>
+
 </body>
 </html>

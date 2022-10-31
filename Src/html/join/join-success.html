@@ -101,14 +101,10 @@
 									<i class="mark"></i>
 									<span class="label-txt">필수 항목 모두 동의</span>
 								</label>
-								<button type="button" class="btn btn-terms-view popup-open" data-popup="popServiceTermsNecessary"><span>서비스 이용 약관</span><i class="ic ic-arrow-right"></i></button>
-								<button type="button" class="btn btn-terms-view popup-open" data-popup="popPirivacyTermsNecessary"><span>개인 정보 수집 이용</span><i class="ic ic-arrow-right"></i></button>
-								<label class="custom-check" for="agreeCheck2">
-									<input type="checkbox" id="agreeCheck2" name="agreeCheck" checked>
-									<i class="mark"></i>
-									<span class="label-txt">선택 항목 모두 동의</span>
-								</label>
-								<button type="button" class="btn btn-terms-view popup-open" data-popup="popPirivacyTermsChoice"><span>개인 정보 수집 이용</span><i class="ic ic-arrow-right"></i></button>
+								<button type="button" class="btn btn-terms-view popup-open" data-popup="popTermsNecessary1"><span>개인정보 수집 &middot; 이용 동의 (필수)</span><i class="ic ic-arrow-right"></i></button>
+								<button type="button" class="btn btn-terms-view popup-open" data-popup="popTermsNecessary2"><span>위치기반서비스 이용약관 (필수)</span><i class="ic ic-arrow-right"></i></button>
+								<button type="button" class="btn btn-terms-view popup-open" data-popup="popTermsNecessary3"><span>개인정보 및 위치정보 제3자 제공 동의 (필수)</span><i class="ic ic-arrow-right"></i></button>
+								<button type="button" class="btn btn-terms-view popup-open" data-popup="popTermsNecessary4"><span>정보보호 서약서 (필수)</span><i class="ic ic-arrow-right"></i></button>
 							</div>
 						</div>
 					</div>
@@ -133,32 +129,13 @@
 
 		<!-- .full-popup -->
 		<!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
-		<div class="popup full-popup" id="popServiceTermsNecessary">
+		<div class="popup full-popup" id="popTermsNecessary1">
 			<div class="inner">
 				<div class="pop-head">
-					<h3 class="tit">서비스 이용 약관 (필수)</h3>
+					<h3 class="terms-tit"><mark><span class="underline">개인정보 수집 &middot; 이용 동의 (필수)</span></mark></h3>
 				</div>
 				<div class="pop-body">
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
-					서비스 이용 약관 (필수) 내용 입니다. <br>
+					${require('html-loader?interpolate!../_template/pop_terms_necessary1.html')}
 				</div>
 				<!-- .btn-group-col -->
 				<div class="btn-group-col">
@@ -171,32 +148,13 @@
 
 		<!-- .full-popup -->
 		<!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
-		<div class="popup full-popup" id="popPirivacyTermsNecessary">
+		<div class="popup full-popup" id="popTermsNecessary2">
 			<div class="inner">
 				<div class="pop-head">
-					<h3 class="tit">개인 정보 수집 이용 (필수)</h3>
+					<h3 class="terms-tit"><mark><span class="underline">위치기반서비스 이용약관 (필수)</span></mark></h3>
 				</div>
 				<div class="pop-body">
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
-					개인 정보 수집 이용 (필수) 내용 입니다. <br>
+					${require('html-loader?interpolate!../_template/pop_terms_necessary2.html')}
 				</div>
 				<!-- .btn-group-col -->
 				<div class="btn-group-col">
@@ -209,32 +167,32 @@
 
 		<!-- .full-popup -->
 		<!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
-		<div class="popup full-popup" id="popPirivacyTermsChoice">
+		<div class="popup full-popup" id="popTermsNecessary3">
 			<div class="inner">
 				<div class="pop-head">
-					<h3 class="tit">개인 정보 수집 이용 (선택)</h3>
+					<h3 class="terms-tit"><mark><span class="underline">개인정보 및 위치정보 제3자 제공 동의 (필수)</span></mark></h3>
 				</div>
 				<div class="pop-body">
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
-					개인 정보 수집 이용 (선택) 내용 입니다. <br>
+					${require('html-loader?interpolate!../_template/pop_terms_necessary3.html')}
+				</div>
+				<!-- .btn-group-col -->
+				<div class="btn-group-col">
+					<button type="button" class="btn btn-secondary popup-close"><span>닫기</span></button>
+				</div>
+				<!-- //.btn-group-col -->
+			</div>
+		</div>
+		<!-- //.full-popup -->
+
+		<!-- .full-popup -->
+		<!-- [.full-popup 클래스 추가] .is-active: 팝업 활성화 -->
+		<div class="popup full-popup" id="popTermsNecessary4">
+			<div class="inner">
+				<div class="pop-head">
+					<h3 class="terms-tit"><mark><span class="underline">정보보호 서약서 (필수)</span></mark></h3>
+				</div>
+				<div class="pop-body">
+					${require('html-loader?interpolate!../_template/pop_terms_necessary4.html')}
 				</div>
 				<!-- .btn-group-col -->
 				<div class="btn-group-col">
