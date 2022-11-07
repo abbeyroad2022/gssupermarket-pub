@@ -507,16 +507,22 @@
 		flex-direction: column;
 		width: 100%;
 	}
-	.custom-check {
-		margin-top: rem(14);
-		padding: rem(7) rem(16);
-		~ .btn-terms-view {
-			padding-left: rem(50);
+	.choice-item {
+		display: flex;
+		align-items: center;
+		margin-top: rem(5);
+		.custom-check {
+			margin-top: 0;
+			padding: rem(7) rem(4) rem(7) rem(16);
+		}
+		.btn-terms-view {
+			width: 100%;
+			white-space: unset;
+			text-align: left;
 		}
 	}
 	.fill-type {
-		margin-top: rem(10);
-		margin-bottom: rem(-5);
+		margin: rem(10) 0 rem(5);
 		padding: rem(12) rem(14);
 		border: rem(2) solid $color-gray_e5;
 		border-radius: rem(6);
