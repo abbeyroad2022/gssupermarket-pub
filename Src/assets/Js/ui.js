@@ -1,6 +1,9 @@
 "use strict";
+(function(){
 
-document.addEventListener("DOMContentLoaded", () => {
+	
+})
+
 	console.log("loadding page")
 
 	// tab
@@ -212,4 +215,3 @@ document.addEventListener("DOMContentLoaded", () => {
 			btnDeliveryComplete.disabled = false;
 		});
 	}
-});

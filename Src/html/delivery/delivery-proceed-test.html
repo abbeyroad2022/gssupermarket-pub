@@ -365,7 +365,6 @@
 			var cardListCreate = document.querySelector(".card-list");
 			var div = document.createElement("div");
 			div.setAttribute("class", "card");
-			div.setAttribute("onclick", "cardOnClick();");
 			div.innerHTML = `<div class="card-box"><div class="card-head"><h3 class="name">홍*동</h3><span class="tag tag-type4"><span class="sr-only">점포몰</span></span><div class="btn-group-row"><button type="button" class="btn btn-receipt popup-open" data-popup="popReceipt"><i class="ic ic-receipt"></i><span class="sr-only">영수증보기</span></button><a href="tel:123-456-7890" class="btn btn-phone" target="_blank"><i class="ic ic-phone"></i><span class="sr-only">전화걸기</span></a><button type="button" class="btn btn-location"><i class="ic ic-location"></i><span class="sr-only">위치확인</span></button></div><div class="btn-group-row app-connection"><button type="button" class="btn btn-tmap"><i class="ic ic-tmap"></i><span class="sr-only">TMAP</span></button><button type="button" class="btn btn-kakaonavi"><i class="ic ic-kakaonavi"></i><span class="sr-only">카카오내비</span></button></div></div><div class="card-body"><p class="address">서울 강남구 테헤란로 203 서울인터내셔널 타워(역삼동 679-4) A동 0000호</p><div class="request"><ul class="request-info"><li class="info-msg"><i class="ic ic-msg"></i><span>문 앞에 놔주세요.</span></li><li class="info-time"><i class="ic ic-time"></i><span>14:00 배달</span></li></ul></div></div><i class="card-area"><span class="order-num">4</span></i></div><button class="btn btn-trash"><i class="ic ic-trash"></i><span>삭제</span></button>`;
 			cardListCreate.appendChild(div);
 		}
